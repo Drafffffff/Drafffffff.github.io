@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+    <head><meta name="generator" content="Hexo 3.9.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <title>U S E R C H A R T | 確認存活</title>
+        
+        <link rel="alternate" href="/atom.xml" title="確認存活" type="application/atom+xml">
+        
+        
+        <link rel="icon" href="//favicon.png">
+        
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/common.css">
+        <link rel="stylesheet" href="/css/markdown.css">
+    </head>
+    <body onscroll="scrollYListener()">
+        <div class="wrapper">
+            <div class="mobile_menu_btn">
+  <button id="mobile_menu_btn" class="c-hamburger c-hamburger--htx">
+  <span>toggle menu</span>
+  </button>
+</div>
+<div class="slide_menu">
+  <nav class="nav_scroll">
+    <ul class="clearfix">
+      
+      
+      <li class> <a href="/">主页</a> </li>
+      
+      
+      <li class="active dotted"> <a href="/archives">归档</a> </li>
+      
+    </ul>
+  </nav>
+  <div class="social">
+    <ul class="clearfix">
+      
+      
+      <li> <a href="https://github.com/Drafffffff" target="_blank"> <img src="/img/GitHub.png"> </a> </li>
+      
+      
+      
+      <li> <a href="https://weibo.com/u/6863939296?is_hot=1" target="_blank"> <img src="/img/Weibo.png"> </a> </li>
+      
+      
+      
+      <li> <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&amp;__biz=MzUyODk3NzQyOQ==#wechat_redirect" target="_blank"> <img src="/img/Twitter.png"> </a> </li>
+      
+      
+      
+      
+    </ul>
+  </div>
+  <div class="copyright">
+    &copy; 2019 確認存活 | Provided By  <a title="Df" href="http://chengkang.me/" target="_blank">Df</a>
+  </div>
+</div>
+<header>
+  <div class="mobile_navbar clearfix">
+    
+    <div class="logo">
+      <a href="/">確認存活</a>
+    </div>
+    
+  </div>
+  <div class="row clearfix no_form">
+    <div class="logo">
+      <a href="/">確認存活</a>
+    </div>
+    <nav class="nav_scroll">
+      <ul class="clearfix">
+      
+      
+      <li class> <a href="/">主页</a> </li>
+      
+      
+      <li class="active dotted"> <a href="/archives">归档</a> </li>
+      
+      </ul>
+    </nav>
+  </div>
+</header>
+            <div class="section" id="Search">
+	<div class="section_content">
+		<h3>
+		Search
+		<br>
+		Find out the treasure.
+		</h3>
+		<div id="search-content" class="search-content-modal unexpanded">
+			<div id="search-view">
+				<div class="search-info box">
+					<input type="text" id="search-input" placeholder="输入关键词">
+					<div class="magnifying-glass" id="search-button">
+						<svg xmlns="https://www.w3.org/2000/svg" viewbox="0 0 500 500">
+						<path fill="none" stroke="#fff" stroke-width="36" stroke-linecap="round" d="m280,278a153,153 0 1,0-2,2l170,170m-91-117 110,110-26,26-110-110"/>
+					</svg>
+				</div>
+			</div>
+			<div class="modal" id="search-result" style="display:none">
+				<h2 id="search-result-title">Found 0 match(es):</h2>
+				<ul id="search-result-list">
+				</ul>
+				<span>
+					<button onclick="dismissSearchResultModal()">×</button>
+				</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="/js/jquery-3.1.1.min.js"></script>
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+var path = "/search.xml";
+searchFunc(path, 'search-input', 'search-result-list');
+</script>
+
+<script>
+function dismissSearchResultModal() {
+	document.getElementById("search-result").style.display = "none";
+}
+</script>
+</div>
+<div class="section" id="Post">
+	<div class="section_content">
+		<p class="breadcrumb"><a href="/">ITEM</a> / U S E R C H A R T</p>
+		<div class="page_content mdcss" id="container">
+			<p><script src="https://cdn.bootcss.com/Chart.js/2.7.3/Chart.min.js"></script></p>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<h2 id="并夕夕购物体验用户情绪地图"><a href="#并夕夕购物体验用户情绪地图" class="headerlink" title="并夕夕购物体验用户情绪地图"></a>并夕夕购物体验用户情绪地图</h2><p>设计心理学作业。</p>
+<div class="chart1">
+        <canvas id="myChart" width="300" height="300"></canvas>
+        <script>
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['打开拼多多', '看到无聊推荐', '搜索商品', '看到表面价格', '寻找喜欢的款式', '点开看到真实价格', '反复纠结', '咬牙下单',
+                        '下单成功'],
+                    datasets: [{
+                        label: '# 情绪值',
+                        data: [2, -3, 3, 8, 9, -8, -9, -10, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: false
+                            }
+                        }]
+                    }
+                }
+            });
+        </script>
+    </div>
+
+<div>
+    <div class="row">
+        <table class="table ">
+            <tr>
+                <th>
+                    <p class="text-center border">阶段任务</p>
+                </th>
+                <th>
+                    <p class="text-center border">搜索</p>
+                </th>
+                     <th>
+                         <p class="text-center border">挑选</p>
+                     </th>
+                     <th>
+                         <p class="text-center border">购买</p>
+                     </th>
+                 </tr>
+                 <tr>
+                     <th>
+                         <p class="text-center border">行为与触点</p>
+                     </th>
+                     <td>
+                         <ol>
+                             <li>拿出手机打开APP</li>
+                             <li>点击搜索栏输入商品</li>
+                         </ol>
+                     </td>
+                     <td>
+                         <ol>
+                             <li>选择心仪的商品</li>
+                             <li>查看价格以及商品信息</li>
+                             <li>查看买家评价</li>
+                             <li>联系客服询问详情</li>
+                         </ol>
+                     </td>
+                     <td>
+                         <ol>
+                             <li>选择是否拼单</li>
+                             <li>选择商品属性以及数量</li>
+                             <li>下单选择地址点击购买</li>
+                             <li>跳出支付宝页面</li>
+                             <li>指纹付款</li>
+                         </ol>
+                     </td>
+                 </tr>
+                 <tr>
+                     <th>
+                         <p class="text-center border">疑问</p>
+                     </th>
+                     <td>
+                         <ol>
+                             <li>不知和某宝比那个平台较好</li>
+                         </ol>
+                     </td>
+                     <td>
+                         <ol>
+                             <li>图片是否与实物相符</li>
+                             <li>质量是否有保障</li>
+                             <li>自己真的需要吗</li>
+                             <li>评价是不是请水军</li>
+                         </ol>
+                     </td>
+                     <td>
+                         <ol>
+                             <li>我还有钱吗</li>
+                         </ol>
+                     </td>
+                 </tr>
+                 <tr>
+                     <th>
+                         <p class="text-center border">满意点</p>
+                     </th>
+                     <td>
+                         <ol>种类多满足顾客要求</ol>
+                     </td>
+                     <td>
+                         <ol>价格相较便宜</ol>
+                     </td>
+                     <td>
+                         <ol>智能手机支付方便流程简单</ol>
+                     </td>
+                 </tr>
+                 <tr>
+                     <th>
+                         <p class="text-center border">痛点</p>
+                     </th>
+                     <td>
+                         <ol>
+                             <il>广告太多</il>
+                             <il>消息推送太频繁</il>
+                         </ol>
+                     </td>
+                     <td>
+                         <ol>
+                             <il>太多有点选不过来</il>
+                         </ol>
+                     </td>
+                     <td>
+                         <ol>
+                             <il>穷</il>
+                         </ol>
+                     </td>
+                 </tr>
+                 <tr>
+                     <th>
+                         <p class="text-center border">机会点</p>
+                     </th>
+                     <td>
+                         <ol>
+                             <il>需要的时候</il>
+                             <il>打折的时候</il>
+                         </ol>
+                     </td>
+                     <td>
+                         <ol>
+                             <il>符合我的品位</il>
+                             <il>实用性强</il>
+                         </ol>
+                     </td>
+                     <td>
+                         <ol>
+                             <il>拼单较便宜</il>
+                         </ol>
+                     </td>
+                 </tr>
+                 <tr>
+                     <th>
+                         <p class="text-center border">竞品 优势 劣势</p>
+                     </th>
+                     <td colspan="3" class="text-center">
+                         <ol>
+                             <p>优点:比较便宜</p>
+                             <p>缺点：假货 劣质产品较多</p>
+                         </ol>
+                     </td>
+                 </tr>
+             </table>
+         </div>
+     </div>
+
+
+
+		</div>
+	</div>
+
+	
+
+	
+	
+</div>
+
+	
+	
+	
+	<div class="section" id="Pagenation">
+		
+		<a href="/2019/11/20/E-Y-E/">Prev</a>
+		
+		
+		<a href="/2019/03/15/B A I N A N Z H U N/">Next</a>
+		
+	</div>
+	
+
+            <footer>
+	<div class="footer_wrap">
+		<div class="social">
+			<ul class="clearfix">
+				
+				
+				<li> <a href="https://github.com/Drafffffff" target="_blank"> <img src="/img/GitHub.png"> </a> </li>
+				
+				
+				
+				<li> <a href="https://weibo.com/u/6863939296?is_hot=1" target="_blank"> <img src="/img/Weibo.png"> </a> </li>
+				
+				
+				
+				<li> <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&amp;__biz=MzUyODk3NzQyOQ==#wechat_redirect" target="_blank"> <img src="/img/Twitter.png"> </a> </li>
+				
+				
+				
+				
+			</ul>
+		</div>
+		<img src="/img/line.jpg">
+		<div class="copyright">
+			&copy; 2019 確認存活 | Provided By  <a title="Df" href="http://chengkang.me/" target="_blank">Df</a>
+		</div>
+	</div>
+</footer>
+        </div>
+        <script src="https://cdn.bootcss.com/p5.js/0.7.3/p5.min.js"></script>
+        <script src="https://cdn.bootcss.com/processing.js/1.6.6/processing.js"></script>  
+        <script type="text/javascript">
+        function scrollYListener() {
+        var searchHeight = parseInt(getComputedStyle(document.getElementById("Search")).height)
+        var width = document.documentElement.clientWidth;
+        var supportPageOffset = window.pageXOffset !== undefined;
+        var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
+        var scrollY = supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
+        if (scrollY >= searchHeight-10) {
+        document.getElementsByTagName('header')[0].style.backgroundColor = "#cd4b4b";
+        document.getElementsByClassName('logo')[0].style.backgroundColor = "#cd4b4b";
+        } else {
+        document.getElementsByTagName('header')[0].style.backgroundColor = "#1f4287";
+        document.getElementsByClassName('logo')[0].style.backgroundColor = "#1f4287";
+        }
+        }
+        var isMenuExpanded = false;
+        document.getElementById("mobile_menu_btn").onclick = function toggleMobileMenu() {
+        if (isMenuExpanded) {
+        document.getElementsByClassName('slide_menu')[0].className = "slide_menu";
+        } else {
+        document.getElementsByClassName('slide_menu')[0].className += " mobile_menu_active";
+        }
+        isMenuExpanded = !isMenuExpanded;
+        }
+        </script>
+        
+        
+    </body>
+</html>

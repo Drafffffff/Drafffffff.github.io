@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head><meta name="generator" content="Hexo 3.9.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <title>I N  A N D  O U T | 確認存活</title>
+        
+        <link rel="alternate" href="/atom.xml" title="確認存活" type="application/atom+xml">
+        
+        
+        <link rel="icon" href="//favicon.png">
+        
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/common.css">
+        <link rel="stylesheet" href="/css/markdown.css">
+    </head>
+    <body onscroll="scrollYListener()">
+        <div class="wrapper">
+            <div class="mobile_menu_btn">
+  <button id="mobile_menu_btn" class="c-hamburger c-hamburger--htx">
+  <span>toggle menu</span>
+  </button>
+</div>
+<div class="slide_menu">
+  <nav class="nav_scroll">
+    <ul class="clearfix">
+      
+      
+      <li class> <a href="/">主页</a> </li>
+      
+      
+      <li class="active dotted"> <a href="/archives">归档</a> </li>
+      
+    </ul>
+  </nav>
+  <div class="social">
+    <ul class="clearfix">
+      
+      
+      <li> <a href="https://github.com/Drafffffff" target="_blank"> <img src="/img/GitHub.png"> </a> </li>
+      
+      
+      
+      <li> <a href="https://weibo.com/u/6863939296?is_hot=1" target="_blank"> <img src="/img/Weibo.png"> </a> </li>
+      
+      
+      
+      <li> <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&amp;__biz=MzUyODk3NzQyOQ==#wechat_redirect" target="_blank"> <img src="/img/Twitter.png"> </a> </li>
+      
+      
+      
+      
+    </ul>
+  </div>
+  <div class="copyright">
+    &copy; 2019 確認存活 | Provided By  <a title="Df" href="http://chengkang.me/" target="_blank">Df</a>
+  </div>
+</div>
+<header>
+  <div class="mobile_navbar clearfix">
+    
+    <div class="logo">
+      <a href="/">確認存活</a>
+    </div>
+    
+  </div>
+  <div class="row clearfix no_form">
+    <div class="logo">
+      <a href="/">確認存活</a>
+    </div>
+    <nav class="nav_scroll">
+      <ul class="clearfix">
+      
+      
+      <li class> <a href="/">主页</a> </li>
+      
+      
+      <li class="active dotted"> <a href="/archives">归档</a> </li>
+      
+      </ul>
+    </nav>
+  </div>
+</header>
+            <div class="section" id="Search">
+	<div class="section_content">
+		<h3>
+		Search
+		<br>
+		Find out the treasure.
+		</h3>
+		<div id="search-content" class="search-content-modal unexpanded">
+			<div id="search-view">
+				<div class="search-info box">
+					<input type="text" id="search-input" placeholder="输入关键词">
+					<div class="magnifying-glass" id="search-button">
+						<svg xmlns="https://www.w3.org/2000/svg" viewbox="0 0 500 500">
+						<path fill="none" stroke="#fff" stroke-width="36" stroke-linecap="round" d="m280,278a153,153 0 1,0-2,2l170,170m-91-117 110,110-26,26-110-110"/>
+					</svg>
+				</div>
+			</div>
+			<div class="modal" id="search-result" style="display:none">
+				<h2 id="search-result-title">Found 0 match(es):</h2>
+				<ul id="search-result-list">
+				</ul>
+				<span>
+					<button onclick="dismissSearchResultModal()">×</button>
+				</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="/js/jquery-3.1.1.min.js"></script>
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+var path = "/search.xml";
+searchFunc(path, 'search-input', 'search-result-list');
+</script>
+
+<script>
+function dismissSearchResultModal() {
+	document.getElementById("search-result").style.display = "none";
+}
+</script>
+</div>
+<div class="section" id="Post">
+	<div class="section_content">
+		<p class="breadcrumb"><a href="/">ITEM</a> / I N  A N D  O U T</p>
+		<div class="page_content mdcss" id="container">
+			<h1 id="In-and-Out"><a href="#In-and-Out" class="headerlink" title="In and Out"></a>In and Out</h1><p>来自Openprocessing的一段代码使用了复杂的三角函数和递归运算，还没悟透。</p>
+<p><div id="container1"></div> <input type="range" id="reclevel" max="20" min="1" step="1" value="6"><br>▲拖动滑块调整递归层数。</p>
+<script type="text/javascript">
+const ww = document.getElementById("container").offsetWidth-40;
+let level = 6;
+function setup() {
+ var myCanvas = createCanvas(ww,ww);
+    myCanvas.parent("container1");
+    strokeWeight(width/180);
+    }
+    function draw() {
+        background(240);
+        let level = Number(document.getElementById("reclevel").value);
+        harom(width/1.08,height/1.174,width/13.4,height/1.174,level,(sin(0.0005*millis()%(2*PI))+1)/2);
+    }
+    function harom(ax,  ay, bx,  by, level, ratio){
+        if(level!=0){
+        var  vx,vy,nx,ny,cx,cy;
+        vx=bx-ax;
+        vy=by-ay;
+        nx=cos(PI/3)*vx-sin(PI/3)*vy; 
+        ny=sin(PI/3)*vx+cos(PI/3)*vy; 
+        cx=ax+nx;
+        cy=ay+ny;
+        line(ax,ay,bx,by);
+        line(ax,ay,cx,cy);
+        line(cx,cy,bx,by);
+        harom(ax*ratio+cx*(1-ratio),ay*ratio+cy*(1-ratio),ax*(1-ratio)+bx*ratio,ay*(1-ratio)+by*ratio,level-1,ratio);
+        }
+    }
+    </script>
+		</div>
+	</div>
+
+	
+
+	
+	
+</div>
+
+	
+	
+	
+	<div class="section" id="Pagenation">
+		
+		<a href="/2019/02/20/p-a-n-G-E-N-E-R-A-T-O-R/">Prev</a>
+		
+		
+		<a href="/2019/02/16/R-E-C-T-A-N-G-L-E-S/">Next</a>
+		
+	</div>
+	
+
+            <footer>
+	<div class="footer_wrap">
+		<div class="social">
+			<ul class="clearfix">
+				
+				
+				<li> <a href="https://github.com/Drafffffff" target="_blank"> <img src="/img/GitHub.png"> </a> </li>
+				
+				
+				
+				<li> <a href="https://weibo.com/u/6863939296?is_hot=1" target="_blank"> <img src="/img/Weibo.png"> </a> </li>
+				
+				
+				
+				<li> <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&amp;__biz=MzUyODk3NzQyOQ==#wechat_redirect" target="_blank"> <img src="/img/Twitter.png"> </a> </li>
+				
+				
+				
+				
+			</ul>
+		</div>
+		<img src="/img/line.jpg">
+		<div class="copyright">
+			&copy; 2019 確認存活 | Provided By  <a title="Df" href="http://chengkang.me/" target="_blank">Df</a>
+		</div>
+	</div>
+</footer>
+        </div>
+        <script src="https://cdn.bootcss.com/p5.js/0.7.3/p5.min.js"></script>
+        <script src="https://cdn.bootcss.com/processing.js/1.6.6/processing.js"></script>  
+        <script type="text/javascript">
+        function scrollYListener() {
+        var searchHeight = parseInt(getComputedStyle(document.getElementById("Search")).height)
+        var width = document.documentElement.clientWidth;
+        var supportPageOffset = window.pageXOffset !== undefined;
+        var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
+        var scrollY = supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
+        if (scrollY >= searchHeight-10) {
+        document.getElementsByTagName('header')[0].style.backgroundColor = "#cd4b4b";
+        document.getElementsByClassName('logo')[0].style.backgroundColor = "#cd4b4b";
+        } else {
+        document.getElementsByTagName('header')[0].style.backgroundColor = "#1f4287";
+        document.getElementsByClassName('logo')[0].style.backgroundColor = "#1f4287";
+        }
+        }
+        var isMenuExpanded = false;
+        document.getElementById("mobile_menu_btn").onclick = function toggleMobileMenu() {
+        if (isMenuExpanded) {
+        document.getElementsByClassName('slide_menu')[0].className = "slide_menu";
+        } else {
+        document.getElementsByClassName('slide_menu')[0].className += " mobile_menu_active";
+        }
+        isMenuExpanded = !isMenuExpanded;
+        }
+        </script>
+        
+        
+    </body>
+</html>

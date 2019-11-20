@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>確認存活</title>
+  
+  <subtitle>SurvivalConfirmed</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://drafffffff.github.io/"/>
+  <updated>2019-11-20T10:33:12.115Z</updated>
+  <id>https://drafffffff.github.io/</id>
+  
+  <author>
+    <name>Df</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>E Y E</title>
+    <link href="https://drafffffff.github.io/2019/11/20/E-Y-E/"/>
+    <id>https://drafffffff.github.io/2019/11/20/E-Y-E/</id>
+    <published>2019-11-20T10:23:57.000Z</published>
+    <updated>2019-11-20T10:33:12.115Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="E-Y-E"><a href="#E-Y-E" class="headerlink" title="E Y E"></a>E Y E</h1><p>当你凝视深渊的时候深渊也在凝视你。</p><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;function setup() {    var myCanvas = createCanvas(ww,ww);    myCanvas.parent("container");    background(0);    rectMode(CENTER);    colorMode(HSB, 360, 100, 100);}function draw() {  for (let x = 50; x < 500; x += 50) {    for (let y = 50; y < 500; y += 50) {      if ((x > 301 || x < 199) || (y < 199 || y > 301)) {        stroke(random(360), 100, 100);        fill(random(360), random(100), random(100));        ellipse(x, y, random(50), random(50));        ellipse(250,250, random(50), random(50));      }    }  }}</script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;E-Y-E&quot;&gt;&lt;a href=&quot;#E-Y-E&quot; class=&quot;headerlink&quot; title=&quot;E Y E&quot;&gt;&lt;/a&gt;E Y E&lt;/h1&gt;&lt;p&gt;当你凝视深渊的时候深渊也在凝视你。&lt;/p&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+cons
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>U S E R C H A R T</title>
+    <link href="https://drafffffff.github.io/2019/03/30/U-S-E-R-C-H-A-R-T/"/>
+    <id>https://drafffffff.github.io/2019/03/30/U-S-E-R-C-H-A-R-T/</id>
+    <published>2019-03-30T13:08:33.000Z</published>
+    <updated>2019-11-18T15:03:38.383Z</updated>
+    
+    <content type="html"><![CDATA[<p><script src="https://cdn.bootcss.com/Chart.js/2.7.3/Chart.min.js"></script></p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><h2 id="并夕夕购物体验用户情绪地图"><a href="#并夕夕购物体验用户情绪地图" class="headerlink" title="并夕夕购物体验用户情绪地图"></a>并夕夕购物体验用户情绪地图</h2><p>设计心理学作业。</p><div class="chart1">        <canvas id="myChart" width="300" height="300"></canvas>        <script>            var ctx = document.getElementById('myChart').getContext('2d');            var myChart = new Chart(ctx, {                type: 'line',                data: {                    labels: ['打开拼多多', '看到无聊推荐', '搜索商品', '看到表面价格', '寻找喜欢的款式', '点开看到真实价格', '反复纠结', '咬牙下单',                        '下单成功'],                    datasets: [{                        label: '# 情绪值',                        data: [2, -3, 3, 8, 9, -8, -9, -10, 3],                        backgroundColor: [                            'rgba(255, 99, 132, 0.2)'                        ],                        borderColor: [                            'rgba(255, 99, 132, 1)'                        ],                        borderWidth: 1                    }]                },                options: {                    scales: {                        yAxes: [{                            ticks: {                                beginAtZero: false                            }                        }]                    }                }            });        </script>    </div><div>    <div class="row">        <table class="table ">            <tr>                <th>                    <p class="text-center border">阶段任务</p>                </th>                <th>                    <p class="text-center border">搜索</p>                </th>                     <th>                         <p class="text-center border">挑选</p>                     </th>                     <th>                         <p class="text-center border">购买</p>                     </th>                 </tr>                 <tr>                     <th>                         <p class="text-center border">行为与触点</p>                     </th>                     <td>                         <ol>                             <li>拿出手机打开APP</li>                             <li>点击搜索栏输入商品</li>                         </ol>                     </td>                     <td>                         <ol>                             <li>选择心仪的商品</li>                             <li>查看价格以及商品信息</li>                             <li>查看买家评价</li>                             <li>联系客服询问详情</li>                         </ol>                     </td>                     <td>                         <ol>                             <li>选择是否拼单</li>                             <li>选择商品属性以及数量</li>                             <li>下单选择地址点击购买</li>                             <li>跳出支付宝页面</li>                             <li>指纹付款</li>                         </ol>                     </td>                 </tr>                 <tr>                     <th>                         <p class="text-center border">疑问</p>                     </th>                     <td>                         <ol>                             <li>不知和某宝比那个平台较好</li>                         </ol>                     </td>                     <td>                         <ol>                             <li>图片是否与实物相符</li>                             <li>质量是否有保障</li>                             <li>自己真的需要吗</li>                             <li>评价是不是请水军</li>                         </ol>                     </td>                     <td>                         <ol>                             <li>我还有钱吗</li>                         </ol>                     </td>                 </tr>                 <tr>                     <th>                         <p class="text-center border">满意点</p>                     </th>                     <td>                         <ol>种类多满足顾客要求</ol>                     </td>                     <td>                         <ol>价格相较便宜</ol>                     </td>                     <td>                         <ol>智能手机支付方便流程简单</ol>                     </td>                 </tr>                 <tr>                     <th>                         <p class="text-center border">痛点</p>                     </th>                     <td>                         <ol>                             <il>广告太多</il>                             <il>消息推送太频繁</il>                         </ol>                     </td>                     <td>                         <ol>                             <il>太多有点选不过来</il>                         </ol>                     </td>                     <td>                         <ol>                             <il>穷</il>                         </ol>                     </td>                 </tr>                 <tr>                     <th>                         <p class="text-center border">机会点</p>                     </th>                     <td>                         <ol>                             <il>需要的时候</il>                             <il>打折的时候</il>                         </ol>                     </td>                     <td>                         <ol>                             <il>符合我的品位</il>                             <il>实用性强</il>                         </ol>                     </td>                     <td>                         <ol>                             <il>拼单较便宜</il>                         </ol>                     </td>                 </tr>                 <tr>                     <th>                         <p class="text-center border">竞品 优势 劣势</p>                     </th>                     <td colspan="3" class="text-center">                         <ol>                             <p>优点:比较便宜</p>                             <p>缺点：假货 劣质产品较多</p>                         </ol>                     </td>                 </tr>             </table>         </div>     </div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;script src=&quot;https://cdn.bootcss.com/Chart.js/2.7.3/Chart.min.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>B A I N A N Z H U N</title>
+    <link href="https://drafffffff.github.io/2019/03/15/B%20A%20I%20N%20A%20N%20Z%20H%20U%20N/"/>
+    <id>https://drafffffff.github.io/2019/03/15/B A I N A N Z H U N/</id>
+    <published>2019-03-15T04:05:24.000Z</published>
+    <updated>2019-11-18T15:03:38.374Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="白南准"><a href="#白南准" class="headerlink" title="白南准"></a>白南准</h1><p>Nam June Paik</p><p>不是制造另一个科学玩具，而是将科技和电子媒介人性化</p><p><img src="https://i.imgur.com/5eVTaHe.jpg" alt="KnWnOZHtvlBD_2400x2400"></p><font size="3" color="#888888">Nam June Paik in Miami, c. 1990. Photo: Brian Smit</font><h1 id="“"><a href="#“" class="headerlink" title="“"></a>“</h1><p>我的电视既非从始至终是有趣的，<br>亦非从始至终是无趣的；<br>就像大自然是美丽的，<br>并非因它在美丽地变化，<br>仅仅因为它是变化的。</p><h1 id="”"><a href="#”" class="headerlink" title="”"></a>”</h1><!-- ## 影像艺术先锋 --><p><img src="https://i.loli.net/2019/03/15/5c8b6b63da587.png" alt="小标题"></p><p>对于白南准（Nam June Paik）这个名字大多数人会觉得陌生，但是他的作品大多数人都在教材中见过。</p><h3 id="TV-Buddha-电视佛"><a href="#TV-Buddha-电视佛" class="headerlink" title="TV Buddha 电视佛"></a>TV Buddha 电视佛</h3><p><img src="https://i.loli.net/2019/03/15/5c8b10bde86a3.jpg" alt="43011_526229_154836"></p><font size="3" color="#888888">TV Buddha (1974) Closed circuit video installation, bronze sculpture.</font><p>在这件作品中，佛陀是沉思和启蒙的象征，而把它放在电视与摄像机的对面则象征了现代技术。白南准作为终身修行的佛教徒，用这个作品来质疑自我在一个与灵性与技术相交的时代中的作用。</p><p><img src="https://i.loli.net/2019/03/15/5c8b11e24929e.jpg" alt="0_Z5rIh0WMze5LCRP4"></p><font size="3" color="#888888">TV Buddha (1989) Closed Circuit video installation, bronze sculpture.</font><p><img src="https://i.loli.net/2019/03/15/5c8b11e982031.jpg" alt="0_VWbV4LBdFDb1yhNb"></p><font size="3" color="#888888">Buddha Watching TV, (1974/1997) Stone sculpture, soil, closed circuit video camera, video monitor, tripod, plywood base.</font><p>该系列中的每件作品都由一尊坐在镜头和电视对面的佛像组成。通过摄像机的投射，佛陀凝视着自己在电视屏幕上的形象，在一场持久对视着的竞争中提出了自我和人性的问题。</p><h3 id="Electronic-Superhighway-电子超级高速路"><a href="#Electronic-Superhighway-电子超级高速路" class="headerlink" title="Electronic Superhighway 电子超级高速路"></a>Electronic Superhighway 电子超级高速路</h3><p><img src="https://i.loli.net/2019/03/15/5c8b16b872049.jpg" alt="SAAM-2002.23_1"><br> <font size="3" color="#888888">Electronic Superhighway, 1974, fifty-one channel video installation , custom electronics, neon lighting, steel and wood</font></p><p>当白南准于1964年来到美国时，州际高速公路系统只有9年的历史，而高速公路则为每个人提供了“see the U.S.A. in your Chevrolet.”(在你的雪佛兰中看美国)的自由。</p><p><img src="https://i.loli.net/2019/03/15/5c8b1fc8efa67.jpeg" alt="Close-up-of-Nam-June-Paik-Electronic-Superhighway-Continental-U.S.-Alaska-Hawaii-1995-at-the-Smithsonian-American-Art-Museum-2-1000x750"></p><font size="3" color="#888888"> Electronic Superhighway (detail), 1974</font><p>他通过霓虹灯与电视，回忆了五彩缤纷的地图和汽车旅馆的炽热诱惑，这些诱惑使美国人向开阔的道路招手。</p><p><img src="https://i.loli.net/2019/03/15/5c8b1d620ba06.gif" alt="highway11"><br> <font size="3" color="#888888">Electronic Superhighway (detail), 1974</font></p><p>霓虹灯不同的颜色区分了不同地域之间的显著差异，每个区域中的电视播放着最有地域特色的内容。</p><p><img src="https://i.loli.net/2019/03/15/5c8b1f84d3ab1.gif" alt="superhighway4"><br> <font size="3" color="#888888">Electronic Superhighway (detail), 1974</font></p><p>白南准的灵感来自于美国的洲际高速公路，他将这个视频装置命名为电子高速公路，以表达他对未来的愿景，随着技术的进步，未来的通信将是无边界的。而白南准设想的内容现已通过互联网体现出来，这个术语今天已被广泛使用。</p><h3 id="Zen-for-TV"><a href="#Zen-for-TV" class="headerlink" title="Zen for TV"></a>Zen for TV</h3><p><img src="https://i.loli.net/2019/03/15/5c8b21ee9934e.jpg" alt="cri_000000244077"></p><font size="3" color="#888888">Zen for TV，1963</font><p>电视禅是一部被剥夺其形式和功能的电视机，因而是一种破坏行为。观众在一个竖直的黑暗屏幕上看到一条抽象的垂直发光线而不是其他电视节目。</p><p><img src="https://i.imgur.com/OXezQWI.gif" alt="zen (1)"></p><font size="3" color="#888888">白南准早期的采访视频，Youtube</font><p>把禅这种生活哲学与电视结合，电视成为了安静、沉浸的对象。</p><h3 id="more"><a href="#more" class="headerlink" title="more"></a>more</h3><p><img src="https://i.imgur.com/K772JTI.jpg" alt="zNpkmHTFCTkL_2340x1316"></p><font size="3" color="#888888">Nam June Paik, TV Chair, 1968</font> <p><img src="https://i.imgur.com/8GL3EPc.jpg" alt="qYLIhUtwOvOj_1170x658"></p><font size="3" color="#888888">Nam June Paik, Bakelite Robot, 2002</font> <p><img src="https://i.imgur.com/uL7r9fj.jpg" alt="WWVA2LFNH0r0_1170x658"></p><font size="3" color="#888888">Nam June Paik, TV Cello, 2003</font> <p><img src="https://i.imgur.com/P91JnVW.jpg" alt="D5SWLDLRh1UC_2340x1316"></p><font size="3" color="#888888">Nam June Paik, Candle TV, 1991–2003</font> <p><img src="https://i.imgur.com/mQogCR1.jpg" alt="bBblQ6LK0o1W_585x329"></p><font size="3" color="#888888">Nam June Paik, Standing Buddha with Outstretched Hand, 2005</font><p><img src="https://i.imgur.com/ECom4yh.jpg" alt="hBDFCJI6GYLT_2340x1316"><br> <font size="3" color="#888888">Nam June Paik, Chinese Memory, 2005</font> </p><!-- ## Nam June Paik  --><p><img src="https://i.loli.net/2019/03/15/5c8b6b51cb8f3.png" alt="2"></p><p><img src="https://i.imgur.com/6TwmMW4.jpg" alt="15-paik-timthumb"></p><p>白南准于1932年在韩国首尔出生于一个富裕的工业家庭，在1950年朝鲜战争开始时，他先是逃往了香港，然后到了日本。1956年在东京大学完成美学、音乐史、艺术史和哲学的学习，随后前往德国，追求他对前卫音乐，作曲和表演的兴趣。</p><p><img src="https://i.imgur.com/qP3gthn.jpg" alt="a869fa71dac536a48"></p><p>1958年，他被先锋派作曲家约翰·凯奇（John Cage）的演讲所开悟，使他从一位学习西方古典音乐和现代音乐的普通学生，转而成为一位在多媒体艺术方面发展的实验艺术家。</p><p><img src="https://i.loli.net/2019/03/15/5c8b3f98087ff.jpg" alt="Ev9rdkiroI9K_2400x2400"></p><font size="3" color="#888888"> Magnet TV, 1965</font><p>20世纪60年代，白南准的名字与无政府主义艺术思潮：激浪派（Fluxus）联系在一起，被视为当时最具代表性的先锋艺术家。</p><p><img src="https://i.loli.net/2019/03/15/5c8b51530b690.jpg" alt="800px-Frankfurt_Medien_Denkmal"></p><font size="3" color="#888888">Pre-Bell-Man，雕像</font><p>综看来，白南准看似更是一个“流行艺术家”，通过最广泛的媒介进行再创作，创造出既通俗又形而上的作品。</p><p><img src="https://i.loli.net/2019/03/15/5c8b3f0b7bd83.jpg" alt="Lennon_Ono_Paik_Abe_at_Galeria_Bonino_NY_1971"></p><font size="3" color="#888888">约翰列侬，小野洋子，白南准和Shuya Abe在1971年11月23日在纽约Galeria Bonino拍照</font><p>在那个年代，艺术家一方面惊叹于有史以来最强大的媒介——电视，同时又对商业电视网所播放的内容不屑一顾。而索尼公司（Sony）推出了手提式摄影设备Portapak，使艺术家们发现了新的艺术创作的媒介。</p><p><img src="https://i.loli.net/2019/03/15/5c8b50c50005f.jpg" alt="Sony_AV-3400_Porta_Pak_Camera"></p><font size="3" color="#888888">Portapak是一个电池供电的，自包含的视频磁带 模拟记录系统。它于1967年推向市场，可以由一个人携带和操作。</font><p>白南准成为使用电视媒介来表达艺术的第一人，他的作品将艺术、媒体、技术、流行文化和先锋派艺术结合在一起，影响着当代艺术。</p><p><img src="https://i.loli.net/2019/03/15/5c8b518ab6cc7.jpg" alt="afb7183bd97cf60ca070f44097f696fc"></p><font size="3" color="#888888">影响装置行为代表作《电子大提琴》1971年与大提琴家(Charlotte Moorman)</font><p>在录像艺术领域，白南准也充分理解这个由他引领而来的新时代的艺术挑战，他坚持艺术和科技结合的理念，并进一步坚信艺术和科技结合的中心目标“不是制造另一个科学玩具，而是将科技和电子媒介人性化”。</p><p><img src="https://i.loli.net/2019/03/15/5c8b525f95665.jpg" alt="56-284002-njp-image-1-transistortv-copy"></p><p>随着信息技术的快速发展，人类的感官经验在新的电信科技媒介面前，不断得到整合、扩张，人的认知模式在这个过程总随之改变。</p><p><img src="https://i.imgur.com/1VekiIT.jpg" alt="Bm3Zx5FRvPtX_2400x4800"></p><font size="3" color="#888888">Nam June Paik’s Robot K-456 (1964)</font><p><img src="https://i.loli.net/2019/03/15/5c8b533994c9b.jpg" alt="_mtlqBAh6avf_740x1480"></p><font size="3" color="#888888">Staged accident with Robot K-456 in front of the Whitney Museum of American Art, New York, 1982</font><p>与此同时，录像或录影艺术在数字化时代，在现代创作理念的驱动下，并通过开创性的应用和整合新媒体投入到艺术实践之中，必将再现艺术的新风貌。</p><p><img src="https://i.imgur.com/Q1Jx45g.jpg" alt="01-PaikVideoEditingMercerSt_photobyHeald"></p><font size="3" color="#888888">1999年，白南准在纽约美世街（Mercer Street）家中的视频剪辑室</font><p><img src="https://i.imgur.com/Qrsjvg6.jpg" alt="e8752c2d77cdadeea13279fe0e6c5039"></p><font size="3" color="#888888">白南准一生的追求：探索当代科技和传统文化如何使新的艺术表达成为可能。</font><p><img src="https://i.loli.net/2019/03/15/5c8b6b33f0d38.png" alt="3"></p><p>然后是一些个人的想法。白南准的作品中最吸引我的部分是他所使用的材料，CRT电视机。</p><p><img src="https://i.imgur.com/mCn4PRl.jpg" alt="a31db723ee100e9e11c2d8e1a4b7ee2d"></p><font size="3" color="#888888">索尼特丽珑®(Trinitron®)电视的海报</font><p>CRT电视也就是俗称的“大屁股电视”，其原理在中学物理书上写的一清二楚，通过电子枪射出电子束，电子经过磁场偏转，打在屏幕上的荧光屏上，产生图像。</p><p><img src="https://i.imgur.com/ikS6mzC.png" alt="CRT_color_enhanced"></p><font size="3" color="#888888">阴极射线管原理： 1.三个电子发射器（用于红色，绿色和蓝色荧光点） 2. 电子束  3. 聚焦线圈 4. 偏转线圈 5. 最终阳极的连接（称为“ultor”） 6. 用于分离显示图像的红色，绿色和蓝色部分光束的掩模   7.具有红色，绿色和蓝色区域的磷光体层（屏幕） 8.  磷光体涂层内侧的特写屏幕</font><p>这种电视跟现今的电视相比最大的差别是使用的是模拟信号（Analog），而不是数字信号（Digital）。</p><p><img src="https://i.imgur.com/aJ09cpd.jpg" alt="1-1PH41HP1L5"></p><font size="3" color="#888888">图中光滑的曲线为模拟信号，方块的部分为数字信号</font><p>而对我们来说实际能感受到的差别是，模拟信号在转化为数字信号的过程中大部分数据会丢失。最直接的体现就是照片的像素，数码照片（数字信号）放大后会有像素颗粒出现，但是胶片（模拟信号 ）呈现的图像，无论如何放大也不会出现像素颗粒。</p><p><img src="https://i.imgur.com/nVS0QpQ.jpg" alt="胶片VS数码"></p><p>而我对这两种信号的理解是，数字信号呈现的对象虽然可以无限接近现实，但是其本质上是经过人为的再编码，而这种编码理论上无法完美的复原自然事物。而模拟信号虽然会有噪波，但是平滑的再现了自然事物的特征。 </p><p><img src="https://i.imgur.com/u758GYL.jpg" alt="3de811ace39990500af9cc25b8e5f4d5"></p><p>早期的电子产品几乎全是用模拟信号，磁带、菲林、唱片…… 而如今模拟信号已经被淘汰，唯一能见到的地方似乎就是实验室中的示波器了。最大的原因是，数字信号容易存储，计算。</p><p><img src="https://i.imgur.com/kzaSxQj.jpg" alt="2a15d3e64320d9178bbde3820213ac2e"></p><p>似乎有些扯远，但是我想说的是按照白南准的理念，把电子媒介人性化，最好的材料就是使用更接近自然的模拟信号的电子媒介。CRT电视就是这种媒介。</p><p>参考资料：<br><a href="https://americanart.si.edu/artist/nam-june-paik-3670" target="_blank" rel="noopener">https://americanart.si.edu/artist/nam-june-paik-3670</a><br><a href="https://www.artnetnews.cn/people/bainanzhun-6560" target="_blank" rel="noopener">https://www.artnetnews.cn/people/bainanzhun-6560</a><br><a href="https://medium.com/@codenamecatstac/nam-june-paiks-tv-buddhas-e3606957b23f" target="_blank" rel="noopener">https://medium.com/@codenamecatstac/nam-june-paiks-tv-buddhas-e3606957b23f</a><br><a href="https://americanart.si.edu/artwork/electronic-superhighway-continental-us-alaska-hawaii-71478" target="_blank" rel="noopener">https://americanart.si.edu/artwork/electronic-superhighway-continental-us-alaska-hawaii-71478</a><br><a href="https://monoskop.org/Nam_June_Paik" target="_blank" rel="noopener">https://monoskop.org/Nam_June_Paik</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;白南准&quot;&gt;&lt;a href=&quot;#白南准&quot; class=&quot;headerlink&quot; title=&quot;白南准&quot;&gt;&lt;/a&gt;白南准&lt;/h1&gt;&lt;p&gt;Nam June Paik&lt;/p&gt;
+&lt;p&gt;不是制造另一个科学玩具，而是将科技和电子媒介人性化&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;ht
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C O L O R T R I A L</title>
+    <link href="https://drafffffff.github.io/2019/03/03/C-O-L-O-R-T-R-I-A-L/"/>
+    <id>https://drafffffff.github.io/2019/03/03/C-O-L-O-R-T-R-I-A-L/</id>
+    <published>2019-03-03T14:51:09.000Z</published>
+    <updated>2019-11-18T15:03:38.375Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="颜色实验"><a href="#颜色实验" class="headerlink" title="颜色实验"></a>颜色实验</h2><p>想要使以后的作品颜色更加丰富，和谐。先做一些色彩实验吧。</p><p>可以尝试用手指戳下面色块。</p><script type="text/javascript">'use strict';var tileCountX = 2;var tileCountY = 10;var colorsLeft = [];var colorsRight = [];var colors = [];var interpolateShortest = true;const ww = document.getElementById("container").offsetWidth-40;function setup() {    var myCanvas = createCanvas(ww,ww);    myCanvas.parent("container");    colorMode(HSB);    noStroke();    shakeColors();}function draw() {    tileCountX = int(map(mouseX, 0, width, 2, 100));    tileCountY = int(map(mouseY, 0, height, 2, 10));    var tileWidth = width / tileCountX;    var tileHeight = height / tileCountY;    var interCol;    colors = [];    for (var gridY = 0;gridY < tileCountY;gridY++){        var col1 = colorsLeft[gridY];        var col2 = colorsRight[gridY];        for (var gridX = 0;gridX<tileCountX;gridX++){            var amount = map(gridX, 0, tileCountX - 1, 0, 1);            if (interpolateShortest) {              colorMode(RGB);              interCol = lerpColor(col1, col2, amount);              colorMode(HSB);            } else {              interCol = lerpColor(col1, col2, amount);            }            fill(interCol);            var posX = tileWidth *gridX;            var posY = tileHeight*gridY;            rect(posX,posY,tileWidth,tileHeight);            colors.push(interCol);        }    }}function shakeColors() {    for(var i = 0;i<tileCountY;i++){        colorsLeft[i] = color(random(0,60),random(0,100),100);        colorsRight[i] = color(random(160,190),100,random(0,100));    }}</script><button onclick="shakeColors()" style="color : #ffF">CHANGE COLOR</button>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;颜色实验&quot;&gt;&lt;a href=&quot;#颜色实验&quot; class=&quot;headerlink&quot; title=&quot;颜色实验&quot;&gt;&lt;/a&gt;颜色实验&lt;/h2&gt;&lt;p&gt;想要使以后的作品颜色更加丰富，和谐。先做一些色彩实验吧。&lt;/p&gt;
+&lt;p&gt;可以尝试用手指戳下面色块。&lt;/p&gt;
+&lt;script 
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>p a n G E N E R A T O R</title>
+    <link href="https://drafffffff.github.io/2019/02/20/p-a-n-G-E-N-E-R-A-T-O-R/"/>
+    <id>https://drafffffff.github.io/2019/02/20/p-a-n-G-E-N-E-R-A-T-O-R/</id>
+    <published>2019-02-20T05:47:20.000Z</published>
+    <updated>2019-11-18T15:03:38.384Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="未来艺术该有的样子-panGenerator"><a href="#未来艺术该有的样子-panGenerator" class="headerlink" title="未来艺术该有的样子 | panGenerator"></a>未来艺术该有的样子 | panGenerator</h1><p><img src="http://pmpqqa839.bkt.clouddn.com/hexo/pangenerator.jpg" alt="pangenerator"></p><h1 id><a href="#" class="headerlink" title="#"></a>#</h1><p><img src="http://pmpqqa839.bkt.clouddn.com/hexo/小标题1.jpg" alt="小标题1"></p><p>比特(bit)是计算机数据的最小单位，而原子(atom)是现实物质的最小单位。</p><p>混合比特和原子(blending bits &amp; atoms together)，言下之意就是把就是把计算机技术与现实结合。</p><h3 id="spiralalala"><a href="#spiralalala" class="headerlink" title="spiralalala"></a>spiralalala</h3><p><img src="http://pmpqqa839.bkt.clouddn.com/hexo/web-thumbnail.jpg" alt="web-thumbnail"><br>singing architecture 歌唱的建筑</p><p>这个作品的名字已经大致体现了作品的样子。”spiral”螺旋，后面的”lala”表示了回音，光从名字就可以看出这是一个在螺旋的楼梯上的声音艺术装置。</p><p><img src="http://pmpqqa839.bkt.clouddn.com/hexo/MAIN.00_00_10_22.Still003-1.jpg" alt="MAIN.00_00_10_22.Still003-1"></p><p>人与建筑的交互开始于将球塞入麦克风。然后声音录制开始，在声音录制结束后，球被释放以沿着轨道向下滑动。</p><p><img src="http://pmpqqa839.bkt.clouddn.com/hexo/MAIN.00_00_18_21.Still013.jpg" alt="MAIN.00_00_18_21.Still013"></p><p>为了实现声音的变换与球的位置、速度同步，轨道上每隔一定距离有一个传感器。有了球通过每个传感器的速度，就能用程序跟踪这个球。</p><p><img src="http://pmpqqa839.bkt.clouddn.com/hexo/MAIN.00_00_24_17.Still014.jpg" alt="MAIN.00_00_24_17.Still014"></p><p>为了使声音更加立体，每层楼梯都装有一个扬声器。从而产生了声音随小球“下落”的错觉。</p><p><img src="http://pmpqqa839.bkt.clouddn.com/hexo/fc5970d8d2d92bed565f2833e0b2dc6d.jpg" alt="fc5970d8d2d92bed565f2833e0b2dc6d"></p><h3 id="hash2ash"><a href="#hash2ash" class="headerlink" title="hash2ash"></a>hash2ash</h3><p><img src="http://pmpqqa839.bkt.clouddn.com/hexo/2018_02_01_PAN_GENERATOR_HASH2ASH_08.jpg" alt="2018_02_01_PAN_GENERATOR_HASH2ASH_08">everything saved will be lost 一切终将逝去</p><p>这一作品的名字同样也很有深度，”hash”即哈希，一种储存数据的算法。”ash”尘土。从数据变为尘土。这个在华沙国家民族博物馆创建的互动装置会将你的自拍变成一堆灰烬。</p><p><img src="http://pmpqqa839.bkt.clouddn.com/hexo/2018_02_01_PAN_GENERATOR_HASH2ASH_06.jpg" alt="2018_02_01_PAN_GENERATOR_HASH2ASH_06"></p><p>显示屏上会提示你在手机上自拍，并在屏幕上呈现数字砾石。片刻之后你的脸部会分崩离析，真正的黑色砾石开始从屏幕底部落下，与数字模拟完美同步。最终在屏幕下方形成一个黑的的土堆。</p><p><img src="http://pmpqqa839.bkt.clouddn.com/hexo/2018_02_01_PAN_GENERATOR_HASH2ASH_10.jpg" alt="2018_02_01_PAN_GENERATOR_HASH2ASH_10"></p><p>这个作品表达了数字的信息最总会消失，即使是关于我们自己的信息也会消失。</p><p>看完这个作品让我想到了《三体》中的一个桥段，渺小的人类发现以现有的科技不管用什么手段存储信息，在宇宙的时间尺度上甚至不能保存一瞬间，最后唯一的办法就是在石碑上刻字来保存信息。</p><h2 id="-1"><a href="#-1" class="headerlink" title=" "></a> </h2><p><img src="http://pmpqqa839.bkt.clouddn.com/hexo/小标题2.jpg" alt="小标题2"></p><p><img src="http://pmpqqa839.bkt.clouddn.com/hexo/panGenerator,%20od%20lewej%20Krzysztof%20Golinski,%20Jakub%20Kozniewski,%20Piotr%20Bar.jpg" alt="panGenerator, od lewej Krzysztof Golinski, Jakub Kozniewski, Piotr Bar"></p><p>让我们看看这些作品的创造者。</p><p>panGenerator是一个位于波兰华沙的新媒体艺术设计团队，自2010年以来，该团队创建了独特的项目，探索创造性表达以及与观众的互动的新方式。</p><p><img src="http://pmpqqa839.bkt.clouddn.com/hexo/Alan%20Zenreich,%20from%20Creative%20Black%20Book%20Photography%201985.jpg" alt="Alan Zenreich, from Creative Black Book Photography 1985"></p><p>他们模糊了艺术、设计和工程之间的界限，创建了许多由文化机构或商业品牌委托的大型互动装置，以及纯粹的实验性音乐界面或投机和批判性的艺术作品。</p><p><img src="http://pmpqqa839.bkt.clouddn.com/hexo/Wind_in_the_willows.jpg" alt="Wind_in_the_willows"></p><p>关于名字中的这个潘神(Pan)，我查阅了一些资料，18世纪古典学者、鉴赏家理查德·佩恩(Richard Payne Knight) 有一段关于潘神的描述：</p><p>“Pan is represented pouring water upon the organ of generation; that is, invigorating the active creative power by the prolific element.”(潘神代表向创造的器官浇水，通过丰富的元素鼓舞创造力)</p><p>我推测他们的名字出自这句话，不由得感叹真会取名。</p><h2 id="-2"><a href="#-2" class="headerlink" title=" "></a> </h2><p><img src="http://pmpqqa839.bkt.clouddn.com/hexo/小标题3.jpg" alt="小标题3"></p><p>pangenerator solo exhibition 早期举办的一个展览</p><p>早期的艺术作品仅仅局限于单一的简单的元素，如纸和画笔，感光元件，或者单纯的声音。这些元素当然能够表达作者的想法，也有非常棒作品，但是从宏观一点的角度看这些作品始终使扁平的。</p><p><img src="http://pmpqqa839.bkt.clouddn.com/hexo/357daac20ebfcfb3470c37c37f11eada.jpg" alt="357daac20ebfcfb3470c37c37f11eada"></p><p>从人类的整个历史来看，艺术的发展本来就是随着科技的发展而发展的。从原始人的洞穴壁画，到纸张、笔的发明而后有了格式各样的绘画形式。透视法的发明、牛顿对光与色的进一步发现都对艺术作品有了巨大的推动作用。</p><p><img src="http://pmpqqa839.bkt.clouddn.com/hexo/4a9a02c5041a2000a9d67aa68e242a47.jpg" alt="4a9a02c5041a2000a9d67aa68e242a47"></p><p>而在科技发展更加迅猛的今天，诸如计算机技术、虚拟现实技术等更多的科技应被艺术采纳，一件立体而丰富的艺术作品中因该广泛的采用多种元素。这就是未来艺术该有的样子。</p><h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p><a href="https://culture.pl/pl/tworca/pangenerator" target="_blank" rel="noopener">https://culture.pl/pl/tworca/pangenerator</a><br><a href="https://pangenerator.com/projects/spiralalala/" target="_blank" rel="noopener">https://pangenerator.com/projects/spiralalala/</a><br><a href="https://pangenerator.com/projects/hash2ash/" target="_blank" rel="noopener">https://pangenerator.com/projects/hash2ash/</a><br><a href="https://en.wikipedia.org/wiki/Pan_(god" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Pan_(god</a>)</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;未来艺术该有的样子-panGenerator&quot;&gt;&lt;a href=&quot;#未来艺术该有的样子-panGenerator&quot; class=&quot;headerlink&quot; title=&quot;未来艺术该有的样子 | panGenerator&quot;&gt;&lt;/a&gt;未来艺术该有的样子 | panGen
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>I N  A N D  O U T</title>
+    <link href="https://drafffffff.github.io/2019/02/18/I-N-A-N-D-O-U-T/"/>
+    <id>https://drafffffff.github.io/2019/02/18/I-N-A-N-D-O-U-T/</id>
+    <published>2019-02-17T18:27:22.000Z</published>
+    <updated>2019-11-18T15:03:38.376Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="In-and-Out"><a href="#In-and-Out" class="headerlink" title="In and Out"></a>In and Out</h1><p>来自Openprocessing的一段代码使用了复杂的三角函数和递归运算，还没悟透。</p><p><div id="container1"></div> <input type="range" id="reclevel" max="20" min="1" step="1" value="6"><br>▲拖动滑块调整递归层数。</p><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;let level = 6;function setup() { var myCanvas = createCanvas(ww,ww);    myCanvas.parent("container1");    strokeWeight(width/180);    }    function draw() {        background(240);        let level = Number(document.getElementById("reclevel").value);        harom(width/1.08,height/1.174,width/13.4,height/1.174,level,(sin(0.0005*millis()%(2*PI))+1)/2);    }    function harom(ax,  ay, bx,  by, level, ratio){        if(level!=0){        var  vx,vy,nx,ny,cx,cy;        vx=bx-ax;        vy=by-ay;        nx=cos(PI/3)*vx-sin(PI/3)*vy;         ny=sin(PI/3)*vx+cos(PI/3)*vy;         cx=ax+nx;        cy=ay+ny;        line(ax,ay,bx,by);        line(ax,ay,cx,cy);        line(cx,cy,bx,by);        harom(ax*ratio+cx*(1-ratio),ay*ratio+cy*(1-ratio),ax*(1-ratio)+bx*ratio,ay*(1-ratio)+by*ratio,level-1,ratio);        }    }    </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;In-and-Out&quot;&gt;&lt;a href=&quot;#In-and-Out&quot; class=&quot;headerlink&quot; title=&quot;In and Out&quot;&gt;&lt;/a&gt;In and Out&lt;/h1&gt;&lt;p&gt;来自Openprocessing的一段代码使用了复杂的三角函数和递归运算，还
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>R E C T A N G L E S</title>
+    <link href="https://drafffffff.github.io/2019/02/16/R-E-C-T-A-N-G-L-E-S/"/>
+    <id>https://drafffffff.github.io/2019/02/16/R-E-C-T-A-N-G-L-E-S/</id>
+    <published>2019-02-16T12:20:58.000Z</published>
+    <updated>2019-11-18T15:03:38.380Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="R-E-C-T-A-N-G-L-E-S"><a href="#R-E-C-T-A-N-G-L-E-S" class="headerlink" title="R E C T A N G L E S"></a>R E C T A N G L E S</h1><p>尝试触摸以下区域</p><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;var tileCount = 20;var moduleColor;var moduleAlpha = 180;var maxDistance = 500;function setup() {  var myCanvas = createCanvas(ww,ww);    myCanvas.parent("container");  noFill();  strokeWeight(3);  moduleColor = color(0, 0, 0, moduleAlpha);}function draw() {  clear();  stroke(moduleColor);  for (var gridY = 0; gridY < width; gridY += 25) {    for (var gridX = 0; gridX < height; gridX += 25) {      var diameter = dist(mouseX, mouseY, gridX, gridY);      diameter = diameter / maxDistance * 40;      push();            noFill();      translate(gridX, gridY, diameter * 5);      rect(0, 0, diameter, diameter); // also nice: ellipse(...)      pop();    }  }}</script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;R-E-C-T-A-N-G-L-E-S&quot;&gt;&lt;a href=&quot;#R-E-C-T-A-N-G-L-E-S&quot; class=&quot;headerlink&quot; title=&quot;R E C T A N G L E S&quot;&gt;&lt;/a&gt;R E C T A N G L E S&lt;/h1&gt;&lt;p&gt;尝试
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C U B E W A V E</title>
+    <link href="https://drafffffff.github.io/2019/02/15/C-U-B-E-W-A-V-E/"/>
+    <id>https://drafffffff.github.io/2019/02/15/C-U-B-E-W-A-V-E/</id>
+    <published>2019-02-15T10:31:19.000Z</published>
+    <updated>2019-11-18T15:03:38.375Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Cube-Wave-方块波"><a href="#Cube-Wave-方块波" class="headerlink" title="Cube Wave 方块波"></a>Cube Wave 方块波</h1><p>来自Twitter大神<a href="https://twitter.com/beesandbombs" target="_blank" rel="noopener">@beesandbombs</a>的一张动图。</p><p><img src="http://pmpqqa839.bkt.clouddn.com/hexo/20190215141626-be14ef72ff.[gif-2-mp4.com].gif" alt="20190215141626-be14ef72ff.[gif-2-mp4.com]"></p><p>主要使用了三角函数实现平滑的波动。</p><p><div id="container1"></div><input type="range" id="speedRange" max="0.4" min="0" step="0.001" value="0.1"><br>▲拖动滑块调整波动频率。</p><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;let angle = 0;let ma;let maxD;function setup() {  createCanvas(ww, ww, WEBGL);var myCanvas = createCanvas(ww,ww,WEBGL);myCanvas.parent("container1");  ma = atan(cos(QUARTER_PI));  maxD = dist(0, 0, width/2, width/2);}function draw() {let w = width/15;  background(100);  ortho(-400, 400, 400, -400, 0, 1000);  rotateX(ma);  rotateY(-QUARTER_PI);  for (let z = 0; z < width; z += w) {    for (let x = 0; x < width; x += w) {      push();      let d = dist(x, z, width / 2, width / 2);      let offset = map(d, 0, maxD, -PI, PI);      let a = angle + offset;      let h = floor(map(sin(a), -1, 1, 150, width));      translate(x - width / 2, 0, z - width / 2);      normalMaterial();      box(w, h, w);      //rect(x - width / 2 + w / 2, 0, w - 2, h);      pop();    }  }  angle += Number(document.getElementById("speedRange").value);}</script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Cube-Wave-方块波&quot;&gt;&lt;a href=&quot;#Cube-Wave-方块波&quot; class=&quot;headerlink&quot; title=&quot;Cube Wave 方块波&quot;&gt;&lt;/a&gt;Cube Wave 方块波&lt;/h1&gt;&lt;p&gt;来自Twitter大神&lt;a href=&quot;https:
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S O M E T H I N G - 1</title>
+    <link href="https://drafffffff.github.io/2019/02/14/S-O-M-E-T-H-I-N-G-1/"/>
+    <id>https://drafffffff.github.io/2019/02/14/S-O-M-E-T-H-I-N-G-1/</id>
+    <published>2019-02-14T12:40:59.000Z</published>
+    <updated>2019-11-18T15:03:38.382Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一-个-B-U-G"><a href="#一-个-B-U-G" class="headerlink" title="一 个 B U G"></a>一 个 B U G</h1><p>做一个立方体矩阵的时候出了点BUG，还挺好看的，上传了。</p><script type="text/javascript">let angle = 0;const ww = document.getElementById("container").offsetWidth-40;let recWidth = 13;function setup() {  var myCanvas = createCanvas(ww, 500,WEBGL);  myCanvas.parent("container");}function draw() {    background(120);    ortho();    // translate(width / 2, height / 2);    rectMode(CENTER);    // directionalLight(240, 135, 200,0,-1, 0);    let offset = 0;    let Yoffset = 0;    rotateX(PI / 3);    // rotateY(PI / 3);    rotateZ(PI/4);    for (let y = 0; y < width; y += recWidth + 5) {        offset = Yoffset;        for (let x = 0; x < width; x += recWidth + 5) {            push();            let a = angle + offset;            // noStroke();            // fill(255);            // ambientMaterial(255);            normalMaterial();            translate(x - width / 2, y - width / 2,0);            let h = map(sin(a), -1, 1, 0, 200);            box(recWidth, recWidth, h);            // rect(x - width /2 + recWidth/2, 0,recWidth, h);            offset += TWO_PI / (width / recWidth);            pop();        }        Yoffset += TWO_PI / (width / recWidth);    }    angle += 0.08;}</script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;一-个-B-U-G&quot;&gt;&lt;a href=&quot;#一-个-B-U-G&quot; class=&quot;headerlink&quot; title=&quot;一 个 B U G&quot;&gt;&lt;/a&gt;一 个 B U G&lt;/h1&gt;&lt;p&gt;做一个立方体矩阵的时候出了点BUG，还挺好看的，上传了。&lt;/p&gt;
+&lt;script t
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>P H Y L L O T A D X I S</title>
+    <link href="https://drafffffff.github.io/2019/02/13/P-H-Y-L-L-O-T-A-D-X-I-S/"/>
+    <id>https://drafffffff.github.io/2019/02/13/P-H-Y-L-L-O-T-A-D-X-I-S/</id>
+    <published>2019-02-12T17:45:17.000Z</published>
+    <updated>2019-11-18T15:03:38.379Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="叶-序"><a href="#叶-序" class="headerlink" title="叶 序"></a>叶 序</h1><p><strong> 叶序（Phyllotaxis）</strong> 是叶梗上的一群、或一丛叶，依固定的方式排列，是植物的固定特征之一。</p><p><img src="http://pmpqqa839.bkt.clouddn.com/hexo/微信截图_20190213032851.png" alt="微信截图_20190213032851"></p><p>来自混乱博物馆（CHAOS MUSEUM）第199期，<a href="https://www.bilibili.com/video/av27410638" target="_blank" rel="noopener">黄金分割的妙处</a>。</p><p><img src="http://pmpqqa839.bkt.clouddn.com/微信截图_20190213021905.png" alt="微信截图_20190213021905"></p><p>在植物生长时每隔一个角度就长出一个侧芽，如果这个角度太过平庸，新芽旋转几周后就会和老的芽对在一起，既浪费空间又争夺资源。</p><p><img src="http://pmpqqa839.bkt.clouddn.com/1.gif" alt="1"></p><p>只要这个旋转角度足够刁钻，新芽就不会转回原点，如宝塔花菜。</p><p><img src="http://pmpqqa839.bkt.clouddn.com/800px-Fractal_Broccoli.jpg" alt="800px-Fractal_Broccoli"></p><p>这个刁钻角度就是圆周角的黄金分割。</p><p><img src="http://pmpqqa839.bkt.clouddn.com/2.gif" alt="2"></p><p>为了模拟了这种旋转产生的图案,可由 360/(1+φ）＝540－180√5＝137.507764 得出黄金角约等于137.5，于是有了下面的图案。</p><script type="text/javascript">var n = 0;var c = 3.2;var Angle = 137.50776405003785464634873962837;const ww = document.getElementById("container").offsetWidth-40;function setup() {  var myCanvas = createCanvas(ww, ww);  myCanvas.parent("zhege");  angleMode(DEGREES);  background(0);}function draw() {  var a = n * Angle;  var r = c * sqrt(n);  var x = r * cos(a) + width / 2;  var y = r * sin(a) + height / 2;  fill(255);  noStroke();  ellipse(x, y, 4);  n++;}function getInputValue() {  var inputValue = document.getElementById("degree").value;  if (inputValue) {    return inputValue;  }}function restart() {  background(0);  n = 0;  if( getInputValue()){    Angle = getInputValue()  }}</script><div id="zhege"></div><p>可以在以下文本框中输入任意角度</p><p><input type="text" id="degree" value="137.5" onfocus="if(value=='137.5'){value=''}" onblur="if(value==''){value='137.5'}"><button onclick="restart()" style="color : #ffF">S U B M I T</button></p><p>这里还有个相差很小的角度形成的图案，分别为137.3和137.6，大家可以尝试下。</p><p><img src="http://pmpqqa839.bkt.clouddn.com/hexo/微信截图_20190213032909.png" alt="微信截图_20190213032909"></p><p>更多关于叶序的信息，<a href="http://algorithmicbotany.org/papers/abop/abop-ch4.pdf" target="_blank" rel="noopener">这里有份资料</a>，感兴趣可以翻阅一下。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;叶-序&quot;&gt;&lt;a href=&quot;#叶-序&quot; class=&quot;headerlink&quot; title=&quot;叶 序&quot;&gt;&lt;/a&gt;叶 序&lt;/h1&gt;&lt;p&gt;&lt;strong&gt; 叶序（Phyllotaxis）&lt;/strong&gt; 是叶梗上的一群、或一丛叶，依固定的方式排列，是植物的固定特征之一
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>M E N G E R S P O N G E</title>
+    <link href="https://drafffffff.github.io/2019/02/10/M-E-N-G-E-R-S-P-O-N-G-E/"/>
+    <id>https://drafffffff.github.io/2019/02/10/M-E-N-G-E-R-S-P-O-N-G-E/</id>
+    <published>2019-02-10T06:24:51.000Z</published>
+    <updated>2019-11-18T15:03:38.377Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="门-格-海-绵"><a href="#门-格-海-绵" class="headerlink" title="门 格 海 绵"></a>门 格 海 绵</h1><hr><p><img src="https://i.loli.net/2019/02/10/5c5fc43f36a16.png" alt="Menger-Schwamm-farbig.png"></p><p>门格海绵的结构可以用以下方法形象化：<br>-</p><blockquote><p>1.从一个正方体开始。（第一个图像）<br>2.把正方体的每一个面分成9个正方形。这将把正方体分成27个小正方体，像魔方一样。<br>3.把每一面的中间的正方体去掉，把最中心的正方体也去掉，留下20个正方体（第二个图像）。<br>4.把每一个留下的小正方体都重复第1-3个步骤。<br>5.把以上的步骤重复无穷多次以后，得到的图形就是门格海绵。</p></blockquote><p><img src="https://i.loli.net/2019/02/10/5c5fc54aae1df.jpg" alt="Menger_sponge_(Level_0-3).jpg"></p><h2 id="以下是用Processing模拟的门格海绵，请谨慎触摸以下区域。"><a href="#以下是用Processing模拟的门格海绵，请谨慎触摸以下区域。" class="headerlink" title="以下是用Processing模拟的门格海绵，请谨慎触摸以下区域。"></a>以下是用Processing模拟的门格海绵，请谨慎触摸以下区域。</h2><canvas data-processing-sources="Menger_Sponge_Fractal.pde Box.pde"></canvas><blockquote><p><strong>门格海绵</strong>（<strong>Menger sponge、Menger universal curve</strong>）是分形的一种。它是一个<strong>通用曲线</strong>，因为它的拓扑维数为一，且任何其它曲线或图都与门格海绵的某个子集同胚。它有时称为门格-谢尔宾斯基海绵或谢尔宾斯基海绵。它是<strong>康托尔集和谢尔宾斯基地毯</strong>在三维空间的推广。它首先由奥地利数学家<strong>卡尔·门格</strong>在1926年描述，当时他正在研究拓扑维数的概念。</p><p>(来自维基百科)</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;门-格-海-绵&quot;&gt;&lt;a href=&quot;#门-格-海-绵&quot; class=&quot;headerlink&quot; title=&quot;门 格 海 绵&quot;&gt;&lt;/a&gt;门 格 海 绵&lt;/h1&gt;&lt;hr&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2019/02/10/5c5fc
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>VAPOR wAVE</title>
+    <link href="https://drafffffff.github.io/2019/02/09/VAPOR-wAVE/"/>
+    <id>https://drafffffff.github.io/2019/02/09/VAPOR-wAVE/</id>
+    <published>2019-02-09T13:42:08.000Z</published>
+    <updated>2019-11-18T15:03:38.383Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="VAPOR-wAVE"><a href="#VAPOR-wAVE" class="headerlink" title="VAPOR wAVE"></a>VAPOR wAVE</h1><p>基于Perlin Noise的蒸汽波图。</p><p>实时产生的噪波。</p><canvas data-processing-sources="PerlinNoise_Java.pde"></canvas>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;VAPOR-wAVE&quot;&gt;&lt;a href=&quot;#VAPOR-wAVE&quot; class=&quot;headerlink&quot; title=&quot;VAPOR wAVE&quot;&gt;&lt;/a&gt;VAPOR wAVE&lt;/h1&gt;&lt;p&gt;基于Perlin Noise的蒸汽波图。&lt;/p&gt;
+&lt;p&gt;实时产生的噪波。&lt;/
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>FireWork</title>
+    <link href="https://drafffffff.github.io/2019/02/09/FireWork/"/>
+    <id>https://drafffffff.github.io/2019/02/09/FireWork/</id>
+    <published>2019-02-09T09:13:01.000Z</published>
+    <updated>2019-11-18T15:03:38.376Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="F-I-R-E-W-O-R-K"><a href="#F-I-R-E-W-O-R-K" class="headerlink" title="F I R E W O R K"></a>F I R E W O R K</h1><p>新 年 快 乐 ！</p><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;var gravity;var fireworks = [];function setup() { var myCanvas = createCanvas(ww,400);    myCanvas.parent("container");  gravity = createVector(0, 0.2);  stroke(255);  strokeWeight(4);  background(0);}function draw() {  background(51, 70);  if (random(1) < 0.03) {    fireworks.push(new Firework());  }  for (var i = fireworks.length - 1; i >= 0; i--) {    fireworks[i].updata();    fireworks[i].show();    // if (fireworks[i].firework.pos.y > height){    //   fireworks.splice(i,1);    // }    if (fireworks[i].done()) {      fireworks.splice(i, 1);    }  }}function Firework() {  this.firework = new Particle(random(width), height, true);  this.exploded = false;  this.particles = [];  this.hu = 0;  this.done = function() {    if (this.exploded && this.particles.length === 0) {      return true;    } else {      return false;    }  };  this.updata = function() {    if (!this.exploded) {      this.firework.applyForce(gravity);      this.firework.update();      if (this.firework.vel.y >= 0) {        this.exploded = true;        this.explode();      }    }    for (var i = this.particles.length - 1; i >= 0; i--) {      this.particles[i].applyForce(gravity);      this.particles[i].update();      if (this.particles[i].done()) {        this.particles.splice(i, 1);      }    }  };  this.explode = function() {    for (var i = 0; i < 100; i++) {      var p = new Particle(this.firework.pos.x, this.firework.pos.y);      this.particles.push(p);    }  };  this.show = function() {    if (!this.exploded) {      this.firework.show();    }    for (var i = 0; i < this.particles.length; i++) {      this.particles[i].show();    }  };}function Particle(x, y, firework) {  this.firework = firework;  this.pos = createVector(x, y);  this.lifespan = 255;  if (firework) {    this.vel = createVector(0, random(-12, -8));  } else {    this.vel = p5.Vector.random2D();    this.vel.mult(random(2, 10));  }  this.acc = createVector(0, 0);  this.applyForce = function(force) {    this.acc.add(force);  };  this.update = function() {    if (!this.firework) {      this.vel.mult(0.9);      this.lifespan -= 3;    }    this.vel.add(this.acc);    this.pos.add(this.vel);    this.acc.mult(0);  };  this.show = function() {    if (!this.firework) {      strokeWeight(2);      stroke(255, this.lifespan);    } else {      stroke(255, 255);      strokeWeight(4);    }    point(this.pos.x, this.pos.y);  };  this.done = function() {    if (this.lifespan < 0) {      return true;    } else {      return false;    }  };}</script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;F-I-R-E-W-O-R-K&quot;&gt;&lt;a href=&quot;#F-I-R-E-W-O-R-K&quot; class=&quot;headerlink&quot; title=&quot;F I R E W O R K&quot;&gt;&lt;/a&gt;F I R E W O R K&lt;/h1&gt;&lt;p&gt;新 年 快 乐 ！&lt;/p&gt;
+&lt;scr
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关 于 流 浪 地 球</title>
+    <link href="https://drafffffff.github.io/2019/02/03/%E5%85%B3-%E4%BA%8E-%E6%B5%81-%E6%B5%AA-%E5%9C%B0-%E7%90%83/"/>
+    <id>https://drafffffff.github.io/2019/02/03/关-于-流-浪-地-球/</id>
+    <published>2019-02-02T18:34:36.000Z</published>
+    <updated>2019-11-18T15:03:38.384Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="行星飞船"><a href="#行星飞船" class="headerlink" title="行星飞船"></a>行星飞船</h2><p>《流浪地球》的背景是太阳即将发生氦闪，人类选择将地球改造成巨大的飞船，使它跟着人类一起在太空中流浪。刘慈欣对于改造的设定描写的非常详细。为了推动地球，地球发动机总共有一万二千台，分布在亚洲和美洲大陆的各个平原上，而发动机使用的燃料是岩石，使用一种重元素聚变的黑科技提供能源。</p><p>这种“行星飞船”的优点就是可以使生态系统最大化，总所周知，生态系统越大越稳定，只有非常稳定的生态系统才能长期在太空中流浪。但是缺点也非常明显，工程量巨大，人类对地球的了解还非常粗浅，能否实现还是个未知数。而刘慈欣就把这壮举呈现在了《流浪地球》这部小说中了。</p><p>关于这类的“行星飞船”的设定，我第一次见到是在《龙珠》的一部剧场版中。《ドラゴンボールZ 超サイヤ人だ孫悟空》（译名：龙珠Z剧场版4：超级赛亚人孙悟空，1991年出品）。讲的是在那美克星爆炸中幸存的超级那美克星人（没错跟短笛大魔王一个种族，比短笛更强）史拉格大王想把地球纳入自己的统治范围，并将地球改造成一艘宇宙飞船。我看这部剧场版时大概还是小学生，当时我就对这个把地球改造成宇宙飞船的设定印象深刻。</p><p>但是《龙珠》毕竟是热血格斗片，就算有很多黑科技也是魔幻的科幻（雾），片中只是提到史拉格大王非常喜欢这颗年轻漂亮的行星，决定改造成最新型的行星游艇。从仅有的片段我们可以看出，可能是要把发动机深埋进地里，而不是像《流浪地球》中那样高耸入云。（原著小说中行星发动机的高度是一万一千米，拍摄电影时重新计算过后发现数据有误差，改成了十万米）但是显然《龙珠》在制作时没有计算过发动机的尺寸。依我看，在《龙珠》的世界观中要实现行星飞船只需把孙悟空固定在地球上，然后对着太空发龟派气功波就完事了。</p><p>还有一种类似的“小行星飞船”，出自贰瓶勉的漫画《希德尼娅的骑士》（超喜欢它的画风），人类播种船希德尼娅。希德尼娅是由现实中存在的小行星579，编号1905 SD，名称为Sidonia，人类将该小行星从现实轨道上捕获并使之环绕地球运转、改造成飞船。播种船的任务是传承人类与地球物种的生命。找到能够进行地球化的行星后，如果有超过5万船员愿意移民，就放出舰载移民船对行星进行移民，播种船本身不会停留。 </p><p>具体设定如下<br>建造：公元237X-2384年在地球轨道上建造<br>出航：2384年8月2日<br>航行时间：已超过1009年<br>所属：人类文明<br>尺寸：长轴约33千米，中轴线长28千米（作品中有表现），居住区长轴约15千米，居住区短轴5千米以上<br>几何形：八角柱<br>动力：爱克斯粒子炉（爱克斯粒子，又译海埃斯粒子，被设定为在宇宙中普遍存在的微观粒子）<br>传动：喷口6组（后方4组推进用，前方2组逆向喷射用）<br>船内重力：由重力发生装置产生，单向1G（存在若干无重力区域）<br>乘员：一般船员50万人以上；不死船员约26人<br>速度：巡航速度为宏观高速（亚光速），推定平均速度约87195千米每秒。最大速度未知（不能进行空间跳跃，不过也能从星际空间接近其他星系） </p><h2 id="小说本身"><a href="#小说本身" class="headerlink" title="小说本身"></a>小说本身</h2><p>抛开这些设定，我们回到小说本身。<br>刘慈欣的作品给我震撼的除了无敌的科幻设定，还有宏大科幻背景下对人类的描写。这里的人类指的是在不同的社会背景下，对人类整体的心理、道德和价值观的把握。</p><p>在《流浪地球》中，有一段对话：</p><blockquote><p>爸爸突然想起了一件事，“呵，忘了告诉你们，我爱上了黎星，我要离开你们和她在一起。”<br>“她是谁？”妈妈平静地问。<br>“我的小学老师。”我替爸爸回答。我升入中学已两年，不知道爸爸和小星老师是怎么认识的，也许是在两年前那个毕业仪式上？<br>“那你去吧。”妈妈说。<br>“过一阵我肯定会厌倦，那时我就回来，你看呢？”<br>“你要愿意当然行。”妈妈的声音像冰冻的海面一样平稳，但很快激动起来， “啊，这一颗真漂亮，里面一定有全息散射体！”她指着刚在空中开放的一朵焰火，真诚地赞美着。</p></blockquote><p>婚姻和爱情在我们这个时代是人生最重要的事情之一，但是在整个人类面临巨大的危机时，生存和延续成为了人类唯一的渴望，对于婚姻和爱情人们都已经感到淡然。</p><p>还有在地下城涌入岩浆逃亡的场景：</p><blockquote><p>古代曾有过一个伦理学问题：当洪水到来时，一个只能救走一个人的男人，是去救他的父亲呢，还是去救他的儿子？在这个时代的人看来，提出这个问题很不可理解。<br>当我到达中心广场时，看到人们已按年龄排起了长长的队。最靠近电梯口的是由机器人保育员抱着的婴儿，然后是幼儿园的孩子，再往后是小学生……</p></blockquote><p>与正常人类争先恐后逃亡相反，人们按照年龄排起了长队，最后的人就等待着死亡，每个人都冷静的可怕，这种与正常的求生欲相违背的冷静又映衬出流浪地球计划的宏大。</p><p>类似的描写还出现在了刘慈欣的其它作品中，大家最熟悉的《三体》中三体危机初期的大低谷人类相食、太阳系被二向箔降维，程心坐超光速飞船出逃时人们的疯狂报复等。这些关于人类整体的描写是刘慈欣小说中不可或缺的元素，是小说整个背景设定厚重的原因之一。</p><h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p>除了《流浪地球》刘慈欣还有很多非常有趣的短篇小说。我只安利三篇。<del>多了你也不会去看</del></p><h4 id="地球大炮"><a href="#地球大炮" class="headerlink" title="地球大炮"></a>地球大炮</h4><p>同样是改造地球，这篇小说中地球被挖了一个贯穿的隧道，这样一个通道有非常多的作用。如发射卫星、飞船，只需把飞船丢入真空隧道，先靠重力加速，跌落到地心，再靠电磁感应在另外一半隧道加速，最后就能在地球的另外一端发射出去。</p><p>小说中还讲了一枚螺丝钉掉入了隧道引起的事故，堪比黑洞的脑洞。</p><h4 id="带上她的眼睛"><a href="#带上她的眼睛" class="headerlink" title="带上她的眼睛"></a>带上她的眼睛</h4><p>在刘慈欣的所有小说中，最让我感到惊艳的就是《带上她的眼睛》，这篇科幻部分着墨非常少，属于清新脱俗的作品。</p><h4 id="时间移民"><a href="#时间移民" class="headerlink" title="时间移民"></a>时间移民</h4><p>关于未来人类的生存方式的思考，最让我震撼的是人类完全脱离了物质世界，生活在计算机模拟的世界中，每个人在自己的世界中成为神。又引出了经典的关于缸中之脑的思考。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;行星飞船&quot;&gt;&lt;a href=&quot;#行星飞船&quot; class=&quot;headerlink&quot; title=&quot;行星飞船&quot;&gt;&lt;/a&gt;行星飞船&lt;/h2&gt;&lt;p&gt;《流浪地球》的背景是太阳即将发生氦闪，人类选择将地球改造成巨大的飞船，使它跟着人类一起在太空中流浪。刘慈欣对于改造的设定描写
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title> M I T O S I S S I M U L A T I O N</title>
+    <link href="https://drafffffff.github.io/2019/02/02/M-I-T-O-S-I-S-S-I-M-U-L-A-T-I-O-N/"/>
+    <id>https://drafffffff.github.io/2019/02/02/M-I-T-O-S-I-S-S-I-M-U-L-A-T-I-O-N/</id>
+    <published>2019-02-02T06:54:23.000Z</published>
+    <updated>2019-11-18T15:03:38.378Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="有丝分裂模拟"><a href="#有丝分裂模拟" class="headerlink" title="有丝分裂模拟"></a>有丝分裂模拟</h1><p>点击分裂</p><p><del>点击判定不是很完善</del></p><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;var cells = [];function setup() {  var myCanvas = createCanvas(ww,300);    myCanvas.parent("container");    cells.push(new Cell());}function draw() {    background(51);    for (var i = 0; i < cells.length; i++) {        cells[i].move();        cells[i].show();        cells[i].grow();    }}function mousePressed() {    for (var i = cells.length - 1; i >= 0; i--) {        if (cells[i].clicked(mouseX, mouseY)) {            cells.push(cells[i].mitosis());            cells.push(cells[i].mitosis());            cells.splice(i, 1);            break;        }        }    }    function Cell(pos, r, c) {    if (pos) {        this.pos = pos.copy();    } else {        this.pos = createVector(random(width), random(height))    }    this.r = r || 30;    this.biggest = 40;    this.c = c || color(105, 239, 254, 100);    this.clicked = function (x, y) {        var d = dist(this.pos.x, this.pos.y, x, y);        if (d < this.r) {            return true;        } else {            return false;        }    }    this.move = function () {        var vel = p5.Vector.random2D();        this.pos.add(vel);        this.pos.x = constrain(this.pos.x, 0 + this.r, width - this.r);        this.pos.y = constrain(this.pos.y, 0 + this.r, height - this.r);    }    this.grow = function () {        if(this.r<this.biggest){            this.r += 0.05;        }    }    this.mitosis = function () {        // this.pos.x += random(-this.r, this.r)        this.newpos = createVector(this.pos);        var cell = new Cell(this.pos, this.r * 0.8, this.c);        return cell;    }    this.show = function () {        fill(this.c);        noStroke();        // rect(this.pos.x,this.pos.y,10,10);s        ellipse(this.pos.x, this.pos.y, this.r, this.r);    }}</script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;有丝分裂模拟&quot;&gt;&lt;a href=&quot;#有丝分裂模拟&quot; class=&quot;headerlink&quot; title=&quot;有丝分裂模拟&quot;&gt;&lt;/a&gt;有丝分裂模拟&lt;/h1&gt;&lt;p&gt;点击分裂&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;点击判定不是很完善&lt;/del&gt;&lt;/p&gt;
+&lt;script type=&quot;tex
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S N A K E</title>
+    <link href="https://drafffffff.github.io/2019/02/01/S-N-A-K-E/"/>
+    <id>https://drafffffff.github.io/2019/02/01/S-N-A-K-E/</id>
+    <published>2019-02-01T12:15:03.000Z</published>
+    <updated>2019-11-18T15:03:38.381Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="S-N-A-K-E"><a href="#S-N-A-K-E" class="headerlink" title="S N A K E"></a>S N A K E</h1><p>一个贪吃蛇小游戏 <del>不是很完善</del></p><p>上下左右方向键控制移动</p><p>请用电脑打开</p><script type="text/javascript">var s;var scl = 20;var food;const ww = document.getElementById("container").offsetWidth-40;function setup() {  var myCanvas = createCanvas(ww,400);    myCanvas.parent("container");    s = new Snake();    frameRate(10);    pickLocation();}function pickLocation() {    var cols = floor(width / scl);    var rows = floor(height / scl);    food = createVector(floor(random(cols)), floor(random(rows)));    food.mult(scl);}function draw() {    background(50);    s.update();    s.show();    if (s.eat(food)) {        pickLocation();        s.len += 1;    }    fill(255, 0, 100);    rect(food.x, food.y, scl, scl);}function keyPressed() {    if (keyCode === UP_ARROW) {        s.dir(0, -1);    }    else if (keyCode === DOWN_ARROW) {        s.dir(0, 1);    }    else if (keyCode === RIGHT_ARROW) {        s.dir(1, 0);    }    else if (keyCode === LEFT_ARROW) {        s.dir(-1, 0);    }}function Snake() {    this.x = 0;    this.y = 0;    this.xspeed = 1;    this.yspeed = 0;    this.len = 1;    this.tail = [];    this.update = function () {        if (this.len === this.tail.length) {            for (var i = 0; i < this.tail.length - 1; i++) {                this.tail[i] = this.tail[i + 1];            }        }        this.tail[this.len - 1] = createVector(this.x, this.y);        this.x += this.xspeed * scl;        this.x = constrain(this.x, 0, width - scl);        this.y += this.yspeed * scl;        this.y = constrain(this.y, 0, height - scl);    }    this.show = function () {        fill(200);        for (var i = 0; i < this.len; i++) {            rect(this.tail[i].x, this.tail[i].y, scl, scl);        }        // rect(this.x, this.y, scl, scl);    }    this.eat = function (pos) {        var d = dist(this.x, this.y, pos.x, pos.y);        if (d < 1) {            return true;        } else {            return false;        }    }    this.dir = function (x, y) {        this.xspeed = x;        this.yspeed = y;    }}</script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;S-N-A-K-E&quot;&gt;&lt;a href=&quot;#S-N-A-K-E&quot; class=&quot;headerlink&quot; title=&quot;S N A K E&quot;&gt;&lt;/a&gt;S N A K E&lt;/h1&gt;&lt;p&gt;一个贪吃蛇小游戏 &lt;del&gt;不是很完善&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;上下左右方向键控制
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S T A R F I E L D</title>
+    <link href="https://drafffffff.github.io/2019/02/01/S-T-A-R-F-I-E-L-D/"/>
+    <id>https://drafffffff.github.io/2019/02/01/S-T-A-R-F-I-E-L-D/</id>
+    <published>2019-02-01T12:12:25.000Z</published>
+    <updated>2019-11-18T15:03:38.382Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="S-T-A-R-F-I-E-L-D"><a href="#S-T-A-R-F-I-E-L-D" class="headerlink" title="S T A R F I E L D"></a>S T A R F I E L D</h1><p>请点击黑域不同位置。</p><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;var World = [];var tSpeed;function setup() {  var myCanvas = createCanvas(ww,400);    myCanvas.parent("container");  for (var i = 0; i < 300; i++) {    World.push(new star());  }}function draw() {  tSpeed = map(mouseX, 0, width, 0, 20);  background(0);  translate(width / 2, height / 2);  for (var i = 0; i < World.length; i++) {    World[i].Execute();  }}function star() {  this.x = random(-width / 2, width / 2);  this.y = random(-height / 2, height / 2);  this.z = random(width);  this.Show = function () {    fill(255);    noStroke();    this.rx = map(this.x / this.z, 0, 1, 0, width);    this.ry = map(this.y / this.z, 0, 1, 0, width);    this.size = map(this.z, 0, width, 12, 0);    ellipse(this.rx, this.ry, this.size);  }  this.Create = function () {    this.z -= tSpeed;    if (this.z < 1) {      this.z = width;    }  }  this.Execute = function () {    this.Create();    this.Show();  }}</script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;S-T-A-R-F-I-E-L-D&quot;&gt;&lt;a href=&quot;#S-T-A-R-F-I-E-L-D&quot; class=&quot;headerlink&quot; title=&quot;S T A R F I E L D&quot;&gt;&lt;/a&gt;S T A R F I E L D&lt;/h1&gt;&lt;p&gt;请点击黑域不同位置。
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>P U R P L E R A I N</title>
+    <link href="https://drafffffff.github.io/2019/02/01/P-U-R-P-L-E-R-A-I-N/"/>
+    <id>https://drafffffff.github.io/2019/02/01/P-U-R-P-L-E-R-A-I-N/</id>
+    <published>2019-02-01T12:08:33.000Z</published>
+    <updated>2019-11-18T15:03:38.380Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="P-U-R-P-L-E-R-A-I-N"><a href="#P-U-R-P-L-E-R-A-I-N" class="headerlink" title="P U R P L E R A I N"></a>P U R P L E R A I N</h1><p>模 拟 下 一 场 紫 色 的 雨</p><script type="text/javascript">var Stars = [];  const ww = document.getElementById("container").offsetWidth-40;function setup() {  var myCanvas = createCanvas(ww,400);    myCanvas.parent("container");  for (var i = 0; i < 600; i++) {    Stars.push(new Star());  }}function draw() {  background(230, 230, 250);  for (var i = 0; i < Stars.length; i++) {    Stars[i].show();    Stars[i].updata();  }}function Star() {  this.x = random(width);  this.y = random(-400,-0);  this.z = random(0,100);  this.yspeed = map(this.z,0,100,2,7);  this.len = map(this.z,0,100,7,12);  this.show = function () {    strokeWeight(map(this.z,0,100,0,2))    print(this.yspeed);    stroke(138, 43, 226);    line(this.x, this.y, this.x, this.y + this.len);  }  this.updata = function () {    this.y += this.yspeed;    this.yspeed += 0.2;    if(this.y>360){      this.y = random(-400,0) ;      this.yspeed = 2;    }  }}</script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;P-U-R-P-L-E-R-A-I-N&quot;&gt;&lt;a href=&quot;#P-U-R-P-L-E-R-A-I-N&quot; class=&quot;headerlink&quot; title=&quot;P U R P L E R A I N&quot;&gt;&lt;/a&gt;P U R P L E R A I N&lt;/h1&gt;&lt;p&gt;模 
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C O L O R F A L L</title>
+    <link href="https://drafffffff.github.io/2019/02/01/C-O-L-O-R-F-A-L-L/"/>
+    <id>https://drafffffff.github.io/2019/02/01/C-O-L-O-R-F-A-L-L/</id>
+    <published>2019-02-01T11:04:32.000Z</published>
+    <updated>2019-11-18T15:03:38.374Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="C-O-L-O-R-F-A-L-L"><a href="#C-O-L-O-R-F-A-L-L" class="headerlink" title="C O L O R F A L L"></a>C O L O R F A L L</h1><p>尝试用手指在下面空白区域滑动。</p><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;var dots = [];var isCreatable = false;function setup() {  var myCanvas = createCanvas(ww,400);    myCanvas.parent("container");}function draw() {  background(220,232,232);  if (isCreatable) {    dots.push(new Dot(mouseX, mouseY));    print(dots.length);  }  for (var i = 0; i<dots.length; i++) {    dots[i].show();    dots[i].grow();  }}function mousePressed() {  isCreatable = true;}function mouseReleased() {  isCreatable = false;}function Dot(px, py) {  this.x = px;  this.y = py;  this.r = 7;  this.l = 0;  this.growSpeed = 2;  this.colR = random(255);   this.colG = random(255);  this.colB = random(255);  this.show = function() {    noStroke();    fill(this.colR, this.colG, this.colB);    ellipse(this.x, this.y, this.r*2, this.r*2);    rect(this.x-this.r, this.y, this.r*2, this.l);    ellipse(this.x, this.y+this.l, this.r*2, this.r*2);  }  this.grow = function() {    if (this.l<height) {      this.l+=this.growSpeed;    }  }}</script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;C-O-L-O-R-F-A-L-L&quot;&gt;&lt;a href=&quot;#C-O-L-O-R-F-A-L-L&quot; class=&quot;headerlink&quot; title=&quot;C O L O R F A L L&quot;&gt;&lt;/a&gt;C O L O R F A L L&lt;/h1&gt;&lt;p&gt;尝试用手指在下面空白
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
