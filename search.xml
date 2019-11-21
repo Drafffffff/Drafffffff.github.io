@@ -4,19 +4,6 @@
   
     
     <entry>
-      <title>asdasf</title>
-      <link href="/2019/11/21/asdasf/"/>
-      <url>/2019/11/21/asdasf/</url>
-      
-        <content type="html"><![CDATA[<p>sdfsdfs</p><h2 id="dsffsdfsdf"><a href="#dsffsdfsdf" class="headerlink" title="dsffsdfsdf"></a>dsffsdfsdf</h2><h3 id="d3234"><a href="#d3234" class="headerlink" title="d3234"></a>d3234</h3><p><del>asdasdasds</del></p><script>    const ww = document.getElementById("container").offsetWidth-40;function setup() {    var myCanvas = createCanvas(ww,ww);    myCanvas.parent("container");    background(0);}function draw() {    ellipse(mouseX,mouseY,20,20);}</script>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>E Y E</title>
       <link href="/2019/11/20/E-Y-E/"/>
       <url>/2019/11/20/E-Y-E/</url>
