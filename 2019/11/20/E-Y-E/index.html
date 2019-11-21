@@ -132,6 +132,7 @@ function dismissSearchResultModal() {
 			<h1 id="E-Y-E"><a href="#E-Y-E" class="headerlink" title="E Y E"></a>E Y E</h1><p>当你凝视深渊的时候深渊也在凝视你。</p>
 <script type="text/javascript">
 const ww = document.getElementById("container").offsetWidth-40;
+let cell = ww / 10;
 function setup() {
     var myCanvas = createCanvas(ww,ww);
     myCanvas.parent("container");
@@ -141,13 +142,13 @@ function setup() {
 }
 
 function draw() {
-  for (let x = 50; x < 500; x += 50) {
-    for (let y = 50; y < 500; y += 50) {
-      if ((x > 301 || x < 199) || (y < 199 || y > 301)) {
+  for (let x = cell; x < ww; x += cell) {
+    for (let y = cell; y < ww; y += cell) {
+      if ((x > cell*6 || x < cell*4) || (y < cell*4 || cell*4)) {
         stroke(random(360), 100, 100);
         fill(random(360), random(100), random(100));
-        ellipse(x, y, random(50), random(50));
-        ellipse(250,250, random(50), random(50));
+        ellipse(x, y, random(cell), random(cell));
+        ellipse(ww/2,ww/2, random(cell), random(cell));
 
       }
     }
@@ -167,6 +168,8 @@ function draw() {
 	
 	
 	<div class="section" id="Pagenation">
+		
+		<a href="/2019/11/21/asdasf/">Prev</a>
 		
 		
 		<a href="/2019/03/30/U-S-E-R-C-H-A-R-T/">Next</a>
