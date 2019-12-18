@@ -154,7 +154,7 @@ cons
     <link href="https://drafffffff.github.io/2019/02/16/R-E-C-T-A-N-G-L-E-S/"/>
     <id>https://drafffffff.github.io/2019/02/16/R-E-C-T-A-N-G-L-E-S/</id>
     <published>2019-02-16T12:20:58.000Z</published>
-    <updated>2019-11-18T15:03:38.380Z</updated>
+    <updated>2019-12-10T16:05:48.353Z</updated>
     
     <content type="html"><![CDATA[<h1 id="R-E-C-T-A-N-G-L-E-S"><a href="#R-E-C-T-A-N-G-L-E-S" class="headerlink" title="R E C T A N G L E S"></a>R E C T A N G L E S</h1><p>尝试触摸以下区域</p><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;var tileCount = 20;var moduleColor;var moduleAlpha = 180;var maxDistance = 500;function setup() {  var myCanvas = createCanvas(ww,ww);    myCanvas.parent("container");  noFill();  strokeWeight(3);  moduleColor = color(0, 0, 0, moduleAlpha);}function draw() {  clear();  stroke(moduleColor);  for (var gridY = 0; gridY < width; gridY += 25) {    for (var gridX = 0; gridX < height; gridX += 25) {      var diameter = dist(mouseX, mouseY, gridX, gridY);      diameter = diameter / maxDistance * 40;      push();            noFill();      translate(gridX, gridY, diameter * 5);      rect(0, 0, diameter, diameter); // also nice: ellipse(...)      pop();    }  }}</script>]]></content>
     
