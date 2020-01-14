@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="我们如今正处于一个从‘面向对象’向‘面向系统’的过度时期。变化没有发生在事务本身上，而是在事务完成的方法上。 Jack Burnham (1968), Systems Esthetics  ​    如果我让你定义一下平面设计师扮演的角色，会是怎样的？这个问题会有各种各样的答案，但我的定义是：平面设计师是一个通过形状和颜色来传达一段内容的人。这项工作可以有很多形式，但目前为止，它主要包括了海报，">
+<meta name="keywords" content="编程设计系统">
+<meta property="og:type" content="article">
+<meta property="og:title" content="1.简介 #Programming Design System">
+<meta property="og:url" content="https://drafff.art/2020/1-简介-Programming-Design-System/index.html">
+<meta property="og:site_name" content="Drafff">
+<meta property="og:description" content="我们如今正处于一个从‘面向对象’向‘面向系统’的过度时期。变化没有发生在事务本身上，而是在事务完成的方法上。 Jack Burnham (1968), Systems Esthetics  ​    如果我让你定义一下平面设计师扮演的角色，会是怎样的？这个问题会有各种各样的答案，但我的定义是：平面设计师是一个通过形状和颜色来传达一段内容的人。这项工作可以有很多形式，但目前为止，它主要包括了海报，">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://i.creativecommons.org/l/by-nc/4.0/88x31.png">
+<meta property="og:updated_time" content="2020-01-14T14:50:30.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="1.简介 #Programming Design System">
+<meta name="twitter:description" content="我们如今正处于一个从‘面向对象’向‘面向系统’的过度时期。变化没有发生在事务本身上，而是在事务完成的方法上。 Jack Burnham (1968), Systems Esthetics  ​    如果我让你定义一下平面设计师扮演的角色，会是怎样的？这个问题会有各种各样的答案，但我的定义是：平面设计师是一个通过形状和颜色来传达一段内容的人。这项工作可以有很多形式，但目前为止，它主要包括了海报，">
+<meta name="twitter:image" content="https://i.creativecommons.org/l/by-nc/4.0/88x31.png">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>1.简介 #Programming Design System</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+</head>
+
+<body class="max-width mx-auto px3 RTL">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/1900/01/14/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+         
+          <li><a href="https://github.com/drafffffff">项目</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2020/2-设计系统的历史-Programming-Design-System/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2020/（转载）为什么把编程当作自学的入口？/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">上一篇</span>
+      <span id="i-next" class="info" style="display:none;">下一篇</span>
+      <span id="i-top" class="info" style="display:none;">返回顶部</span>
+      <span id="i-share" class="info" style="display:none;">分享文章</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://drafff.art/2020/1-简介-Programming-Design-System/"><i
+        class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://drafff.art/2020/1-简介-Programming-Design-System/&text=1.简介 #Programming Design System"><i
+        class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://drafff.art/2020/1-简介-Programming-Design-System/&title=1.简介 #Programming Design System"><i
+        class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://drafff.art/2020/1-简介-Programming-Design-System/&is_video=false&description=1.简介 #Programming Design System"><i
+        class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=1.简介 #Programming Design System&body=Check out this article: https://drafff.art/2020/1-简介-Programming-Design-System/"><i
+        class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://drafff.art/2020/1-简介-Programming-Design-System/&title=1.简介 #Programming Design System"><i
+        class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://drafff.art/2020/1-简介-Programming-Design-System/&title=1.简介 #Programming Design System"><i
+        class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://drafff.art/2020/1-简介-Programming-Design-System/&title=1.简介 #Programming Design System"><i
+        class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://drafff.art/2020/1-简介-Programming-Design-System/&title=1.简介 #Programming Design System"><i
+        class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon"
+      href="http://www.tumblr.com/share/link?url=https://drafff.art/2020/1-简介-Programming-Design-System/&name=1.简介 #Programming Design System&description="><i
+        class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://news.ycombinator.com/submitlink?u=https://drafff.art/2020/1-简介-Programming-Design-System/&t=1.简介 #Programming Design System"><i
+        class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        1.简介 #Programming Design System
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Drafff</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2020-01-14T14:47:48.000Z" itemprop="datePublished">2020-01-14</time>
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/编程设计系统/">编程设计系统</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <blockquote>
+<p>我们如今正处于一个从‘面向对象’向‘面向系统’的过度时期。变化没有发生在事务本身上，而是在事务完成的方法上。</p>
+<p>Jack Burnham (1968), Systems Esthetics</p>
+</blockquote>
+<p>​    如果我让你定义一下平面设计师扮演的角色，会是怎样的？这个问题会有各种各样的答案，但我的定义是：平面设计师是一个通过形状和颜色来传达一段内容的人。这项工作可以有很多形式，但目前为止，它主要包括了海报，名片，书籍封面等形式的印刷品。</p>
+<p>​    我们面临着新的挑战，不是因为设计的定义发生了巨大的改变，而是我们需要生产的产品已经变了。我们如今把大部分的时间花在电子屏幕而不是纸上，于是对能够为数字设备做设计的设计师产生了极大的需求。但是数字产品不像印刷品。数字产品需要把动态的内容显示在不同尺寸的设备上。数字产品能让用户与内容交互，并从动态效果中获取有用的信息。<strong>此外，数字产品通常具有时间逻辑，其中的线性叙事被复杂的状态和转换替代了。</strong> <em>(Furthermore, digital products often have temporal logic where a linear narrative is replaced by a set of complex states and transitions. )</em> 但是归根结底，数字产品都有同一个特征：都是通过编程语言创作的。</p>
+<p>​    对于根植于<strong>纯艺</strong>  <em>(fine arts)</em> 的领域来说，这将是一个非常困难的转变。许多平面设计的学校都采取了<strong>瀑布式的教学方法</strong> <em>(waterfall philosophy)</em>，学生们把自己定位成能够为他人提供构想的创意者。毕竟，这比采取一个全新的教学方式简单多了。但是，这种方法的根本问题在于传统的静态设计工具（例如illustrator和sketch）无法胜任数字系统的原型制作。即使实在<strong>页面隐喻</strong> <em>(metaphor)</em>任然盛行的网页设计中，它们似乎也只能局限于设计网页的外观。谷歌会只是因为有一个好看的搜索框而成为一个优秀的网站吗？传统的平面设计固然非常重要，这本书也是构建在传统平面设计基础上的。然而设计领域和新兴技术之间已经有了长达一个世纪的纽带，如果平面设计师不习惯于这些新的<strong>数字现实</strong> <em>(digital reality)</em>，那么就会被时代淘汰。如今我们有了编写生成精美设计作品代码的能力，<strong>而未来的设计师必须了解如何实现这个承诺</strong>。 <em>(and the designer of tomorrow will have to understand how to deliver on that promise.)</em></p>
+<p>​    当我们试图通过把一门编程语言当作设计师的工具来重定义平面设计课程时会发生什么？这本书给出了一个简单的答案。有很多理由来说明为什么这是一个强有力的概念。首先，平面设计师经常在他们工作中使用<strong>设计系统</strong> <em>(systems)</em>。我们使用栅格系统来平衡我们的排版，使用色环来选择<strong>合适的颜色</strong> <em>(colors with proper distance to each other)</em>。历史告诉我们<strong>设计系统</strong>能够使我们克服对空白画布的恐惧。将这些系统的概念应用到代码里将会是一个<strong>很有力的概念</strong> (powerful concept)。其次，代码能使设计师做一些之前做不到的事情。在原型设计阶段，设计中的变化可以更迅速地被测试，并且可以使用随机函数生成设计师永远也无法通过铅笔达到的效果。第三，它使设计师创建能够根据时间、地点或者用途而变化的动态系统。把设计作品扔在墙上不管不顾，仅仅是看，使印刷作品遗留下来的不良习惯，没有理由使设计的过程伴随着作品的诞生而结束。</p>
+<p>​    这本书的结构类似于对平面设计的介绍，着重于视觉设计的元素以及它们与算法设计的关系。这本书是写给想要成为更好程序员的设计师和想成为更好设计师的程序员。在你阅读此书时，你会发现它从最基础的内容开始。代码将会非常简单，练习也会限制在合理的范围。如果觉得这本书很简单，请继续往下读。这些基础概念是为某些复杂的概念奠定基础的，我们很快就会接触到更具挑战性的主题。在本书的最后，我希望你能学习到两个新技能：如何使用代码创建新颖有趣的平面设计作品，以及如何评估这些设计是否成功。</p>
+<p>​    我决定本书中的所有实例都使用<a href="https://p5js.org/" target="_blank" rel="noopener">P5.js这个JavaScript库</a> 。它已经被证明对于初学者来说是一个很好的编程环境，同时对于高级用户来说，它也足够强大。我知道，不可能选择一种适合所有人的编程语言，并且读者可能需要根据具体项目的性质，将本书中的思想移植到其他编程语言和框架中。因此，我试图将文字写得尽可能概括。同样重要的是，要注意这不是一本关于网页设计的书。尽管这些示例可以嵌入到任何网页上，但是这些技术可以同时应用于数字和印刷作品。实际上，我已经看到我的学生创造了各种各样的设计作品，包括雕塑，绘画，时装，摄影，游戏设计，网页设计和印刷品等项目。</p>
+<p>​    这本书是为具有JavaScript编程入门知识的读者而写的，这意味着几乎没有时间花在解释变量，函数和循环等概念上。对于没有基础的读者，我强烈推荐Daniel Shiffman的<a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA" target="_blank" rel="noopener">Coding Rainbow YouTube YouTube</a>频道，Dan在解释这些概念方面做得比我做得更好。这些视频还将介绍P5.js中编程的基本概念。</p>
+<p>​    我不是第一个写有关平面设计系统的作者，这本书使用了许多令人难以置信的作者的想法，这些作者多到在这里无法一一提及。 我也不是第一个写编程和平面设计的人，但是我对这个领域的书籍感到沮丧，这些书大致分为两类：那些专注于代码和生成设计的书，却没有讲授平面设计原理。 那些做出优秀设计作品的书，却没有总结项目的制作方式或成功的原因。 所以需要一本以现代的方式讲授平面设计的基础的教学材料，特别是如果它还能为学生提供用于批判数字设计项目的心理模型。</p>
+<p>​    我选择在没有出版商的情况下免费在线出版这本书。 这样做的主要原因是自由。 它使我能够编写和设计我想要的书籍类型。 这反映在本书的结构中，该书的结构包括许多较短的章节，这些章节在网络上更易于阅读，并且教师可以直接改编以用于教学（由于拥有知识共享许可，因此完全合法）。 我将以非线性方式撰写这些章节，讨论我在特定时间最感兴趣的主题。 尽管我将其作为全职工作，但没有完成本书的具体截止日期。 本书的源代码可在GitHub上找到，我鼓励所有读者<strong>提交问题</strong> <em>(issues)</em>或提出<strong>修改请求</strong> <em>(pull requests)</em>。 要了解本书的最新进展，可以在网站上通过邮箱订阅。</p>
+<p>​    我要感谢下面这些人，没有他们就没有这本书。当我2009年移居纽约，在纽约大学的“互动电信计划”（ITP）学习时，我只有一个模糊的想法，就是想在艺术与代码的交汇处创作。作为主要开发横幅广告的Flash开发人员，在ITP的两年时间完全改变了我的想法。我要感谢Dan O’Sullivan对这个项目的大力支持，该项目始于ITP的一个班级，在我担任研究人员的同时它经发展成为一本书。没有Daniel Shiffman的帮助和指导，这本书就不会存在。Daniel Shiffman的工作启发了成千上万的学生学习代码。我还要感谢斯图尔特·史密斯（Stewart Smith），他在“可视化数据”课上讲授了本书的早期构想。我感谢所有帮助塑造这些想法的ITP教师和校友，包括Patrick Hebron，Greg Borenstein，Clay Shirky，Danny Rozin，Tom Igoe，David Nolen，Gabe Barcia-Colombo和George Agudow。特别感谢P5.js的原始作者Lauren McCarthy，以及Casey Reas和Ben Fry在Processing方面的工作。我要感谢钱德勒·亚伯拉罕（Chandler Abraham）在色彩空间一章中所做的详细编辑，克莱尔·科尼·沃尔普（Claire Kearney-Volpe）回答了我有关可访问性的众多问题，以及玛丽亚·玛格瓦德·詹森（Maria Marqvard Jensen）的不懈努力。现在，我们开始吧。</p>
+<p>本文译自<a href="https://programmingdesignsystems.com/" target="_blank" rel="noopener">Programming Design Systems</a></p>
+<p><a rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"></a></p>
+<p>本作品采用<a rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可。</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/1900/01/14/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+         
+          <li><a href="https://github.com/drafffffff">项目</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://drafff.art/2020/1-简介-Programming-Design-System/"><i
+        class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://drafff.art/2020/1-简介-Programming-Design-System/&text=1.简介 #Programming Design System"><i
+        class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://drafff.art/2020/1-简介-Programming-Design-System/&title=1.简介 #Programming Design System"><i
+        class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=https://drafff.art/2020/1-简介-Programming-Design-System/&is_video=false&description=1.简介 #Programming Design System"><i
+        class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=1.简介 #Programming Design System&body=Check out this article: https://drafff.art/2020/1-简介-Programming-Design-System/"><i
+        class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://drafff.art/2020/1-简介-Programming-Design-System/&title=1.简介 #Programming Design System"><i
+        class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://drafff.art/2020/1-简介-Programming-Design-System/&title=1.简介 #Programming Design System"><i
+        class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://drafff.art/2020/1-简介-Programming-Design-System/&title=1.简介 #Programming Design System"><i
+        class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://drafff.art/2020/1-简介-Programming-Design-System/&title=1.简介 #Programming Design System"><i
+        class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon"
+      href="http://www.tumblr.com/share/link?url=https://drafff.art/2020/1-简介-Programming-Design-System/&name=1.简介 #Programming Design System&description="><i
+        class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://news.ycombinator.com/submitlink?u=https://drafff.art/2020/1-简介-Programming-Design-System/&t=1.简介 #Programming Design System"><i
+        class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> 目录</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js'></script>
+  <div class="footer-left">
+    Copyright &copy; 2020 Drafff
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/1900/01/14/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+         
+          <li><a href="https://github.com/drafffffff">项目</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<!-- clipboard -->
+
+  <script src="/lib/clipboard/clipboard.min.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"复制到粘贴板!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "复制成功!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>
