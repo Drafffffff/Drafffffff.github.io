@@ -208,6 +208,28 @@
   </entry>
   
   <entry>
+    <title>A-B-O-U-T</title>
+    <link href="https://drafff.art/2020/01/14/A-B-O-U-T/"/>
+    <id>https://drafff.art/2020/01/14/A-B-O-U-T/</id>
+    <published>2020-01-14T11:56:02.000Z</published>
+    <updated>2020-01-14T11:56:12.941Z</updated>
+    
+    <content type="html"><![CDATA[<p>sdfsdf</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;sdfsdf&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>W-H-I-T-E-H-O-L-E</title>
     <link href="https://drafff.art/2020/01/14/W-H-I-T-E-H-O-L-E/"/>
     <id>https://drafff.art/2020/01/14/W-H-I-T-E-H-O-L-E/</id>
@@ -446,28 +468,6 @@ const ww = document.getElementById(
       
       
         &lt;h1 id=&quot;叶-序&quot;&gt;&lt;a href=&quot;#叶-序&quot; class=&quot;headerlink&quot; title=&quot;叶 序&quot;&gt;&lt;/a&gt;叶 序&lt;/h1&gt;&lt;p&gt;&lt;strong&gt; 叶序（Phyllotaxis）&lt;/strong&gt; 是叶梗上的一群、或一丛叶，依固定的方式排列，是植物的固定特征之一
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>M E N G E R S P O N G E</title>
-    <link href="https://drafff.art/2019/02/10/M-E-N-G-E-R-S-P-O-N-G-E/"/>
-    <id>https://drafff.art/2019/02/10/M-E-N-G-E-R-S-P-O-N-G-E/</id>
-    <published>2019-02-10T06:24:51.000Z</published>
-    <updated>2019-11-18T15:03:38.377Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="门-格-海-绵"><a href="#门-格-海-绵" class="headerlink" title="门 格 海 绵"></a>门 格 海 绵</h1><hr><p><img src="https://i.loli.net/2019/02/10/5c5fc43f36a16.png" alt="Menger-Schwamm-farbig.png"></p><p>门格海绵的结构可以用以下方法形象化：<br>-</p><blockquote><p>1.从一个正方体开始。（第一个图像）<br>2.把正方体的每一个面分成9个正方形。这将把正方体分成27个小正方体，像魔方一样。<br>3.把每一面的中间的正方体去掉，把最中心的正方体也去掉，留下20个正方体（第二个图像）。<br>4.把每一个留下的小正方体都重复第1-3个步骤。<br>5.把以上的步骤重复无穷多次以后，得到的图形就是门格海绵。</p></blockquote><p><img src="https://i.loli.net/2019/02/10/5c5fc54aae1df.jpg" alt="Menger_sponge_(Level_0-3).jpg"></p><h2 id="以下是用Processing模拟的门格海绵，请谨慎触摸以下区域。"><a href="#以下是用Processing模拟的门格海绵，请谨慎触摸以下区域。" class="headerlink" title="以下是用Processing模拟的门格海绵，请谨慎触摸以下区域。"></a>以下是用Processing模拟的门格海绵，请谨慎触摸以下区域。</h2><canvas data-processing-sources="Menger_Sponge_Fractal.pde Box.pde"></canvas><blockquote><p><strong>门格海绵</strong>（<strong>Menger sponge、Menger universal curve</strong>）是分形的一种。它是一个<strong>通用曲线</strong>，因为它的拓扑维数为一，且任何其它曲线或图都与门格海绵的某个子集同胚。它有时称为门格-谢尔宾斯基海绵或谢尔宾斯基海绵。它是<strong>康托尔集和谢尔宾斯基地毯</strong>在三维空间的推广。它首先由奥地利数学家<strong>卡尔·门格</strong>在1926年描述，当时他正在研究拓扑维数的概念。</p><p>(来自维基百科)</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;门-格-海-绵&quot;&gt;&lt;a href=&quot;#门-格-海-绵&quot; class=&quot;headerlink&quot; title=&quot;门 格 海 绵&quot;&gt;&lt;/a&gt;门 格 海 绵&lt;/h1&gt;&lt;hr&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2019/02/10/5c5fc
       
     
     </summary>
