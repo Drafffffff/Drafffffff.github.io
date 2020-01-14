@@ -19,7 +19,7 @@
 <meta property="og:image" content="http://pmpqqa839.bkt.clouddn.com/800px-Fractal_Broccoli.jpg">
 <meta property="og:image" content="http://pmpqqa839.bkt.clouddn.com/2.gif">
 <meta property="og:image" content="http://pmpqqa839.bkt.clouddn.com/hexo/微信截图_20190213032909.png">
-<meta property="og:updated_time" content="2019-11-18T15:03:38.379Z">
+<meta property="og:updated_time" content="2020-01-14T13:12:05.723Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="P H Y L L O T A D X I S">
 <meta name="twitter:description" content="叶 序 叶序（Phyllotaxis） 是叶梗上的一群、或一丛叶，依固定的方式排列，是植物的固定特征之一。  来自混乱博物馆（CHAOS MUSEUM）第199期，黄金分割的妙处。  在植物生长时每隔一个角度就长出一个侧芽，如果这个角度太过平庸，新芽旋转几周后就会和老的芽对在一起，既浪费空间又争夺资源。  只要这个旋转角度足够刁钻，新芽就不会转回原点，如宝塔花菜。  这个刁钻角度就是圆周角的黄金分">
@@ -172,6 +172,9 @@
 <p>这个刁钻角度就是圆周角的黄金分割。</p>
 <p><img src="http://pmpqqa839.bkt.clouddn.com/2.gif" alt="2"></p>
 <p>为了模拟了这种旋转产生的图案,可由 360/(1+φ）＝540－180√5＝137.507764 得出黄金角约等于137.5，于是有了下面的图案。</p>
+<div id="container" style="width:400px"></div>
+
+
 <script type="text/javascript">
 
 var n = 0;
@@ -181,7 +184,7 @@ const ww = document.getElementById("container").offsetWidth-40;
 
 function setup() {
   var myCanvas = createCanvas(ww, ww);
-  myCanvas.parent("zhege");
+  myCanvas.parent("container");
   angleMode(DEGREES);
   background(0);
 

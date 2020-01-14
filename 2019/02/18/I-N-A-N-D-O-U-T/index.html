@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="In and Out来自Openprocessing的一段代码使用了复杂的三角函数和递归运算，还没悟透。  ▲拖动滑块调整递归层数。  const ww = document.getElementById(&quot;container&quot;).offsetWidth-40; let level = 6; function setup() {  var myCanvas = createCanvas(ww,ww">
+    <meta name="description" content="In and Out来自Openprocessing的一段代码使用了复杂的三角函数和递归运算，还没悟透。     ▲拖动滑块调整递归层数。  const ww = document.getElementById(&quot;container&quot;).offsetWidth-40; let level = 6; function setup() {  var myCanvas = createCanvas(ww">
 <meta property="og:type" content="article">
 <meta property="og:title" content="I N  A N D  O U T">
 <meta property="og:url" content="https://drafff.art/2019/02/18/I-N-A-N-D-O-U-T/index.html">
 <meta property="og:site_name" content="Drafff">
-<meta property="og:description" content="In and Out来自Openprocessing的一段代码使用了复杂的三角函数和递归运算，还没悟透。  ▲拖动滑块调整递归层数。  const ww = document.getElementById(&quot;container&quot;).offsetWidth-40; let level = 6; function setup() {  var myCanvas = createCanvas(ww,ww">
+<meta property="og:description" content="In and Out来自Openprocessing的一段代码使用了复杂的三角函数和递归运算，还没悟透。     ▲拖动滑块调整递归层数。  const ww = document.getElementById(&quot;container&quot;).offsetWidth-40; let level = 6; function setup() {  var myCanvas = createCanvas(ww">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-18T15:03:38.376Z">
+<meta property="og:updated_time" content="2020-01-14T13:11:37.093Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="I N  A N D  O U T">
-<meta name="twitter:description" content="In and Out来自Openprocessing的一段代码使用了复杂的三角函数和递归运算，还没悟透。  ▲拖动滑块调整递归层数。  const ww = document.getElementById(&quot;container&quot;).offsetWidth-40; let level = 6; function setup() {  var myCanvas = createCanvas(ww,ww">
+<meta name="twitter:description" content="In and Out来自Openprocessing的一段代码使用了复杂的三角函数和递归运算，还没悟透。     ▲拖动滑块调整递归层数。  const ww = document.getElementById(&quot;container&quot;).offsetWidth-40; let level = 6; function setup() {  var myCanvas = createCanvas(ww">
     
     
         
@@ -155,13 +155,16 @@
 
   <div class="content" itemprop="articleBody">
     <h1 id="In-and-Out"><a href="#In-and-Out" class="headerlink" title="In and Out"></a>In and Out</h1><p>来自Openprocessing的一段代码使用了复杂的三角函数和递归运算，还没悟透。</p>
+<div id="container" style="width:400px"></div>
+
+
 <p><div id="container1"></div> <input type="range" id="reclevel" max="20" min="1" step="1" value="6"><br>▲拖动滑块调整递归层数。</p>
 <script type="text/javascript">
 const ww = document.getElementById("container").offsetWidth-40;
 let level = 6;
 function setup() {
  var myCanvas = createCanvas(ww,ww);
-    myCanvas.parent("container1");
+    myCanvas.parent("container");
     strokeWeight(width/180);
     }
     function draw() {
