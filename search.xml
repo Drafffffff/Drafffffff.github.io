@@ -171,6 +171,12 @@
       
       
       
+        <tags>
+            
+            <tag> tryyy </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -196,6 +202,12 @@
         <content type="html"><![CDATA[<p>当你凝视深渊的时候深渊也在凝视你。</p><div id="container" style="width:400px"></div><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;let cell = ww / 10;function setup() {    var myCanvas = createCanvas(ww,ww);    myCanvas.parent("container");    background(0);    rectMode(CENTER);    colorMode(HSB, 360, 100, 100);}function draw() {  for (let x = cell; x < ww; x += cell) {    for (let y = cell; y < ww; y += cell) {      if ((x > cell*6 || x < cell*4) || (y < cell*4 || cell*4)) {        stroke(random(360), 100, 100);        fill(random(360), random(100), random(100));        ellipse(x, y, random(cell), random(cell));      }    }  }}</script>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> tryyy </tag>
+            
+        </tags>
       
     </entry>
     
@@ -223,6 +235,12 @@
       
       
       
+        <tags>
+            
+            <tag> tryyy </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -249,6 +267,12 @@
       
       
       
+        <tags>
+            
+            <tag> tryyy </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -261,6 +285,12 @@
         <content type="html"><![CDATA[<h1 id="R-E-C-T-A-N-G-L-E-S"><a href="#R-E-C-T-A-N-G-L-E-S" class="headerlink" title="R E C T A N G L E S"></a>R E C T A N G L E S</h1><p>尝试触摸以下区域</p><p><div id="container" style="width:400px"></div></p><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;var tileCount = 20;var moduleColor;var moduleAlpha = 180;var maxDistance = 500;function setup() {  var myCanvas = createCanvas(ww,ww);    myCanvas.parent("container");  noFill();  strokeWeight(3);  moduleColor = color(0, 0, 0, moduleAlpha);}function draw() {  clear();  stroke(moduleColor);  for (var gridY = 0; gridY < width; gridY += 25) {    for (var gridX = 0; gridX < height; gridX += 25) {      var diameter = dist(mouseX, mouseY, gridX, gridY);      diameter = diameter / maxDistance * 40;      push();            noFill();      translate(gridX, gridY, diameter * 5);      rect(0, 0, diameter, diameter); // also nice: ellipse(...)      pop();    }  }}</script>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> tryyy </tag>
+            
+        </tags>
       
     </entry>
     
@@ -275,6 +305,12 @@
       
       
       
+        <tags>
+            
+            <tag> tryyy </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -287,6 +323,12 @@
         <content type="html"><![CDATA[<h1 id="一-个-B-U-G"><a href="#一-个-B-U-G" class="headerlink" title="一 个 B U G"></a>一 个 B U G</h1><p>做一个立方体矩阵的时候出了点BUG，还挺好看的，上传了。</p><div id="container" style="width:400px"></div><script type="text/javascript">let angle = 0;const ww = document.getElementById("container").offsetWidth-40;let recWidth = 13;function setup() {  var myCanvas = createCanvas(ww, 500,WEBGL);  myCanvas.parent("container");}function draw() {    background(120);    ortho();    // translate(width / 2, height / 2);    rectMode(CENTER);    // directionalLight(240, 135, 200,0,-1, 0);    let offset = 0;    let Yoffset = 0;    rotateX(PI / 3);    // rotateY(PI / 3);    rotateZ(PI/4);    for (let y = 0; y < width; y += recWidth + 5) {        offset = Yoffset;        for (let x = 0; x < width; x += recWidth + 5) {            push();            let a = angle + offset;            // noStroke();            // fill(255);            // ambientMaterial(255);            normalMaterial();            translate(x - width / 2, y - width / 2,0);            let h = map(sin(a), -1, 1, 0, 200);            box(recWidth, recWidth, h);            // rect(x - width /2 + recWidth/2, 0,recWidth, h);            offset += TWO_PI / (width / recWidth);            pop();        }        Yoffset += TWO_PI / (width / recWidth);    }    angle += 0.08;}</script>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> tryyy </tag>
+            
+        </tags>
       
     </entry>
     
@@ -327,6 +369,12 @@
       
       
       
+        <tags>
+            
+            <tag> tryyy </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -339,6 +387,12 @@
         <content type="html"><![CDATA[<h1 id="F-I-R-E-W-O-R-K"><a href="#F-I-R-E-W-O-R-K" class="headerlink" title="F I R E W O R K"></a>F I R E W O R K</h1><p>新 年 快 乐 ！</p><div id="container" style="width:400px"></div><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;var gravity;var fireworks = [];function setup() { var myCanvas = createCanvas(ww,400);    myCanvas.parent("container");  gravity = createVector(0, 0.2);  stroke(255);  strokeWeight(4);  background(0);}function draw() {  background(51, 70);  if (random(1) < 0.03) {    fireworks.push(new Firework());  }  for (var i = fireworks.length - 1; i >= 0; i--) {    fireworks[i].updata();    fireworks[i].show();    // if (fireworks[i].firework.pos.y > height){    //   fireworks.splice(i,1);    // }    if (fireworks[i].done()) {      fireworks.splice(i, 1);    }  }}function Firework() {  this.firework = new Particle(random(width), height, true);  this.exploded = false;  this.particles = [];  this.hu = 0;  this.done = function() {    if (this.exploded && this.particles.length === 0) {      return true;    } else {      return false;    }  };  this.updata = function() {    if (!this.exploded) {      this.firework.applyForce(gravity);      this.firework.update();      if (this.firework.vel.y >= 0) {        this.exploded = true;        this.explode();      }    }    for (var i = this.particles.length - 1; i >= 0; i--) {      this.particles[i].applyForce(gravity);      this.particles[i].update();      if (this.particles[i].done()) {        this.particles.splice(i, 1);      }    }  };  this.explode = function() {    for (var i = 0; i < 100; i++) {      var p = new Particle(this.firework.pos.x, this.firework.pos.y);      this.particles.push(p);    }  };  this.show = function() {    if (!this.exploded) {      this.firework.show();    }    for (var i = 0; i < this.particles.length; i++) {      this.particles[i].show();    }  };}function Particle(x, y, firework) {  this.firework = firework;  this.pos = createVector(x, y);  this.lifespan = 255;  if (firework) {    this.vel = createVector(0, random(-12, -8));  } else {    this.vel = p5.Vector.random2D();    this.vel.mult(random(2, 10));  }  this.acc = createVector(0, 0);  this.applyForce = function(force) {    this.acc.add(force);  };  this.update = function() {    if (!this.firework) {      this.vel.mult(0.9);      this.lifespan -= 3;    }    this.vel.add(this.acc);    this.pos.add(this.vel);    this.acc.mult(0);  };  this.show = function() {    if (!this.firework) {      strokeWeight(2);      stroke(255, this.lifespan);    } else {      stroke(255, 255);      strokeWeight(4);    }    point(this.pos.x, this.pos.y);  };  this.done = function() {    if (this.lifespan < 0) {      return true;    } else {      return false;    }  };}</script>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> tryyy </tag>
+            
+        </tags>
       
     </entry>
     
@@ -379,6 +433,12 @@
       
       
       
+        <tags>
+            
+            <tag> tryyy </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -391,6 +451,12 @@
         <content type="html"><![CDATA[<h1 id="S-T-A-R-F-I-E-L-D"><a href="#S-T-A-R-F-I-E-L-D" class="headerlink" title="S T A R F I E L D"></a>S T A R F I E L D</h1><p>请点击黑域不同位置。</p><div id="container" style="width:400px"></div><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;var World = [];var tSpeed;function setup() {  var myCanvas = createCanvas(ww,400);    myCanvas.parent("container");  for (var i = 0; i < 300; i++) {    World.push(new star());  }}function draw() {  tSpeed = map(mouseX, 0, width, 0, 20);  background(0);  translate(width / 2, height / 2);  for (var i = 0; i < World.length; i++) {    World[i].Execute();  }}function star() {  this.x = random(-width / 2, width / 2);  this.y = random(-height / 2, height / 2);  this.z = random(width);  this.Show = function () {    fill(255);    noStroke();    this.rx = map(this.x / this.z, 0, 1, 0, width);    this.ry = map(this.y / this.z, 0, 1, 0, width);    this.size = map(this.z, 0, width, 12, 0);    ellipse(this.rx, this.ry, this.size);  }  this.Create = function () {    this.z -= tSpeed;    if (this.z < 1) {      this.z = width;    }  }  this.Execute = function () {    this.Create();    this.Show();  }}</script>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> tryyy </tag>
+            
+        </tags>
       
     </entry>
     
@@ -405,6 +471,12 @@
       
       
       
+        <tags>
+            
+            <tag> tryyy </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -417,6 +489,12 @@
         <content type="html"><![CDATA[<h1 id="C-O-L-O-R-F-A-L-L"><a href="#C-O-L-O-R-F-A-L-L" class="headerlink" title="C O L O R F A L L"></a>C O L O R F A L L</h1><p>尝试用手指在下面空白区域滑动。</p><div id="container" style="width:400px"></div><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;var dots = [];var isCreatable = false;function setup() {  var myCanvas = createCanvas(ww,400);    myCanvas.parent("container");}function draw() {  background(220,232,232);  if (isCreatable) {    dots.push(new Dot(mouseX, mouseY));    print(dots.length);  }  for (var i = 0; i<dots.length; i++) {    dots[i].show();    dots[i].grow();  }}function mousePressed() {  isCreatable = true;}function mouseReleased() {  isCreatable = false;}function Dot(px, py) {  this.x = px;  this.y = py;  this.r = 7;  this.l = 0;  this.growSpeed = 2;  this.colR = random(255);   this.colG = random(255);  this.colB = random(255);  this.show = function() {    noStroke();    fill(this.colR, this.colG, this.colB);    ellipse(this.x, this.y, this.r*2, this.r*2);    rect(this.x-this.r, this.y, this.r*2, this.l);    ellipse(this.x, this.y+this.l, this.r*2, this.r*2);  }  this.grow = function() {    if (this.l<height) {      this.l+=this.growSpeed;    }  }}</script>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> tryyy </tag>
+            
+        </tags>
       
     </entry>
     

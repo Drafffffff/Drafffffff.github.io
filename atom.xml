@@ -234,7 +234,7 @@
     <link href="https://drafff.art/2020/01/14/W-H-I-T-E-H-O-L-E/"/>
     <id>https://drafff.art/2020/01/14/W-H-I-T-E-H-O-L-E/</id>
     <published>2020-01-14T02:28:39.000Z</published>
-    <updated>2020-01-14T02:32:07.005Z</updated>
+    <updated>2020-01-14T15:20:45.579Z</updated>
     
     <content type="html"><![CDATA[<iframe src="http://something.drafff.art/whitehole" width="400" height="400"> </iframe>]]></content>
     
@@ -247,6 +247,8 @@
     
     </summary>
     
+    
+      <category term="tryyy" scheme="https://drafff.art/tags/tryyy/"/>
     
   </entry>
   
@@ -282,7 +284,7 @@ function setC1(){
     <link href="https://drafff.art/2019/11/20/E-Y-E/"/>
     <id>https://drafff.art/2019/11/20/E-Y-E/</id>
     <published>2019-11-20T10:23:57.000Z</published>
-    <updated>2020-01-14T12:49:51.846Z</updated>
+    <updated>2020-01-14T15:21:33.579Z</updated>
     
     <content type="html"><![CDATA[<p>当你凝视深渊的时候深渊也在凝视你。</p><div id="container" style="width:400px"></div><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;let cell = ww / 10;function setup() {    var myCanvas = createCanvas(ww,ww);    myCanvas.parent("container");    background(0);    rectMode(CENTER);    colorMode(HSB, 360, 100, 100);}function draw() {  for (let x = cell; x < ww; x += cell) {    for (let y = cell; y < ww; y += cell) {      if ((x > cell*6 || x < cell*4) || (y < cell*4 || cell*4)) {        stroke(random(360), 100, 100);        fill(random(360), random(100), random(100));        ellipse(x, y, random(cell), random(cell));      }    }  }}</script>]]></content>
     
@@ -299,6 +301,8 @@ const ww = document.getElementById(
     
     </summary>
     
+    
+      <category term="tryyy" scheme="https://drafff.art/tags/tryyy/"/>
     
   </entry>
   
@@ -330,7 +334,7 @@ const ww = document.getElementById(
     <link href="https://drafff.art/2019/03/03/C-O-L-O-R-T-R-I-A-L/"/>
     <id>https://drafff.art/2019/03/03/C-O-L-O-R-T-R-I-A-L/</id>
     <published>2019-03-03T14:51:09.000Z</published>
-    <updated>2020-01-14T13:11:10.933Z</updated>
+    <updated>2020-01-14T15:21:40.969Z</updated>
     
     <content type="html"><![CDATA[<h2 id="颜色实验"><a href="#颜色实验" class="headerlink" title="颜色实验"></a>颜色实验</h2><p>想要使以后的作品颜色更加丰富，和谐。先做一些色彩实验吧。</p><p>可以尝试用手指戳下面色块。</p><div id="container" style="width:400px"></div><script type="text/javascript">'use strict';var tileCountX = 2;var tileCountY = 10;var colorsLeft = [];var colorsRight = [];var colors = [];var interpolateShortest = true;const ww = document.getElementById("container").offsetWidth-40;function setup() {    var myCanvas = createCanvas(ww,ww);    myCanvas.parent("container");    colorMode(HSB);    noStroke();    shakeColors();}function draw() {    tileCountX = int(map(mouseX, 0, width, 2, 100));    tileCountY = int(map(mouseY, 0, height, 2, 10));    var tileWidth = width / tileCountX;    var tileHeight = height / tileCountY;    var interCol;    colors = [];    for (var gridY = 0;gridY < tileCountY;gridY++){        var col1 = colorsLeft[gridY];        var col2 = colorsRight[gridY];        for (var gridX = 0;gridX<tileCountX;gridX++){            var amount = map(gridX, 0, tileCountX - 1, 0, 1);            if (interpolateShortest) {              colorMode(RGB);              interCol = lerpColor(col1, col2, amount);              colorMode(HSB);            } else {              interCol = lerpColor(col1, col2, amount);            }            fill(interCol);            var posX = tileWidth *gridX;            var posY = tileHeight*gridY;            rect(posX,posY,tileWidth,tileHeight);            colors.push(interCol);        }    }}function shakeColors() {    for(var i = 0;i<tileCountY;i++){        colorsLeft[i] = color(random(0,60),random(0,100),100);        colorsRight[i] = color(random(160,190),100,random(0,100));    }}</script><button onclick="shakeColors()" style="color : #ffF">CHANGE COLOR</button>]]></content>
     
@@ -345,6 +349,8 @@ const ww = document.getElementById(
     
     </summary>
     
+    
+      <category term="tryyy" scheme="https://drafff.art/tags/tryyy/"/>
     
   </entry>
   
@@ -374,7 +380,7 @@ const ww = document.getElementById(
     <link href="https://drafff.art/2019/02/18/I-N-A-N-D-O-U-T/"/>
     <id>https://drafff.art/2019/02/18/I-N-A-N-D-O-U-T/</id>
     <published>2019-02-17T18:27:22.000Z</published>
-    <updated>2020-01-14T13:11:37.093Z</updated>
+    <updated>2020-01-14T15:21:23.527Z</updated>
     
     <content type="html"><![CDATA[<h1 id="In-and-Out"><a href="#In-and-Out" class="headerlink" title="In and Out"></a>In and Out</h1><p>来自Openprocessing的一段代码使用了复杂的三角函数和递归运算，还没悟透。</p><div id="container" style="width:400px"></div><p><div id="container1"></div> <input type="range" id="reclevel" max="20" min="1" step="1" value="6"><br>▲拖动滑块调整递归层数。</p><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;let level = 6;function setup() { var myCanvas = createCanvas(ww,ww);    myCanvas.parent("container");    strokeWeight(width/180);    }    function draw() {        background(240);        let level = Number(document.getElementById("reclevel").value);        harom(width/1.08,height/1.174,width/13.4,height/1.174,level,(sin(0.0005*millis()%(2*PI))+1)/2);    }    function harom(ax,  ay, bx,  by, level, ratio){        if(level!=0){        var  vx,vy,nx,ny,cx,cy;        vx=bx-ax;        vy=by-ay;        nx=cos(PI/3)*vx-sin(PI/3)*vy;         ny=sin(PI/3)*vx+cos(PI/3)*vy;         cx=ax+nx;        cy=ay+ny;        line(ax,ay,bx,by);        line(ax,ay,cx,cy);        line(cx,cy,bx,by);        harom(ax*ratio+cx*(1-ratio),ay*ratio+cy*(1-ratio),ax*(1-ratio)+bx*ratio,ay*(1-ratio)+by*ratio,level-1,ratio);        }    }    </script>]]></content>
     
@@ -388,6 +394,8 @@ const ww = document.getElementById(
     </summary>
     
     
+      <category term="tryyy" scheme="https://drafff.art/tags/tryyy/"/>
+    
   </entry>
   
   <entry>
@@ -395,7 +403,7 @@ const ww = document.getElementById(
     <link href="https://drafff.art/2019/02/16/R-E-C-T-A-N-G-L-E-S/"/>
     <id>https://drafff.art/2019/02/16/R-E-C-T-A-N-G-L-E-S/</id>
     <published>2019-02-16T12:20:58.000Z</published>
-    <updated>2020-01-14T13:12:31.034Z</updated>
+    <updated>2020-01-14T15:21:13.796Z</updated>
     
     <content type="html"><![CDATA[<h1 id="R-E-C-T-A-N-G-L-E-S"><a href="#R-E-C-T-A-N-G-L-E-S" class="headerlink" title="R E C T A N G L E S"></a>R E C T A N G L E S</h1><p>尝试触摸以下区域</p><p><div id="container" style="width:400px"></div></p><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;var tileCount = 20;var moduleColor;var moduleAlpha = 180;var maxDistance = 500;function setup() {  var myCanvas = createCanvas(ww,ww);    myCanvas.parent("container");  noFill();  strokeWeight(3);  moduleColor = color(0, 0, 0, moduleAlpha);}function draw() {  clear();  stroke(moduleColor);  for (var gridY = 0; gridY < width; gridY += 25) {    for (var gridX = 0; gridX < height; gridX += 25) {      var diameter = dist(mouseX, mouseY, gridX, gridY);      diameter = diameter / maxDistance * 40;      push();            noFill();      translate(gridX, gridY, diameter * 5);      rect(0, 0, diameter, diameter); // also nice: ellipse(...)      pop();    }  }}</script>]]></content>
     
@@ -409,6 +417,8 @@ const ww = document.getElementById(
     </summary>
     
     
+      <category term="tryyy" scheme="https://drafff.art/tags/tryyy/"/>
+    
   </entry>
   
   <entry>
@@ -416,7 +426,7 @@ const ww = document.getElementById(
     <link href="https://drafff.art/2019/02/15/C-U-B-E-W-A-V-E/"/>
     <id>https://drafff.art/2019/02/15/C-U-B-E-W-A-V-E/</id>
     <published>2019-02-15T10:31:19.000Z</published>
-    <updated>2020-01-14T15:17:44.871Z</updated>
+    <updated>2020-01-14T15:21:36.478Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Cube-Wave-方块波"><a href="#Cube-Wave-方块波" class="headerlink" title="Cube Wave 方块波"></a>Cube Wave 方块波</h1><p>来自Twitter大神<a href="https://twitter.com/beesandbombs" target="_blank" rel="noopener">@beesandbombs</a>的一张动图。</p><p><img src="http://pic.drafff.art/hexo/20190215141626-be14ef72ff.[gif-2-mp4.com].gif" alt="20190215141626-be14ef72ff.[gif-2-mp4.com]"></p><p>主要使用了三角函数实现平滑的波动。</p><p><div id="container1"></div><input type="range" id="speedRange" max="0.4" min="0" step="0.001" value="0.1"><br>▲拖动滑块调整波动频率。</p><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;let angle = 0;let ma;let maxD;function setup() {  createCanvas(ww, ww, WEBGL);var myCanvas = createCanvas(ww,ww,WEBGL);myCanvas.parent("container1");  ma = atan(cos(QUARTER_PI));  maxD = dist(0, 0, width/2, width/2);}function draw() {let w = width/15;  background(100);  ortho(-400, 400, 400, -400, 0, 1000);  rotateX(ma);  rotateY(-QUARTER_PI);  for (let z = 0; z < width; z += w) {    for (let x = 0; x < width; x += w) {      push();      let d = dist(x, z, width / 2, width / 2);      let offset = map(d, 0, maxD, -PI, PI);      let a = angle + offset;      let h = floor(map(sin(a), -1, 1, 150, width));      translate(x - width / 2, 0, z - width / 2);      normalMaterial();      box(w, h, w);      //rect(x - width / 2 + w / 2, 0, w - 2, h);      pop();    }  }  angle += Number(document.getElementById("speedRange").value);}</script>]]></content>
     
@@ -430,6 +440,8 @@ const ww = document.getElementById(
     </summary>
     
     
+      <category term="tryyy" scheme="https://drafff.art/tags/tryyy/"/>
+    
   </entry>
   
   <entry>
@@ -437,7 +449,7 @@ const ww = document.getElementById(
     <link href="https://drafff.art/2019/02/14/S-O-M-E-T-H-I-N-G-1/"/>
     <id>https://drafff.art/2019/02/14/S-O-M-E-T-H-I-N-G-1/</id>
     <published>2019-02-14T12:40:59.000Z</published>
-    <updated>2020-01-14T13:12:44.901Z</updated>
+    <updated>2020-01-14T15:20:55.963Z</updated>
     
     <content type="html"><![CDATA[<h1 id="一-个-B-U-G"><a href="#一-个-B-U-G" class="headerlink" title="一 个 B U G"></a>一 个 B U G</h1><p>做一个立方体矩阵的时候出了点BUG，还挺好看的，上传了。</p><div id="container" style="width:400px"></div><script type="text/javascript">let angle = 0;const ww = document.getElementById("container").offsetWidth-40;let recWidth = 13;function setup() {  var myCanvas = createCanvas(ww, 500,WEBGL);  myCanvas.parent("container");}function draw() {    background(120);    ortho();    // translate(width / 2, height / 2);    rectMode(CENTER);    // directionalLight(240, 135, 200,0,-1, 0);    let offset = 0;    let Yoffset = 0;    rotateX(PI / 3);    // rotateY(PI / 3);    rotateZ(PI/4);    for (let y = 0; y < width; y += recWidth + 5) {        offset = Yoffset;        for (let x = 0; x < width; x += recWidth + 5) {            push();            let a = angle + offset;            // noStroke();            // fill(255);            // ambientMaterial(255);            normalMaterial();            translate(x - width / 2, y - width / 2,0);            let h = map(sin(a), -1, 1, 0, 200);            box(recWidth, recWidth, h);            // rect(x - width /2 + recWidth/2, 0,recWidth, h);            offset += TWO_PI / (width / recWidth);            pop();        }        Yoffset += TWO_PI / (width / recWidth);    }    angle += 0.08;}</script>]]></content>
     
@@ -451,6 +463,8 @@ const ww = document.getElementById(
     
     </summary>
     
+    
+      <category term="tryyy" scheme="https://drafff.art/tags/tryyy/"/>
     
   </entry>
   
