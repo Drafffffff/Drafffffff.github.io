@@ -1,37 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>確認存活</title>
+  <title>Drafff</title>
   
-  <subtitle>SurvivalConfirmed</subtitle>
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://drafffffff.github.io/"/>
-  <updated>2019-11-23T02:47:56.225Z</updated>
+  <updated>2020-01-14T02:32:07.005Z</updated>
   <id>https://drafffffff.github.io/</id>
   
   <author>
-    <name>Df</name>
+    <name>Drafff</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>W-H-I-T-E-H-O-L-E</title>
+    <link href="https://drafffffff.github.io/2020/01/14/W-H-I-T-E-H-O-L-E/"/>
+    <id>https://drafffffff.github.io/2020/01/14/W-H-I-T-E-H-O-L-E/</id>
+    <published>2020-01-14T02:28:39.000Z</published>
+    <updated>2020-01-14T02:32:07.005Z</updated>
+    
+    <content type="html"><![CDATA[<iframe src="http://something.drafff.art/whitehole" width="400" height="400"> </iframe>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;iframe src=&quot;http://something.drafff.art/whitehole&quot; width=&quot;400&quot; height=&quot;400&quot;&gt; &lt;/iframe&gt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>santa</title>
+    <link href="https://drafffffff.github.io/2019/12/25/santa/"/>
+    <id>https://drafffffff.github.io/2019/12/25/santa/</id>
+    <published>2019-12-25T14:58:41.000Z</published>
+    <updated>2019-12-25T15:16:06.907Z</updated>
+    
+    <content type="html"><![CDATA[<button onclick="setC2()">Copy Text</button><script type="text/javascript">function setC1(){    background(220);    colors = [ '#f8b195', '#f67280', '#c06c84', '#6c567b'];}function setC2(){    background(220);    colors = [ '#464159', '#6c7b95', '#8bbabb', '#c7f0db'];}function setC3(){    background(220);    colors = [ '#35477d', '#6c5b7b', '#c06c84', '#f67280'];}function setC4(){    background(220);    colors = [ '#2d334a', '#0c9463', '#fab696', '#fbe3b9'];}let symmetry = 12;let angle = 360 / symmetry;const ww = document.getElementById("container").offsetWidth-40;function setup() {    let myCanvas = createCanvas(600, 400);    myCanvas.parent("p5container");    angleMode(DEGREES);    background(220);}function draw() {    translate(width / 2, height / 2);    let mx = mouseX - width / 2;    let my = mouseY - height / 2;    let pmx = pmouseX - height / 2;    let pmy = pmouseY - height / 2;    if (mouseIsPressed) {        let c = getCol();        stroke(getCol());        strokeWeight(4);        for (let i = 0; i < 12; i++) {            rotate(angle);            let d = dist(mx, my, pmx, pmy);            let sw = map(d, 0, 20, 20, 1);            strokeWeight(sw);            line(mx, my, pmx, pmy);        }    }}let colors = [ '#404040'];function getCol() {    return colors[int(random(colors.length))];}</script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;button onclick=&quot;setC2()&quot;&gt;Copy Text&lt;/button&gt;
+
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+function setC1(){
+    background(220);
+    colors = [ &#39;#f8b19
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>E Y E</title>
     <link href="https://drafffffff.github.io/2019/11/20/E-Y-E/"/>
     <id>https://drafffffff.github.io/2019/11/20/E-Y-E/</id>
     <published>2019-11-20T10:23:57.000Z</published>
-    <updated>2019-11-23T02:47:56.225Z</updated>
+    <updated>2020-01-14T01:21:17.790Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="E-Y-E"><a href="#E-Y-E" class="headerlink" title="E Y E"></a>E Y E</h1><p>当你凝视深渊的时候深渊也在凝视你。</p><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;let cell = ww / 10;function setup() {    var myCanvas = createCanvas(ww,ww);    myCanvas.parent("container");    background(0);    rectMode(CENTER);    colorMode(HSB, 360, 100, 100);}function draw() {  for (let x = cell; x < ww; x += cell) {    for (let y = cell; y < ww; y += cell) {      if ((x > cell*6 || x < cell*4) || (y < cell*4 || cell*4)) {        stroke(random(360), 100, 100);        fill(random(360), random(100), random(100));        ellipse(x, y, random(cell), random(cell));      }    }  }}</script>]]></content>
+    <content type="html"><![CDATA[<h1 id="E-Y-E"><a href="#E-Y-E" class="headerlink" title="E Y E"></a>E Y E</h1><p>当你凝视深渊的时候深渊也在凝视你。</p><div id="container"></div><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;let cell = ww / 10;function setup() {    var myCanvas = createCanvas(ww,ww);    myCanvas.parent("container");    background(0);    rectMode(CENTER);    colorMode(HSB, 360, 100, 100);}function draw() {  for (let x = cell; x < ww; x += cell) {    for (let y = cell; y < ww; y += cell) {      if ((x > cell*6 || x < cell*4) || (y < cell*4 || cell*4)) {        stroke(random(360), 100, 100);        fill(random(360), random(100), random(100));        ellipse(x, y, random(cell), random(cell));      }    }  }}</script>]]></content>
     
     <summary type="html">
     
       
       
         &lt;h1 id=&quot;E-Y-E&quot;&gt;&lt;a href=&quot;#E-Y-E&quot; class=&quot;headerlink&quot; title=&quot;E Y E&quot;&gt;&lt;/a&gt;E Y E&lt;/h1&gt;&lt;p&gt;当你凝视深渊的时候深渊也在凝视你。&lt;/p&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-cons
+&lt;div id=&quot;container&quot;&gt;&lt;/div&gt;
+
+&lt;script 
       
     
     </summary>
@@ -89,7 +138,7 @@ cons
     <link href="https://drafffffff.github.io/2019/03/03/C-O-L-O-R-T-R-I-A-L/"/>
     <id>https://drafffffff.github.io/2019/03/03/C-O-L-O-R-T-R-I-A-L/</id>
     <published>2019-03-03T14:51:09.000Z</published>
-    <updated>2019-11-18T15:03:38.375Z</updated>
+    <updated>2019-12-18T09:12:47.014Z</updated>
     
     <content type="html"><![CDATA[<h2 id="颜色实验"><a href="#颜色实验" class="headerlink" title="颜色实验"></a>颜色实验</h2><p>想要使以后的作品颜色更加丰富，和谐。先做一些色彩实验吧。</p><p>可以尝试用手指戳下面色块。</p><script type="text/javascript">'use strict';var tileCountX = 2;var tileCountY = 10;var colorsLeft = [];var colorsRight = [];var colors = [];var interpolateShortest = true;const ww = document.getElementById("container").offsetWidth-40;function setup() {    var myCanvas = createCanvas(ww,ww);    myCanvas.parent("container");    colorMode(HSB);    noStroke();    shakeColors();}function draw() {    tileCountX = int(map(mouseX, 0, width, 2, 100));    tileCountY = int(map(mouseY, 0, height, 2, 10));    var tileWidth = width / tileCountX;    var tileHeight = height / tileCountY;    var interCol;    colors = [];    for (var gridY = 0;gridY < tileCountY;gridY++){        var col1 = colorsLeft[gridY];        var col2 = colorsRight[gridY];        for (var gridX = 0;gridX<tileCountX;gridX++){            var amount = map(gridX, 0, tileCountX - 1, 0, 1);            if (interpolateShortest) {              colorMode(RGB);              interCol = lerpColor(col1, col2, amount);              colorMode(HSB);            } else {              interCol = lerpColor(col1, col2, amount);            }            fill(interCol);            var posX = tileWidth *gridX;            var posY = tileHeight*gridY;            rect(posX,posY,tileWidth,tileHeight);            colors.push(interCol);        }    }}function shakeColors() {    for(var i = 0;i<tileCountY;i++){        colorsLeft[i] = color(random(0,60),random(0,100),100);        colorsRight[i] = color(random(160,190),100,random(0,100));    }}</script><button onclick="shakeColors()" style="color : #ffF">CHANGE COLOR</button>]]></content>
     
@@ -401,27 +450,6 @@ cons
       
       
         &lt;h1 id=&quot;P-U-R-P-L-E-R-A-I-N&quot;&gt;&lt;a href=&quot;#P-U-R-P-L-E-R-A-I-N&quot; class=&quot;headerlink&quot; title=&quot;P U R P L E R A I N&quot;&gt;&lt;/a&gt;P U R P L E R A I N&lt;/h1&gt;&lt;p&gt;模 
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>C O L O R F A L L</title>
-    <link href="https://drafffffff.github.io/2019/02/01/C-O-L-O-R-F-A-L-L/"/>
-    <id>https://drafffffff.github.io/2019/02/01/C-O-L-O-R-F-A-L-L/</id>
-    <published>2019-02-01T11:04:32.000Z</published>
-    <updated>2019-11-18T15:03:38.374Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="C-O-L-O-R-F-A-L-L"><a href="#C-O-L-O-R-F-A-L-L" class="headerlink" title="C O L O R F A L L"></a>C O L O R F A L L</h1><p>尝试用手指在下面空白区域滑动。</p><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;var dots = [];var isCreatable = false;function setup() {  var myCanvas = createCanvas(ww,400);    myCanvas.parent("container");}function draw() {  background(220,232,232);  if (isCreatable) {    dots.push(new Dot(mouseX, mouseY));    print(dots.length);  }  for (var i = 0; i<dots.length; i++) {    dots[i].show();    dots[i].grow();  }}function mousePressed() {  isCreatable = true;}function mouseReleased() {  isCreatable = false;}function Dot(px, py) {  this.x = px;  this.y = py;  this.r = 7;  this.l = 0;  this.growSpeed = 2;  this.colR = random(255);   this.colG = random(255);  this.colB = random(255);  this.show = function() {    noStroke();    fill(this.colR, this.colG, this.colB);    ellipse(this.x, this.y, this.r*2, this.r*2);    rect(this.x-this.r, this.y, this.r*2, this.l);    ellipse(this.x, this.y+this.l, this.r*2, this.r*2);  }  this.grow = function() {    if (this.l<height) {      this.l+=this.growSpeed;    }  }}</script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;C-O-L-O-R-F-A-L-L&quot;&gt;&lt;a href=&quot;#C-O-L-O-R-F-A-L-L&quot; class=&quot;headerlink&quot; title=&quot;C O L O R F A L L&quot;&gt;&lt;/a&gt;C O L O R F A L L&lt;/h1&gt;&lt;p&gt;尝试用手指在下面空白
       
     
     </summary>

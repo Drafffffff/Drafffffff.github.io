@@ -4,11 +4,37 @@
   
     
     <entry>
+      <title>W-H-I-T-E-H-O-L-E</title>
+      <link href="/2020/01/14/W-H-I-T-E-H-O-L-E/"/>
+      <url>/2020/01/14/W-H-I-T-E-H-O-L-E/</url>
+      
+        <content type="html"><![CDATA[<iframe src="http://something.drafff.art/whitehole" width="400" height="400"> </iframe>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>santa</title>
+      <link href="/2019/12/25/santa/"/>
+      <url>/2019/12/25/santa/</url>
+      
+        <content type="html"><![CDATA[<button onclick="setC2()">Copy Text</button><script type="text/javascript">function setC1(){    background(220);    colors = [ '#f8b195', '#f67280', '#c06c84', '#6c567b'];}function setC2(){    background(220);    colors = [ '#464159', '#6c7b95', '#8bbabb', '#c7f0db'];}function setC3(){    background(220);    colors = [ '#35477d', '#6c5b7b', '#c06c84', '#f67280'];}function setC4(){    background(220);    colors = [ '#2d334a', '#0c9463', '#fab696', '#fbe3b9'];}let symmetry = 12;let angle = 360 / symmetry;const ww = document.getElementById("container").offsetWidth-40;function setup() {    let myCanvas = createCanvas(600, 400);    myCanvas.parent("p5container");    angleMode(DEGREES);    background(220);}function draw() {    translate(width / 2, height / 2);    let mx = mouseX - width / 2;    let my = mouseY - height / 2;    let pmx = pmouseX - height / 2;    let pmy = pmouseY - height / 2;    if (mouseIsPressed) {        let c = getCol();        stroke(getCol());        strokeWeight(4);        for (let i = 0; i < 12; i++) {            rotate(angle);            let d = dist(mx, my, pmx, pmy);            let sw = map(d, 0, 20, 20, 1);            strokeWeight(sw);            line(mx, my, pmx, pmy);        }    }}let colors = [ '#404040'];function getCol() {    return colors[int(random(colors.length))];}</script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>E Y E</title>
       <link href="/2019/11/20/E-Y-E/"/>
       <url>/2019/11/20/E-Y-E/</url>
       
-        <content type="html"><![CDATA[<h1 id="E-Y-E"><a href="#E-Y-E" class="headerlink" title="E Y E"></a>E Y E</h1><p>当你凝视深渊的时候深渊也在凝视你。</p><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;let cell = ww / 10;function setup() {    var myCanvas = createCanvas(ww,ww);    myCanvas.parent("container");    background(0);    rectMode(CENTER);    colorMode(HSB, 360, 100, 100);}function draw() {  for (let x = cell; x < ww; x += cell) {    for (let y = cell; y < ww; y += cell) {      if ((x > cell*6 || x < cell*4) || (y < cell*4 || cell*4)) {        stroke(random(360), 100, 100);        fill(random(360), random(100), random(100));        ellipse(x, y, random(cell), random(cell));      }    }  }}</script>]]></content>
+        <content type="html"><![CDATA[<h1 id="E-Y-E"><a href="#E-Y-E" class="headerlink" title="E Y E"></a>E Y E</h1><p>当你凝视深渊的时候深渊也在凝视你。</p><div id="container"></div><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;let cell = ww / 10;function setup() {    var myCanvas = createCanvas(ww,ww);    myCanvas.parent("container");    background(0);    rectMode(CENTER);    colorMode(HSB, 360, 100, 100);}function draw() {  for (let x = cell; x < ww; x += cell) {    for (let y = cell; y < ww; y += cell) {      if ((x > cell*6 || x < cell*4) || (y < cell*4 || cell*4)) {        stroke(random(360), 100, 100);        fill(random(360), random(100), random(100));        ellipse(x, y, random(cell), random(cell));      }    }  }}</script>]]></content>
       
       
       
