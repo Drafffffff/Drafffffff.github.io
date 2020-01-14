@@ -34,7 +34,7 @@
       <link href="/2019/11/20/E-Y-E/"/>
       <url>/2019/11/20/E-Y-E/</url>
       
-        <content type="html"><![CDATA[<h1 id="E-Y-E"><a href="#E-Y-E" class="headerlink" title="E Y E"></a>E Y E</h1><p>当你凝视深渊的时候深渊也在凝视你。</p><div id="container"></div><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;let cell = ww / 10;function setup() {    var myCanvas = createCanvas(ww,ww);    myCanvas.parent("container");    background(0);    rectMode(CENTER);    colorMode(HSB, 360, 100, 100);}function draw() {  for (let x = cell; x < ww; x += cell) {    for (let y = cell; y < ww; y += cell) {      if ((x > cell*6 || x < cell*4) || (y < cell*4 || cell*4)) {        stroke(random(360), 100, 100);        fill(random(360), random(100), random(100));        ellipse(x, y, random(cell), random(cell));      }    }  }}</script>]]></content>
+        <content type="html"><![CDATA[<p>当你凝视深渊的时候深渊也在凝视你。</p><div id="container" style="width:400px"></div><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;let cell = ww / 10;function setup() {    var myCanvas = createCanvas(ww,ww);    myCanvas.parent("container");    background(0);    rectMode(CENTER);    colorMode(HSB, 360, 100, 100);}function draw() {  for (let x = cell; x < ww; x += cell) {    for (let y = cell; y < ww; y += cell) {      if ((x > cell*6 || x < cell*4) || (y < cell*4 || cell*4)) {        stroke(random(360), 100, 100);        fill(random(360), random(100), random(100));        ellipse(x, y, random(cell), random(cell));      }    }  }}</script>]]></content>
       
       
       
@@ -269,6 +269,19 @@
       <url>/2019/02/01/C-O-L-O-R-F-A-L-L/</url>
       
         <content type="html"><![CDATA[<h1 id="C-O-L-O-R-F-A-L-L"><a href="#C-O-L-O-R-F-A-L-L" class="headerlink" title="C O L O R F A L L"></a>C O L O R F A L L</h1><p>尝试用手指在下面空白区域滑动。</p><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;var dots = [];var isCreatable = false;function setup() {  var myCanvas = createCanvas(ww,400);    myCanvas.parent("container");}function draw() {  background(220,232,232);  if (isCreatable) {    dots.push(new Dot(mouseX, mouseY));    print(dots.length);  }  for (var i = 0; i<dots.length; i++) {    dots[i].show();    dots[i].grow();  }}function mousePressed() {  isCreatable = true;}function mouseReleased() {  isCreatable = false;}function Dot(px, py) {  this.x = px;  this.y = py;  this.r = 7;  this.l = 0;  this.growSpeed = 2;  this.colR = random(255);   this.colG = random(255);  this.colB = random(255);  this.show = function() {    noStroke();    fill(this.colR, this.colG, this.colB);    ellipse(this.x, this.y, this.r*2, this.r*2);    rect(this.x-this.r, this.y, this.r*2, this.l);    ellipse(this.x, this.y+this.l, this.r*2, this.r*2);  }  this.grow = function() {    if (this.l<height) {      this.l+=this.growSpeed;    }  }}</script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ABOUT</title>
+      <link href="/1900/01/14/about/"/>
+      <url>/1900/01/14/about/</url>
+      
+        <content type="html"><![CDATA[<p>He never grew up,but he never stop growing.</p><p><img src="http://pic.drafff.art//drafff/20190923c1test00014bw_720x1024.jpg" width="250" style="display: inline; float: left; "></p>]]></content>
       
       
       
