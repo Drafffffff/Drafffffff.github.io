@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://drafff.art/"/>
-  <updated>2020-01-14T14:55:01.248Z</updated>
+  <updated>2020-01-18T08:18:16.389Z</updated>
   <id>https://drafff.art/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Google InnoCamp Winter 2020</title>
+    <link href="https://drafff.art/2020/Google-InnoCamp-Winter-2020/"/>
+    <id>https://drafff.art/2020/Google-InnoCamp-Winter-2020/</id>
+    <published>2020-01-18T08:18:05.000Z</published>
+    <updated>2020-01-18T08:18:16.389Z</updated>
+    
+    <content type="html"><![CDATA[<p>👾👾</p><p><img src="http://pic.drafff.art//drafff/20200118161454.jpg" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;👾👾&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://pic.drafff.art//drafff/20200118161454.jpg&quot; alt&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>7.色彩理论简史 #Programming Design System</title>
@@ -465,27 +488,6 @@ const ww = document.getElementById(
     
     
       <category term="碎片" scheme="https://drafff.art/tags/%E7%A2%8E%E7%89%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>P H Y L L O T A D X I S</title>
-    <link href="https://drafff.art/2019/P-H-Y-L-L-O-T-A-D-X-I-S/"/>
-    <id>https://drafff.art/2019/P-H-Y-L-L-O-T-A-D-X-I-S/</id>
-    <published>2019-02-12T17:45:17.000Z</published>
-    <updated>2020-01-14T15:17:44.871Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="叶-序"><a href="#叶-序" class="headerlink" title="叶 序"></a>叶 序</h1><p><strong> 叶序（Phyllotaxis）</strong> 是叶梗上的一群、或一丛叶，依固定的方式排列，是植物的固定特征之一。</p><p><img src="http://pic.drafff.art/hexo/微信截图_20190213032851.png" alt="微信截图_20190213032851"></p><p>来自混乱博物馆（CHAOS MUSEUM）第199期，<a href="https://www.bilibili.com/video/av27410638" target="_blank" rel="noopener">黄金分割的妙处</a>。</p><p><img src="http://pic.drafff.art/微信截图_20190213021905.png" alt="微信截图_20190213021905"></p><p>在植物生长时每隔一个角度就长出一个侧芽，如果这个角度太过平庸，新芽旋转几周后就会和老的芽对在一起，既浪费空间又争夺资源。</p><p><img src="http://pic.drafff.art/1.gif" alt="1"></p><p>只要这个旋转角度足够刁钻，新芽就不会转回原点，如宝塔花菜。</p><p><img src="http://pic.drafff.art/800px-Fractal_Broccoli.jpg" alt="800px-Fractal_Broccoli"></p><p>这个刁钻角度就是圆周角的黄金分割。</p><p><img src="http://pic.drafff.art/2.gif" alt="2"></p><p>为了模拟了这种旋转产生的图案,可由 360/(1+φ）＝540－180√5＝137.507764 得出黄金角约等于137.5，于是有了下面的图案。</p><div id="container" style="width:400px"></div><script type="text/javascript">var n = 0;var c = 3.2;var Angle = 137.50776405003785464634873962837;const ww = document.getElementById("container").offsetWidth-40;function setup() {  var myCanvas = createCanvas(ww, ww);  myCanvas.parent("container");  angleMode(DEGREES);  background(0);}function draw() {  var a = n * Angle;  var r = c * sqrt(n);  var x = r * cos(a) + width / 2;  var y = r * sin(a) + height / 2;  fill(255);  noStroke();  ellipse(x, y, 4);  n++;}function getInputValue() {  var inputValue = document.getElementById("degree").value;  if (inputValue) {    return inputValue;  }}function restart() {  background(0);  n = 0;  if( getInputValue()){    Angle = getInputValue()  }}</script><div id="zhege"></div><p>可以在以下文本框中输入任意角度</p><p><input type="text" id="degree" value="137.5" onfocus="if(value=='137.5'){value=''}" onblur="if(value==''){value='137.5'}"><button onclick="restart()" style="color : #ffF">S U B M I T</button></p><p>这里还有个相差很小的角度形成的图案，分别为137.3和137.6，大家可以尝试下。</p><p><img src="http://pic.drafff.art/hexo/微信截图_20190213032909.png" alt="微信截图_20190213032909"></p><p>更多关于叶序的信息，<a href="http://algorithmicbotany.org/papers/abop/abop-ch4.pdf" target="_blank" rel="noopener">这里有份资料</a>，感兴趣可以翻阅一下。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;叶-序&quot;&gt;&lt;a href=&quot;#叶-序&quot; class=&quot;headerlink&quot; title=&quot;叶 序&quot;&gt;&lt;/a&gt;叶 序&lt;/h1&gt;&lt;p&gt;&lt;strong&gt; 叶序（Phyllotaxis）&lt;/strong&gt; 是叶梗上的一群、或一丛叶，依固定的方式排列，是植物的固定特征之一
-      
-    
-    </summary>
-    
     
   </entry>
   
