@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang=zh>
 <head><meta name="generator" content="Hexo 3.9.0">
-    <!-- so meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="​    到目前为止，我们自定义形状的代码还是非常繁琐。我们通过逐行输入顶点函数来手动创建形状，用这种方法碰到更加复杂的形状就会爆炸，根据我们的书名，这种方法不太适合。现在我们知道了beginShape()的用法，接下来我们要用for循环和sin()和cos()函数以程序化的方式绘制自定义形状。 正弦和余弦多年来，我已经看到了许多同学面对sin和cos函数苦苦挣扎。原因也很容易理解：这些词看起来相">
+  <!-- so meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="​    到目前为止，我们自定义形状的代码还是非常繁琐。我们通过逐行输入顶点函数来手动创建形状，用这种方法碰到更加复杂的形状就会爆炸，根据我们的书名，这种方法不太适合。现在我们知道了beginShape()的用法，接下来我们要用for循环和sin()和cos()函数以程序化的方式绘制自定义形状。 正弦和余弦多年来，我已经看到了许多同学面对sin和cos函数苦苦挣扎。原因也很容易理解：这些词看起来相">
 <meta name="keywords" content="编程设计系统">
 <meta property="og:type" content="article">
 <meta property="og:title" content="6.程序化的形状(Procedural Shapes)  #Programming Design System">
@@ -36,37 +36,48 @@
 <meta name="twitter:title" content="6.程序化的形状(Procedural Shapes)  #Programming Design System">
 <meta name="twitter:description" content="​    到目前为止，我们自定义形状的代码还是非常繁琐。我们通过逐行输入顶点函数来手动创建形状，用这种方法碰到更加复杂的形状就会爆炸，根据我们的书名，这种方法不太适合。现在我们知道了beginShape()的用法，接下来我们要用for循环和sin()和cos()函数以程序化的方式绘制自定义形状。 正弦和余弦多年来，我已经看到了许多同学面对sin和cos函数苦苦挣扎。原因也很容易理解：这些词看起来相">
 <meta name="twitter:image" content="http://pic.drafff.art//drafff/20191228192203.png">
-    
-    
-        
-          
-              <link rel="shortcut icon" href="/images/favicon.ico">
-          
-        
-        
-          
-            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
-          
-        
-        
-          
-            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-          
-        
-    
-    <!-- title -->
-    <title>6.程序化的形状(Procedural Shapes)  #Programming Design System</title>
-    <!-- styles -->
-    <link rel="stylesheet" href="/css/style.css">
-    <!-- persian styles -->
-    
-      <link rel="stylesheet" href="/css/rtl.css">
-    
-    <!-- rss -->
-    
-    
-</head>
+  
+  
+  
+  
+  <link rel="shortcut icon" href="/images/favicon.ico">
+  
+  
+  
+  
+  <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+  
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  
+  
+  
+  <!-- title -->
+  <title>6.程序化的形状(Procedural Shapes)  #Programming Design System</title>
+  <!-- styles -->
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- persian styles -->
+  
+  <link rel="stylesheet" href="/css/rtl.css">
+  
+  <!-- rss -->
+  
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BQN78YMFWL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-BQN78YMFWL');
+  </script>
+</head>
 <body class="max-width mx-auto px3 RTL">
     
       <div id="header-post">
