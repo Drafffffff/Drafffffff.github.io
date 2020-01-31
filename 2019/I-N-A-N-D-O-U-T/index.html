@@ -215,11 +215,31 @@ function setup() {
         }
     }
     </script>
+      <script>
+        window.disqusProxy={
+          shortname: 'drafff',
+          username: 'Drafff',
+          server: 'secure-basin-83444.herokuapp.com',
+          port: 80,
+          adminAvatar: '/avatars/admin-avatar.jpg',
+          identifier: '2019/I-N-A-N-D-O-U-T/',
+        };
+        window.disqus_config = function () {
+          this.page.url = window.location.href;
+          this.page.identifier = window.disqusProxy.identifier;
+        };
+      </script>
   </div>
 </article>
 
     <div class="blog-post-comments">
-        <div id="disqus_thread">
+        
+      <script src="//cdn.bootcss.com/react/16.0.0/umd/react.production.min.js"></script>
+      <script src="//cdn.bootcss.com/react-dom/16.0.0/umd/react-dom.production.min.js"></script>
+      <script src="//cdn.bootcss.com/fetch/2.0.3/fetch.min.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/blockies-identicon@0.1.0/blockies.min.js"></script>
+      <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <div id="disqus_proxy_thread"><script src="/scripts/hexo-disqus-proxy-primary.js" async></script>
             <noscript>加载评论需要在浏览器启用 JavaScript 脚本支持。</noscript>
         </div>
     </div>
