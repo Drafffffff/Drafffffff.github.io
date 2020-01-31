@@ -22,7 +22,7 @@
   
   
   
-  <link rel="shortcut icon" href="/images/favicon.ico">
+  <link rel="shortcut icon" href="https://www.gravatar.com/avatar/82e8edf826ca0d13b8815c5b1f485ab7?s=16">
   
   
   
@@ -48,7 +48,6 @@
   
   
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BQN78YMFWL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -201,6 +200,12 @@ function draw() {
   </div>
 </article>
 
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>加载评论需要在浏览器启用 JavaScript 脚本支持。</noscript>
+        </div>
+    </div>
+
 
 
         
@@ -323,9 +328,30 @@ function draw() {
 
 <!-- Google Analytics -->
 
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'G-BQN78YMFWL', 'auto');
+        ga('send', 'pageview');
+    </script>
+
 <!-- Baidu Analytics -->
 
 <!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'drafff';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
 
 
 </body>
