@@ -280,7 +280,7 @@
     <link href="https://drafff.art/2019/santa/"/>
     <id>https://drafff.art/2019/santa/</id>
     <published>2019-12-25T14:58:41.000Z</published>
-    <updated>2020-01-14T13:10:19.037Z</updated>
+    <updated>2020-01-31T09:07:27.979Z</updated>
     
     <content type="html"><![CDATA[<button onclick="setC2()">Copy Text</button><script type="text/javascript">function setC1(){    background(220);    colors = [ '#f8b195', '#f67280', '#c06c84', '#6c567b'];}function setC2(){    background(220);    colors = [ '#464159', '#6c7b95', '#8bbabb', '#c7f0db'];}function setC3(){    background(220);    colors = [ '#35477d', '#6c5b7b', '#c06c84', '#f67280'];}function setC4(){    background(220);    colors = [ '#2d334a', '#0c9463', '#fab696', '#fbe3b9'];}<div id="p5container"></div>let symmetry = 12;let angle = 360 / symmetry;function setup() {    let myCanvas = createCanvas(600, 400);    myCanvas.parent("p5container");    angleMode(DEGREES);    background(220);}function draw() {    translate(width / 2, height / 2);    let mx = mouseX - width / 2;    let my = mouseY - height / 2;    let pmx = pmouseX - height / 2;    let pmy = pmouseY - height / 2;    if (mouseIsPressed) {        let c = getCol();        stroke(getCol());        strokeWeight(4);        for (let i = 0; i < 12; i++) {            rotate(angle);            let d = dist(mx, my, pmx, pmy);            let sw = map(d, 0, 20, 20, 1);            strokeWeight(sw);            line(mx, my, pmx, pmy);        }    }}let colors = [ '#404040'];function getCol() {    return colors[int(random(colors.length))];}</script>]]></content>
     
