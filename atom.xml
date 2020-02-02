@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://drafff.art/"/>
-  <updated>2020-02-02T20:09:46.499Z</updated>
+  <updated>2020-02-02T20:16:05.692Z</updated>
   <id>https://drafff.art/</id>
   
   <author>
@@ -17,23 +17,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>碎片收容计划 Debris-Containment-Project</title>
     <link href="https://drafff.art/2020/%E7%A2%8E%E7%89%87%E6%94%B6%E5%AE%B9%E8%AE%A1%E5%88%92-Debris-Containment-Project/"/>
     <id>https://drafff.art/2020/碎片收容计划-Debris-Containment-Project/</id>
-    <published>2020-02-02T19:56:52.896Z</published>
-    <updated>2020-02-02T20:09:46.499Z</updated>
+    <published>2020-02-02T20:15:25.000Z</published>
+    <updated>2020-02-02T20:16:05.692Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="碎片收容计划-Debris-Containment-Project"><a href="#碎片收容计划-Debris-Containment-Project" class="headerlink" title="碎片收容计划 Debris-Containment-Project"></a>碎片收容计划 Debris-Containment-Project</h1><p><img src="http://pic.drafff.art//drafff/20200128020242.gif" alt></p><blockquote><p>一个匿名留言板，用于收容人们的碎片.</p><p>📦：<a href="http://something.drafff.art/dcp/" target="_blank" rel="noopener">http://something.drafff.art/dcp/</a></p><p>🔗：<a href="https://github.com/Drafffffff/Debris-Containment-Project" target="_blank" rel="noopener">https://github.com/Drafffffff/Debris-Containment-Project</a></p></blockquote><h2 id="Project-setup"><a href="#Project-setup" class="headerlink" title="Project setup"></a>Project setup</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure><h3 id="Compiles-and-hot-reloads-for-development"><a href="#Compiles-and-hot-reloads-for-development" class="headerlink" title="Compiles and hot-reloads for development"></a>Compiles and hot-reloads for development</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run serve</span><br></pre></td></tr></table></figure><h3 id="Compiles-and-minifies-for-production"><a href="#Compiles-and-minifies-for-production" class="headerlink" title="Compiles and minifies for production"></a>Compiles and minifies for production</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run build</span><br></pre></td></tr></table></figure><h3 id="Customize-configuration"><a href="#Customize-configuration" class="headerlink" title="Customize configuration"></a>Customize configuration</h3><p>See <a href="https://cli.vuejs.org/config/" target="_blank" rel="noopener">Configuration Reference</a>.</p>]]></content>
+    <content type="html"><![CDATA[<p><img src="http://pic.drafff.art//drafff/20200128020242.gif" alt></p><blockquote><p>一个匿名留言板，用于收容人们的碎片.</p></blockquote><p>📦：<a href="http://something.drafff.art/dcp/" target="_blank" rel="noopener">http://something.drafff.art/dcp/</a></p><p>🔗：<a href="https://github.com/Drafffffff/Debris-Containment-Project" target="_blank" rel="noopener">https://github.com/Drafffffff/Debris-Containment-Project</a></p><h2 id="Project-setup"><a href="#Project-setup" class="headerlink" title="Project setup"></a>Project setup</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure><h3 id="Compiles-and-hot-reloads-for-development"><a href="#Compiles-and-hot-reloads-for-development" class="headerlink" title="Compiles and hot-reloads for development"></a>Compiles and hot-reloads for development</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run serve</span><br></pre></td></tr></table></figure><h3 id="Compiles-and-minifies-for-production"><a href="#Compiles-and-minifies-for-production" class="headerlink" title="Compiles and minifies for production"></a>Compiles and minifies for production</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run build</span><br></pre></td></tr></table></figure><h3 id="Customize-configuration"><a href="#Customize-configuration" class="headerlink" title="Customize configuration"></a>Customize configuration</h3><p>See <a href="https://cli.vuejs.org/config/" target="_blank" rel="noopener">Configuration Reference</a>.</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;碎片收容计划-Debris-Containment-Project&quot;&gt;&lt;a href=&quot;#碎片收容计划-Debris-Containment-Project&quot; class=&quot;headerlink&quot; title=&quot;碎片收容计划 Debris-Containment-
+        &lt;p&gt;&lt;img src=&quot;http://pic.drafff.art//drafff/20200128020242.gif&quot; alt&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一个匿名留言板，用于收容人们的碎片.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;📦：&lt;a href=&quot;
       
     
     </summary>
     
+    
+      <category term="vue" scheme="https://drafff.art/tags/vue/"/>
     
   </entry>
   
