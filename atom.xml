@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://drafff.art/"/>
-  <updated>2020-02-02T20:29:10.757Z</updated>
+  <updated>2020-02-08T18:02:47.724Z</updated>
   <id>https://drafff.art/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>nCoV 疫情数据可视化</title>
+    <link href="https://drafff.art/2020/nCoV-%E7%96%AB%E6%83%85%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+    <id>https://drafff.art/2020/nCoV-疫情数据可视化/</id>
+    <published>2020-02-08T18:02:02.000Z</published>
+    <updated>2020-02-08T18:02:47.724Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://drafff.oss-cn-beijing.aliyuncs.com/img/20200209015914.jpg" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;https://drafff.oss-cn-beijing.aliyuncs.com/img/20200209015914.jpg&quot; alt&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="vue" scheme="https://drafff.art/tags/vue/"/>
+    
+  </entry>
   
   <entry>
     <title>碎片收容计划 Debris-Containment-Project</title>
@@ -462,29 +486,6 @@ const ww = document.getElementById(
       
       
         &lt;h1 id=&quot;R-E-C-T-A-N-G-L-E-S&quot;&gt;&lt;a href=&quot;#R-E-C-T-A-N-G-L-E-S&quot; class=&quot;headerlink&quot; title=&quot;R E C T A N G L E S&quot;&gt;&lt;/a&gt;R E C T A N G L E S&lt;/h1&gt;&lt;p&gt;尝试
-      
-    
-    </summary>
-    
-    
-      <category term="碎片" scheme="https://drafff.art/tags/%E7%A2%8E%E7%89%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C U B E W A V E</title>
-    <link href="https://drafff.art/2019/C-U-B-E-W-A-V-E/"/>
-    <id>https://drafff.art/2019/C-U-B-E-W-A-V-E/</id>
-    <published>2019-02-15T10:31:19.000Z</published>
-    <updated>2020-01-14T15:34:31.259Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Cube-Wave-方块波"><a href="#Cube-Wave-方块波" class="headerlink" title="Cube Wave 方块波"></a>Cube Wave 方块波</h1><p>来自Twitter大神<a href="https://twitter.com/beesandbombs" target="_blank" rel="noopener">@beesandbombs</a>的一张动图。</p><p><img src="http://pic.drafff.art/hexo/20190215141626-be14ef72ff.[gif-2-mp4.com].gif" alt="20190215141626-be14ef72ff.[gif-2-mp4.com]"></p><p>主要使用了三角函数实现平滑的波动。</p><p><div id="container1"></div><input type="range" id="speedRange" max="0.4" min="0" step="0.001" value="0.1"><br>▲拖动滑块调整波动频率。</p><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;let angle = 0;let ma;let maxD;function setup() {  createCanvas(ww, ww, WEBGL);var myCanvas = createCanvas(ww,ww,WEBGL);myCanvas.parent("container1");  ma = atan(cos(QUARTER_PI));  maxD = dist(0, 0, width/2, width/2);}function draw() {let w = width/15;  background(100);  ortho(-400, 400, 400, -400, 0, 1000);  rotateX(ma);  rotateY(-QUARTER_PI);  for (let z = 0; z < width; z += w) {    for (let x = 0; x < width; x += w) {      push();      let d = dist(x, z, width / 2, width / 2);      let offset = map(d, 0, maxD, -PI, PI);      let a = angle + offset;      let h = floor(map(sin(a), -1, 1, 150, width));      translate(x - width / 2, 0, z - width / 2);      normalMaterial();      box(w, h, w);      //rect(x - width / 2 + w / 2, 0, w - 2, h);      pop();    }  }  angle += Number(document.getElementById("speedRange").value);}</script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Cube-Wave-方块波&quot;&gt;&lt;a href=&quot;#Cube-Wave-方块波&quot; class=&quot;headerlink&quot; title=&quot;Cube Wave 方块波&quot;&gt;&lt;/a&gt;Cube Wave 方块波&lt;/h1&gt;&lt;p&gt;来自Twitter大神&lt;a href=&quot;https:
       
     
     </summary>
