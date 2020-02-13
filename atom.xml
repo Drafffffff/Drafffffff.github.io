@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://drafff.art/"/>
-  <updated>2020-02-13T04:46:49.898Z</updated>
+  <updated>2020-02-13T04:57:43.515Z</updated>
   <id>https://drafff.art/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://drafff.art/2020/p5js%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/"/>
     <id>https://drafff.art/2020/p5js入门指南/</id>
     <published>2020-02-13T04:36:57.000Z</published>
-    <updated>2020-02-13T04:46:49.898Z</updated>
+    <updated>2020-02-13T04:57:43.515Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>编程技术入门的一点愚见，思想方面还没有什么门道。</p></blockquote><h2 id="1-JavaScript-语法入门"><a href="#1-JavaScript-语法入门" class="headerlink" title="1. JavaScript 语法入门"></a>1. JavaScript 语法入门</h2><ul><li><a href="https://www.imooc.com/learn/36" target="_blank" rel="noopener">JavaScript入门篇</a>(视频教程)</li><li><a href="https://www.kancloud.cn/kancloud/javascript-101/47831" target="_blank" rel="noopener">JavaScript新手教程</a>(小册子)</li><li><a href="https://zh.javascript.info/" target="_blank" rel="noopener">现代 JavaScript 教程</a> (查阅)</li></ul><h2 id="2-p5js入门"><a href="#2-p5js入门" class="headerlink" title="2. p5js入门"></a>2. p5js入门</h2><ul><li><a href="https://p5js.org/learn/" target="_blank" rel="noopener">p5js官方教程</a></li><li><a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA" target="_blank" rel="noopener">Code! Programming with p5.js</a>（视频教程）</li><li><a href="https://p5js.org/zh-Hans/reference/" target="_blank" rel="noopener">p5jsReference</a>（查阅）</li></ul><h2 id="3-p5js进阶"><a href="#3-p5js进阶" class="headerlink" title="3. p5js进阶"></a>3. p5js进阶</h2><ul><li><a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH" target="_blank" rel="noopener">Coding Challenges</a></li><li><a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6aFlwukCmDf0-1-uSR7mklK" target="_blank" rel="noopener">The Nature of Code: Simulating Natural Systems</a></li><li><a href="https://www.openprocessing.org/" target="_blank" rel="noopener">OpenProcessing</a></li></ul><h2 id="4-进阶-更多前端图形工具"><a href="#4-进阶-更多前端图形工具" class="headerlink" title="4. 进阶 更多前端图形工具"></a>4. 进阶 更多前端图形工具</h2><ul><li><a href="https://www.yuque.com/fe9/basic" target="_blank" rel="noopener">前端九部 - 入门者手册2019</a></li><li><a href="https://github.com/goodjack/developer-roadmap-chinese" target="_blank" rel="noopener">2019 年成為 Web 開發人員的路線圖</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>编程技术入门的一点愚见，思想方面还没有什么门道。</p></blockquote><ol><li><p>JavaScript 语法入门</p><ul><li><a href="https://www.imooc.com/learn/36" target="_blank" rel="noopener">JavaScript入门篇</a>(视频教程)</li><li><a href="https://www.kancloud.cn/kancloud/javascript-101/47831" target="_blank" rel="noopener">JavaScript新手教程</a>(小册子)</li><li><a href="https://zh.javascript.info/" target="_blank" rel="noopener">现代 JavaScript 教程</a> (查阅)</li></ul></li><li><p>p5js入门</p><ul><li><a href="https://p5js.org/learn/" target="_blank" rel="noopener">p5js官方教程</a></li><li><a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA" target="_blank" rel="noopener">Code! Programming with p5.js</a>（视频教程）</li><li><a href="https://p5js.org/zh-Hans/reference/" target="_blank" rel="noopener">p5jsReference</a>（查阅）</li></ul></li><li><p>p5js进阶</p><ul><li><a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH" target="_blank" rel="noopener">Coding Challenges</a></li><li><a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6aFlwukCmDf0-1-uSR7mklK" target="_blank" rel="noopener">The Nature of Code: Simulating Natural Systems</a></li><li><a href="https://www.openprocessing.org/" target="_blank" rel="noopener">OpenProcessing</a></li></ul></li><li><p>进阶 更多前端图形工具</p><ul><li><a href="https://www.yuque.com/fe9/basic" target="_blank" rel="noopener">前端九部 - 入门者手册2019</a></li><li><a href="https://github.com/goodjack/developer-roadmap-chinese" target="_blank" rel="noopener">2019 年成為 Web 開發人員的路線圖</a></li></ul></li></ol>]]></content>
     
     <summary type="html">
     
@@ -32,7 +32,10 @@
         &lt;blockquote&gt;
 &lt;p&gt;编程技术入门的一点愚见，思想方面还没有什么门道。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&quot;1-JavaScript-语法入门&quot;&gt;&lt;a href=&quot;#1-JavaScript-语法入门&quot; class=&quot;headerlink&quot; title=
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;JavaScript 语法入门&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.imooc.com/learn/36&quot;
       
     
     </summary>
