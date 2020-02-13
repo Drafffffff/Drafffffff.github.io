@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://drafff.art/"/>
-  <updated>2020-02-08T18:02:47.724Z</updated>
+  <updated>2020-02-13T04:39:31.959Z</updated>
   <id>https://drafff.art/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>p5*js入门指北</title>
+    <link href="https://drafff.art/2020/p5js%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/"/>
+    <id>https://drafff.art/2020/p5js入门指南/</id>
+    <published>2020-02-13T04:36:57.000Z</published>
+    <updated>2020-02-13T04:39:31.959Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>编程技术入门的一点愚见，思想方面还没有什么门道。</p></blockquote><ol><li><p>JavaScript 语法入门</p><ul><li><a href="https://www.imooc.com/learn/36" target="_blank" rel="noopener">JavaScript入门篇</a>(视频教程)</li><li><a href="https://www.kancloud.cn/kancloud/javascript-101/47831" target="_blank" rel="noopener">JavaScript新手教程</a>(小册子)</li><li><a href="https://zh.javascript.info/" target="_blank" rel="noopener">现代 JavaScript 教程</a> (查阅)</li></ul></li><li><p>p5js入门</p><ul><li><p><a href="https://p5js.org/learn/" target="_blank" rel="noopener">p5js官方教程</a></p></li><li><p><a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA" target="_blank" rel="noopener">Code! Programming with p5.js</a>（视频教程）</p></li><li><a href="https://p5js.org/zh-Hans/reference/" target="_blank" rel="noopener">p5jsReference</a>（查阅）</li></ul></li><li><p>p5js进阶</p><ul><li><a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH" target="_blank" rel="noopener">Coding Challenges</a></li><li><a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6aFlwukCmDf0-1-uSR7mklK" target="_blank" rel="noopener">The Nature of Code: Simulating Natural Systems</a></li><li><a href="https://www.openprocessing.org/" target="_blank" rel="noopener">OpenProcessing</a></li></ul></li><li><p>进阶 更多前端工具</p><ul><li><a href="https://www.yuque.com/fe9/basic" target="_blank" rel="noopener">前端九部 - 入门者手册2019</a></li><li><a href="https://github.com/goodjack/developer-roadmap-chinese" target="_blank" rel="noopener">2019 年成為 Web 開發人員的路線圖</a></li></ul></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;编程技术入门的一点愚见，思想方面还没有什么门道。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;JavaScript 语法入门&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.imooc.com/learn/36&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="p5js" scheme="https://drafff.art/tags/p5js/"/>
+    
+  </entry>
   
   <entry>
     <title>nCoV 疫情数据可视化</title>
@@ -463,29 +492,6 @@ const ww = document.getElementById(
       
       
         &lt;h1 id=&quot;In-and-Out&quot;&gt;&lt;a href=&quot;#In-and-Out&quot; class=&quot;headerlink&quot; title=&quot;In and Out&quot;&gt;&lt;/a&gt;In and Out&lt;/h1&gt;&lt;p&gt;来自Openprocessing的一段代码使用了复杂的三角函数和递归运算，还
-      
-    
-    </summary>
-    
-    
-      <category term="碎片" scheme="https://drafff.art/tags/%E7%A2%8E%E7%89%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>R E C T A N G L E S</title>
-    <link href="https://drafff.art/2019/R-E-C-T-A-N-G-L-E-S/"/>
-    <id>https://drafff.art/2019/R-E-C-T-A-N-G-L-E-S/</id>
-    <published>2019-02-16T12:20:58.000Z</published>
-    <updated>2020-01-14T15:34:31.260Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="R-E-C-T-A-N-G-L-E-S"><a href="#R-E-C-T-A-N-G-L-E-S" class="headerlink" title="R E C T A N G L E S"></a>R E C T A N G L E S</h1><p>尝试触摸以下区域</p><p><div id="container" style="width:400px"></div></p><script type="text/javascript">const ww = document.getElementById("container").offsetWidth-40;var tileCount = 20;var moduleColor;var moduleAlpha = 180;var maxDistance = 500;function setup() {  var myCanvas = createCanvas(ww,ww);    myCanvas.parent("container");  noFill();  strokeWeight(3);  moduleColor = color(0, 0, 0, moduleAlpha);}function draw() {  clear();  stroke(moduleColor);  for (var gridY = 0; gridY < width; gridY += 25) {    for (var gridX = 0; gridX < height; gridX += 25) {      var diameter = dist(mouseX, mouseY, gridX, gridY);      diameter = diameter / maxDistance * 40;      push();            noFill();      translate(gridX, gridY, diameter * 5);      rect(0, 0, diameter, diameter); // also nice: ellipse(...)      pop();    }  }}</script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;R-E-C-T-A-N-G-L-E-S&quot;&gt;&lt;a href=&quot;#R-E-C-T-A-N-G-L-E-S&quot; class=&quot;headerlink&quot; title=&quot;R E C T A N G L E S&quot;&gt;&lt;/a&gt;R E C T A N G L E S&lt;/h1&gt;&lt;p&gt;尝试
       
     
     </summary>
