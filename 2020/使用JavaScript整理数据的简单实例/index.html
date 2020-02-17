@@ -16,7 +16,10 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://drafff.oss-cn-beijing.aliyuncs.com/img/20200209174248.gif">
 <meta property="og:image" content="https://drafff.oss-cn-beijing.aliyuncs.com/img/20200218030622.png">
-<meta property="og:updated_time" content="2020-02-17T20:58:11.567Z">
+<meta property="og:image" content="https://drafff.oss-cn-beijing.aliyuncs.com/img/20200218040652.gif">
+<meta property="og:image" content="https://drafff.oss-cn-beijing.aliyuncs.com/img/20200218043601.gif">
+<meta property="og:image" content="https://drafff.oss-cn-beijing.aliyuncs.com/img/20200218044313.gif">
+<meta property="og:updated_time" content="2020-02-17T21:00:46.009Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用JavaScript整理数据的简单实例">
 <meta name="twitter:description" content="本文是前段时间做的一个疫情数据可视化案例的数据整理部分的教程。个人水平有限，欢迎批评指正。 🐖：本教程针对的是几乎没有编程基础的艺术类专业同学，但又不可避免的会遇到一些难以理解的概念，编程的学习本身就不是一个线性渐进的过程，这种现象被称为“过早引用”（关于这点推荐这篇文章）,遇到“过早引用”的知识点我的建议是：不懂也要硬着头皮跟着做完，体会整个过程，并且善于使用搜索引擎。当然你也可以在博客首页找">
@@ -142,7 +145,7 @@
 </ul>
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#概述"><span class="toc-number">1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#必须的基础知识"><span class="toc-number">2.</span> <span class="toc-text">必须的基础知识</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分析原始数据与目标数据结构"><span class="toc-number">3.</span> <span class="toc-text">分析原始数据与目标数据结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据处理"><span class="toc-number">4.</span> <span class="toc-text">数据处理</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#概述"><span class="toc-number">1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#必须的基础知识"><span class="toc-number">2.</span> <span class="toc-text">必须的基础知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#对象（object）"><span class="toc-number">2.1.</span> <span class="toc-text">对象（object）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#对象概述🔨"><span class="toc-number">2.1.1.</span> <span class="toc-text">对象概述🔨</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#感受对象🔨"><span class="toc-number">2.1.2.</span> <span class="toc-text">感受对象🔨</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#总结🔨"><span class="toc-number">2.1.3.</span> <span class="toc-text">总结🔨</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数组（Array）"><span class="toc-number">2.2.</span> <span class="toc-text">数组（Array）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JSON"><span class="toc-number">2.3.</span> <span class="toc-text">JSON</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分析原始数据与目标数据结构"><span class="toc-number">3.</span> <span class="toc-text">分析原始数据与目标数据结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据处理"><span class="toc-number">4.</span> <span class="toc-text">数据处理</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -226,101 +229,49 @@
 <ul>
 <li>数据集 - <a href>点击这里可以下载</a>（原案例是直接通过http请求获取，这里单独给出）</li>
 </ul>
-<h2 id="必须的基础知识"><a href="#必须的基础知识" class="headerlink" title="必须的基础知识"></a>必须的基础知识</h2><pre><code>在开始操作之前，我们先简单了解一下所需的基本知识。
-
-### 对象（object）
-
-    #### 对象概述🔨
-
-    javascript 中的对象(object)，和其它编程语言中的对象一样，可以比照现实生活中的对象(物体)来理解它。 javascript 中对象的概念可以比照着现实生活中实实在在的物体来理解。
-
-    在javascript中，一个对象可以是一个单独的拥有属性和类型的实体。我们拿它和一个杯子做下类比。一个杯子是一个**对象**，杯子有颜色，图案，重量和材质等**属性**。同样，javascript对象也有属性来定义它的特征。
-
-    在这个案例中我把每个城市当成了一个对象，我们最后封装好的数据就是一个对象。
-
-    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    cityName: <span class="string">"杭州"</span>,</span><br><span class="line">    currentConfirmedCount: <span class="number">75</span>,</span><br><span class="line">    lon: <span class="string">"120.155070"</span>,</span><br><span class="line">    lat: <span class="string">"30.274084"</span> ,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-    如你所见，这个由两个花括号包裹起来的东西就是一个对象，其中有4个属性分别是`cityName` 、`currentConfirmedCount` 、`lon` 和`lat` 。
-
-    #### 感受对象🔨
-
-    上面讲了一大堆，理解不了没关系，重点是下面跟着我做的部分，我们打两行代码感受下什么是对象。（以下内容我会插入大量GIF给大家参考）
-
-    通常我们测试javascript最方便的地方就是chrome浏览器的控制台(console)。
-
-    1. 首先我们打开chrome，随便进入一个网页，按下F12。你就会看到控制台。
-
-    ![](https://drafff.oss-cn-beijing.aliyuncs.com/img/20200218040652.gif)
-
-    1. 现在我们尝试定义一个新的对象`orange` ，输入以下代码，回车。
-
-    输入：
-
-
-    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> orange = &#123;<span class="attr">color</span>:<span class="string">"red"</span>,<span class="attr">size</span>:<span class="string">"10cm"</span>,<span class="attr">weight</span>:<span class="string">"100g"</span>&#125;;</span><br></pre></td></tr></table></figure>
-
-    ​    输出：
-
-    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">undefined</span><br></pre></td></tr></table></figure>
-
-    ![](https://drafff.oss-cn-beijing.aliyuncs.com/img/20200218043601.gif)
-
-    GIF中我直接粘贴了上面一段代码，但是不熟悉的同学建议手动敲一遍。
-
-    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> orange = &#123;</span><br><span class="line">    color:<span class="string">"red"</span>,</span><br><span class="line">    size:<span class="string">"10cm"</span>,</span><br><span class="line">    weight:<span class="string">"100g"</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-    我们把上面一段代码格式化来看，首先我们定义一个对象用到了 `let`关键字，整个定义的语法可以写为`let [对象名] = {...}`,然后对象中的属性的格式是`[属性名]:[属性值]` ，这里要注意的是连接属性和属性值的符号是冒号`:`，并且两个属性定义之间用逗号`,`分割。
-
-    把上面的代码输进去并回车之后我们看到的是一个灰色的`undefined`，我们先不用管这个什么意思，正常情况下我们已经定义好了一个orange对象，并且它有三个属性，颜色（color）是红色（red），尺寸（size）是10cm，重量（weight）是100g。
-
-    这里插一句，Javascript里面的变量名是可以用中文的，所以理论上你可以这么写：
-
-    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> 橘子 = &#123;颜色:<span class="string">"红色"</span>,尺寸:<span class="string">"10厘米"</span>,重量:<span class="string">"100克"</span>&#125;;</span><br></pre></td></tr></table></figure>
-
-    但是习惯上，我们一般都会用英文来做变量名。
-
-    回到主题上，如果成功定义了`orange`，我们在控制台中输入`orange`并且回车，会看到orange对象的输出，如果你看到了跟GIF里一样的输出，那么你的第一个对象定义成功了。🙈
-
-    接下来我们来获取这个orange对象里的特定属性。
-
-    输入：
-
-    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">orange.size</span><br></pre></td></tr></table></figure>
-
-    输出：
-
-    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;10cm&quot;</span><br></pre></td></tr></table></figure>
-
-    ![](https://drafff.oss-cn-beijing.aliyuncs.com/img/20200218044313.gif)
-
-    如你所见，通常情况下我们用点`.`来获取对象中的属性。
-
-    获取对象中的属性还有另外一种方法，在对象后面加方括号里面写属性名。
-
-    输入：
-
-    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">orange[&quot;color&quot;]</span><br></pre></td></tr></table></figure>
-
-    输出:
-
-    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;red&quot;</span><br></pre></td></tr></table></figure>
-
-    #### 总结🔨
-
-    对象是javascript中非常常用的数据结构，使用对象来组织我们数据的好处是数据结构理非常清楚，并且调用非常方便。
-
-### 数组（Array）
-
-
-
-
-
-
-
-
-
-### JSON
-</code></pre><h2 id="分析原始数据与目标数据结构"><a href="#分析原始数据与目标数据结构" class="headerlink" title="分析原始数据与目标数据结构"></a>分析原始数据与目标数据结构</h2><h2 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h2>
+<h2 id="必须的基础知识"><a href="#必须的基础知识" class="headerlink" title="必须的基础知识"></a>必须的基础知识</h2><p>在开始操作之前，我们先简单了解一下所需的基本知识。</p>
+<h3 id="对象（object）"><a href="#对象（object）" class="headerlink" title="对象（object）"></a>对象（object）</h3><h4 id="对象概述🔨"><a href="#对象概述🔨" class="headerlink" title="对象概述🔨"></a>对象概述🔨</h4><p>javascript 中的对象(object)，和其它编程语言中的对象一样，可以比照现实生活中的对象(物体)来理解它。 javascript 中对象的概念可以比照着现实生活中实实在在的物体来理解。</p>
+<p>在javascript中，一个对象可以是一个单独的拥有属性和类型的实体。我们拿它和一个杯子做下类比。一个杯子是一个<strong>对象</strong>，杯子有颜色，图案，重量和材质等<strong>属性</strong>。同样，javascript对象也有属性来定义它的特征。</p>
+<p>在这个案例中我把每个城市当成了一个对象，我们最后封装好的数据就是一个对象。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    cityName: <span class="string">"杭州"</span>,</span><br><span class="line">    currentConfirmedCount: <span class="number">75</span>,</span><br><span class="line">    lon: <span class="string">"120.155070"</span>,</span><br><span class="line">    lat: <span class="string">"30.274084"</span> ,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如你所见，这个由两个花括号包裹起来的东西就是一个对象，其中有4个属性分别是<code>cityName</code> 、<code>currentConfirmedCount</code> 、<code>lon</code> 和<code>lat</code> 。</p>
+<h4 id="感受对象🔨"><a href="#感受对象🔨" class="headerlink" title="感受对象🔨"></a>感受对象🔨</h4><p>上面讲了一大堆，理解不了没关系，重点是下面跟着我做的部分，我们打两行代码感受下什么是对象。（以下内容我会插入大量GIF给大家参考）</p>
+<p>通常我们测试javascript最方便的地方就是chrome浏览器的控制台(console)。</p>
+<ol>
+<li>首先我们打开chrome，随便进入一个网页，按下F12。你就会看到控制台。</li>
+</ol>
+<p><img src="https://drafff.oss-cn-beijing.aliyuncs.com/img/20200218040652.gif" alt></p>
+<ol>
+<li><p>现在我们尝试定义一个新的对象<code>orange</code> ，输入以下代码，回车。</p>
+<p>输入：</p>
+</li>
+</ol>
+   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> orange = &#123;<span class="attr">color</span>:<span class="string">"red"</span>,<span class="attr">size</span>:<span class="string">"10cm"</span>,<span class="attr">weight</span>:<span class="string">"100g"</span>&#125;;</span><br></pre></td></tr></table></figure>
+<p>​    输出：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">undefined</span><br></pre></td></tr></table></figure>
+<p><img src="https://drafff.oss-cn-beijing.aliyuncs.com/img/20200218043601.gif" alt></p>
+<p>   GIF中我直接粘贴了上面一段代码，但是不熟悉的同学建议手动敲一遍。</p>
+   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> orange = &#123;</span><br><span class="line">    color:<span class="string">"red"</span>,</span><br><span class="line">    size:<span class="string">"10cm"</span>,</span><br><span class="line">    weight:<span class="string">"100g"</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>   我们把上面一段代码格式化来看，首先我们定义一个对象用到了 <code>let</code>关键字，整个定义的语法可以写为<code>let [对象名] = {...}</code>,然后对象中的属性的格式是<code>[属性名]:[属性值]</code> ，这里要注意的是连接属性和属性值的符号是冒号<code>:</code>，并且两个属性定义之间用逗号<code>,</code>分割。</p>
+<p>   把上面的代码输进去并回车之后我们看到的是一个灰色的<code>undefined</code>，我们先不用管这个什么意思，正常情况下我们已经定义好了一个orange对象，并且它有三个属性，颜色（color）是红色（red），尺寸（size）是10cm，重量（weight）是100g。</p>
+<p>   这里插一句，Javascript里面的变量名是可以用中文的，所以理论上你可以这么写：</p>
+   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> 橘子 = &#123;颜色:<span class="string">"红色"</span>,尺寸:<span class="string">"10厘米"</span>,重量:<span class="string">"100克"</span>&#125;;</span><br></pre></td></tr></table></figure>
+<p>   但是习惯上，我们一般都会用英文来做变量名。</p>
+<p>   回到主题上，如果成功定义了<code>orange</code>，我们在控制台中输入<code>orange</code>并且回车，会看到orange对象的输出，如果你看到了跟GIF里一样的输出，那么你的第一个对象定义成功了。🙈</p>
+<p>接下来我们来获取这个orange对象里的特定属性。</p>
+<p>输入：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">orange.size</span><br></pre></td></tr></table></figure>
+<p>输出：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;10cm&quot;</span><br></pre></td></tr></table></figure>
+<p><img src="https://drafff.oss-cn-beijing.aliyuncs.com/img/20200218044313.gif" alt></p>
+<p>如你所见，通常情况下我们用点<code>.</code>来获取对象中的属性。</p>
+<p>获取对象中的属性还有另外一种方法，在对象后面加方括号里面写属性名。</p>
+<p>输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">orange[&quot;color&quot;]</span><br></pre></td></tr></table></figure>
+<p>输出:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;red&quot;</span><br></pre></td></tr></table></figure>
+<h4 id="总结🔨"><a href="#总结🔨" class="headerlink" title="总结🔨"></a>总结🔨</h4><p>对象是javascript中非常常用的数据结构，使用对象来组织我们数据的好处是数据结构理非常清楚，并且调用非常方便。</p>
+<h3 id="数组（Array）"><a href="#数组（Array）" class="headerlink" title="数组（Array）"></a>数组（Array）</h3><h3 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h3><h2 id="分析原始数据与目标数据结构"><a href="#分析原始数据与目标数据结构" class="headerlink" title="分析原始数据与目标数据结构"></a>分析原始数据与目标数据结构</h2><h2 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h2>
   </div>
 </article>
 
@@ -351,7 +302,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#概述"><span class="toc-number">1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#必须的基础知识"><span class="toc-number">2.</span> <span class="toc-text">必须的基础知识</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分析原始数据与目标数据结构"><span class="toc-number">3.</span> <span class="toc-text">分析原始数据与目标数据结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据处理"><span class="toc-number">4.</span> <span class="toc-text">数据处理</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#概述"><span class="toc-number">1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#必须的基础知识"><span class="toc-number">2.</span> <span class="toc-text">必须的基础知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#对象（object）"><span class="toc-number">2.1.</span> <span class="toc-text">对象（object）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#对象概述🔨"><span class="toc-number">2.1.1.</span> <span class="toc-text">对象概述🔨</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#感受对象🔨"><span class="toc-number">2.1.2.</span> <span class="toc-text">感受对象🔨</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#总结🔨"><span class="toc-number">2.1.3.</span> <span class="toc-text">总结🔨</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数组（Array）"><span class="toc-number">2.2.</span> <span class="toc-text">数组（Array）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JSON"><span class="toc-number">2.3.</span> <span class="toc-text">JSON</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分析原始数据与目标数据结构"><span class="toc-number">3.</span> <span class="toc-text">分析原始数据与目标数据结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据处理"><span class="toc-number">4.</span> <span class="toc-text">数据处理</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
