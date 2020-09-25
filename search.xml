@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>unity安装</title>
+      <link href="/2020/unity/"/>
+      <url>/2020/unity/</url>
+      
+        <content type="html"><![CDATA[<h2 id="unity安装"><a href="#unity安装" class="headerlink" title="unity安装"></a>unity安装</h2><h3 id="1-下载UnityHub"><a href="#1-下载UnityHub" class="headerlink" title="1.下载UnityHub"></a>1.下载UnityHub</h3><p>点<a href="https://unity.com/cn" target="_blank" rel="noopener">这里(https://unity.com/cn)</a>进入unity官网。</p><p>点击开始使用。</p><p><img src="http://pic.drafff.art//drafff/20200926011719.png" alt></p><p>我们选择个人订阅方案。</p><p><img src="http://pic.drafff.art//drafff/20200926012004.png" alt></p><p>点击回头用户</p><p><img src="http://pic.drafff.art//drafff/20200926012052.png" alt></p><p>选中上面的复选框，点下载（此处默认Windows系统）</p><p><img src="http://pic.drafff.art//drafff/20200926012148.png" alt></p><p>下载完成后，打开安装，一直下一步。</p><p><img src="http://pic.drafff.art//drafff/20200926012309.png" alt></p><h2 id="2-获取Unity主体"><a href="#2-获取Unity主体" class="headerlink" title="2.获取Unity主体"></a>2.获取Unity主体</h2><p>打开安装好的UnityHub，点击右上角小头像，登录Unity账户，如果没有点击注册注册一个。</p><p><img src="http://pic.drafff.art//drafff/20200926012733.png" alt></p><p>登陆后点击进入管理许可证。</p><p><img src="http://pic.drafff.art//drafff/20200926013607.png" alt></p><p>点击激活新许可证。</p><p><img src="http://pic.drafff.art//drafff/20200926013710.png" alt></p><p>选择不以专业身份使用Unity。</p><p><img src="http://pic.drafff.art//drafff/20200926013736.png" alt></p><p>进入安装面板，点击安装</p><p><img src="http://pic.drafff.art//drafff/20200926013031.png" alt></p><p>选择版本为2019.4.11f1(LTS)</p><p><img src="http://pic.drafff.art//drafff/20200926013109.png" alt></p><p>点击下一步，只需要Visual Studio一个勾即可。点击下一步，同意许可，开始安装。<br>后面会跳出一个Visual Studio 的安装窗口。同样点击下一步即可。</p><p><img src="http://pic.drafff.art//drafff/20200926013258.png" alt></p><p>当滚动条消失后，安装完成。</p><p><img src="http://pic.drafff.art//drafff/20200926013853.png" alt></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>外卖配送标识系统</title>
       <link href="/2020/%E5%A4%96%E5%8D%96%E9%85%8D%E9%80%81%E6%A0%87%E8%AF%86%E7%B3%BB%E7%BB%9F/"/>
       <url>/2020/%E5%A4%96%E5%8D%96%E9%85%8D%E9%80%81%E6%A0%87%E8%AF%86%E7%B3%BB%E7%BB%9F/</url>
